@@ -4191,11 +4191,28 @@ class Ui_MainWindow(object):
         company = jobs[4]
         location = jobs[5]
         job_type = jobs[6]
+        us = "Jujaworks"
 
-        self.mycursor.execute(self.application_sql_querry)
-        email_to_applicant = f"Hello {}"
+        email_to_applicant = f"Hello {self.current_session_name}\n\nYour application for {job_type} {job_title} position at {company} has been successfully submitted. \n\n" \
+                             f"We will keep you informed on the job. Good luck" \
+                             f"\n\nRegards, \n\n{us}"
+        applicant_title = f"Application for {job_title.lower()} position at {company}"
 
-
+        message = f'subject: {applicant_title} \n\n{email_to_applicant}'
+        try:
+                self.sendmail(self.this_user_email, message)
+                warning = QMessageBox()
+                warning.setWindowTitle("Application sent")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"Your application has successfully been sent to {company}\n"
+                                f"We will keep you informed on the job.")
+                x = warning.exec_()
+        except:
+                warning = QMessageBox()
+                warning.setWindowTitle("Application Error")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Error sending application.\nPlease check your network.!")
+                x = warning.exec_()
 
     def button_clicked(self, but_num):
             sql = self.current_display_jobs_sql_querry + f" LIMIT {self.current_display_jobs_sql_querry_ulimit+(but_num-1)}, 1"
@@ -4221,6 +4238,7 @@ class Ui_MainWindow(object):
 
                     more_description = f"BRIEF DESCRIPTION\n\n{brief_description}\n\n\nJOB RESPONSIBILITIES\n\n" \
                                        f"{responsibilities}\n\n\nJOB QUALIFICATIONS\n\n{qualifications}\n\n\nSKILLS REQUIRED\n\n{skills}"
+
                     self.label_177.setText(job_title)
                     self.label_183.setText(location)
                     self.label_184.setText(job_type)
@@ -5308,6 +5326,7 @@ class Ui_MainWindow(object):
             self.mycursor.execute(f'SELECT * FROM jujaworks.personaldata Where email_address = "{email}";')
             valid = [i for i in self.mycursor][0]
             name = f"{valid[1]} {valid[2]}"
+            self.current_session_name = name
             Location = f"{valid[4]}"
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.tertiaryeducation Where email_address = "{email}";')
@@ -5333,24 +5352,12 @@ class Ui_MainWindow(object):
             uni_dates = f"{start_date} to {end_date}"
 
             self.label_3.setText(name)
-            print("SETTEXT NAME DONE")
             self.label_5.setText(course)
-            print("SETTEXT COURSE DONE")
             self.label_12.setText(university)
-            print("SETTEXT UNIVERSITY DONE")
             self.label_10.setText(Location)
-            print("SETTEXT LOCATION DONE")
-
             self.label_20.setText(university)
-            print("SETTEXT UNI-UNI DONE")
-
             self.label_17.setText(uni_dates)
-            print("SETTEXT UNI-DATES DONE")
-
             self.label_16.setText(course)
-            print("SETTEXT COURSE DONE")
-
-            print("GETTING HIGHSCHOOL DATA")
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.highschooleducation Where email_address = "{email}";')
             high = [i for i in self.mycursor][0]
@@ -5377,16 +5384,8 @@ class Ui_MainWindow(object):
 
 
             self.label_34.setText(highchool)
-            print("SETTEXT HIGHSCHOOL DONE")
-
             self.label_33.setText(grade)
-            print("SETTEXT HIGHSCHOOL-GRADE DONE")
-
             self.label_35.setText(highschool_dates)
-            print("SETTEXT HIGHSCHOOL-DATES DONE")
-
-            print("GETTING PRIMARY SCHOOL")
-
             self.mycursor.execute(f'SELECT * FROM jujaworks.primaryeducation Where email_address = "{email}";')
             primary = [i for i in self.mycursor][0]
             primary_school = primary[2]
@@ -5410,17 +5409,9 @@ class Ui_MainWindow(object):
             primary_dates = f"{start_date} to {end_date}"
 
             self.label_22.setText(primary_school)
-            print("SETTEXT PRIMARY-SCHOOL DONE")
-
             self.label_18.setText(primary_grade)
-            print("SETTEXT PRIMARY-GRADE DONE")
-
             self.label_23.setText(primary_dates)
-            print("SETTEXT PRIMARY-DATES DONE")
-
             self.frame_24.hide()
-            print("GETTING work experience")
-
             self.mycursor.execute(f'SELECT * FROM jujaworks.workexperience Where email_address = "{email}";')
             job = [i for i in self.mycursor][0]
 
@@ -5447,30 +5438,17 @@ class Ui_MainWindow(object):
             skills = job[7]
 
             self.label_26.setText(title)
-            print("SETTEXT WORK TITLE DONE")
-
             self.label_25.setText(company)
-            print("SETTEXT COMPANY DONE")
-
             self.label_29.setText(type)
-            print("SETTEXT WORK TYPE DONE")
-
 
             self.label_27.setText(work_dates)
-            print("SETTEXT WORK DATES DONE")
 
             self.label_28.setText(skills)
-            print("SETTEXT WORK SKILLS DONE")
-
-
-            print("GETTING SKILLS")
 
             self.mycursor.execute(f'SELECT skills FROM jujaworks.skills Where email_address = "{email}";')
             skills = [i for i in self.mycursor][0][0]
             print(skills)
             skills = skills.split(",")
-            print("STRIPPING SKILLS")
-
 
             skills = [i.strip() for i in skills]
             skills_num = len(skills)
