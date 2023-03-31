@@ -168,7 +168,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.toolButton_2 = QtWidgets.QToolButton(self.frame_9)
         self.toolButton_2.setMinimumSize(QtCore.QSize(47, 0))
-        self.toolButton_2.setStyleSheet("background-color: rgb(240, 240, 240);")
+        self.toolButton_2.setStyleSheet("\n"
+"")
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap(":/icons/icons/homepage.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton_2.setIcon(icon2)
@@ -984,6 +985,13 @@ class Ui_MainWindow(object):
         self.frame_46.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_46.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_46.setObjectName("frame_46")
+        self.pushButton_27 = QtWidgets.QPushButton(self.frame_46)
+        self.pushButton_27.setGeometry(QtCore.QRect(10, 10, 101, 31))
+        self.pushButton_27.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_27.setStyleSheet("background-color: rgb(1, 79, 223);\n"
+"border: 1px solid black;\n"
+"border-radius: 3px;")
+        self.pushButton_27.setObjectName("pushButton_27")
         self.horizontalLayout_7.addWidget(self.frame_46)
         self.verticalLayout_26.addWidget(self.frame_40)
         self.frame_39 = QtWidgets.QFrame(self.frame_38)
@@ -1008,7 +1016,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 359, 1471))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 363, 1471))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_33.setObjectName("verticalLayout_33")
@@ -1020,53 +1028,53 @@ class Ui_MainWindow(object):
         self.frame_55.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_55.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_55.setObjectName("frame_55")
-        self.label_73 = QtWidgets.QLabel(self.frame_55)
-        self.label_73.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_1 = QtWidgets.QLabel(self.frame_55)
+        self.lbl_jobdisplay_jobtitle_1.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_73.setFont(font)
-        self.label_73.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_73.setObjectName("label_73")
-        self.label_74 = QtWidgets.QLabel(self.frame_55)
-        self.label_74.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_1.setFont(font)
+        self.lbl_jobdisplay_jobtitle_1.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_1.setObjectName("lbl_jobdisplay_jobtitle_1")
+        self.lbl_jobdisplay_company_1 = QtWidgets.QLabel(self.frame_55)
+        self.lbl_jobdisplay_company_1.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_74.setFont(font)
-        self.label_74.setObjectName("label_74")
-        self.label_83 = QtWidgets.QLabel(self.frame_55)
-        self.label_83.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_1.setFont(font)
+        self.lbl_jobdisplay_company_1.setObjectName("lbl_jobdisplay_company_1")
+        self.lbl_jobdisplay_date_1 = QtWidgets.QLabel(self.frame_55)
+        self.lbl_jobdisplay_date_1.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_83.setFont(font)
-        self.label_83.setStyleSheet("padding-right:11px")
-        self.label_83.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_83.setObjectName("label_83")
-        self.label_84 = QtWidgets.QLabel(self.frame_55)
-        self.label_84.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_1.setFont(font)
+        self.lbl_jobdisplay_date_1.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_1.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_1.setObjectName("lbl_jobdisplay_date_1")
+        self.lbl_jobdisplay_description_1 = QtWidgets.QLabel(self.frame_55)
+        self.lbl_jobdisplay_description_1.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_84.setFont(font)
-        self.label_84.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_84.setWordWrap(True)
-        self.label_84.setObjectName("label_84")
-        self.label_85 = QtWidgets.QLabel(self.frame_55)
-        self.label_85.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_1.setFont(font)
+        self.lbl_jobdisplay_description_1.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_1.setWordWrap(True)
+        self.lbl_jobdisplay_description_1.setObjectName("lbl_jobdisplay_description_1")
+        self.lbl_jobdisplay_salary_1 = QtWidgets.QLabel(self.frame_55)
+        self.lbl_jobdisplay_salary_1.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_85.setFont(font)
-        self.label_85.setStyleSheet("")
-        self.label_85.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_85.setObjectName("label_85")
-        self.pushButton_15 = QtWidgets.QPushButton(self.frame_55)
-        self.pushButton_15.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_15.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_15.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_1.setFont(font)
+        self.lbl_jobdisplay_salary_1.setStyleSheet("")
+        self.lbl_jobdisplay_salary_1.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_1.setObjectName("lbl_jobdisplay_salary_1")
+        self.btn_jobsdisplay_1 = QtWidgets.QPushButton(self.frame_55)
+        self.btn_jobsdisplay_1.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_1.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_15.setText("")
-        self.pushButton_15.setObjectName("pushButton_15")
+        self.btn_jobsdisplay_1.setText("")
+        self.btn_jobsdisplay_1.setObjectName("btn_jobsdisplay_1")
         self.verticalLayout_33.addWidget(self.frame_55)
         self.frame_70 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_70.setMinimumSize(QtCore.QSize(341, 151))
@@ -1076,53 +1084,53 @@ class Ui_MainWindow(object):
         self.frame_70.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_70.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_70.setObjectName("frame_70")
-        self.label_155 = QtWidgets.QLabel(self.frame_70)
-        self.label_155.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_2 = QtWidgets.QLabel(self.frame_70)
+        self.lbl_jobdisplay_jobtitle_2.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_155.setFont(font)
-        self.label_155.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_155.setObjectName("label_155")
-        self.label_156 = QtWidgets.QLabel(self.frame_70)
-        self.label_156.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_2.setFont(font)
+        self.lbl_jobdisplay_jobtitle_2.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_2.setObjectName("lbl_jobdisplay_jobtitle_2")
+        self.lbl_jobdisplay_company_2 = QtWidgets.QLabel(self.frame_70)
+        self.lbl_jobdisplay_company_2.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_156.setFont(font)
-        self.label_156.setObjectName("label_156")
-        self.label_157 = QtWidgets.QLabel(self.frame_70)
-        self.label_157.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_2.setFont(font)
+        self.lbl_jobdisplay_company_2.setObjectName("lbl_jobdisplay_company_2")
+        self.lbl_jobdisplay_date_2 = QtWidgets.QLabel(self.frame_70)
+        self.lbl_jobdisplay_date_2.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_157.setFont(font)
-        self.label_157.setStyleSheet("padding-right:11px")
-        self.label_157.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_157.setObjectName("label_157")
-        self.label_160 = QtWidgets.QLabel(self.frame_70)
-        self.label_160.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_2.setFont(font)
+        self.lbl_jobdisplay_date_2.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_2.setObjectName("lbl_jobdisplay_date_2")
+        self.lbl_jobdisplay_description_2 = QtWidgets.QLabel(self.frame_70)
+        self.lbl_jobdisplay_description_2.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_160.setFont(font)
-        self.label_160.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_160.setWordWrap(True)
-        self.label_160.setObjectName("label_160")
-        self.label_161 = QtWidgets.QLabel(self.frame_70)
-        self.label_161.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_2.setFont(font)
+        self.lbl_jobdisplay_description_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_2.setWordWrap(True)
+        self.lbl_jobdisplay_description_2.setObjectName("lbl_jobdisplay_description_2")
+        self.lbl_jobdisplay_salary_2 = QtWidgets.QLabel(self.frame_70)
+        self.lbl_jobdisplay_salary_2.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_161.setFont(font)
-        self.label_161.setStyleSheet("")
-        self.label_161.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_161.setObjectName("label_161")
-        self.pushButton_30 = QtWidgets.QPushButton(self.frame_70)
-        self.pushButton_30.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_30.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_30.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_2.setFont(font)
+        self.lbl_jobdisplay_salary_2.setStyleSheet("")
+        self.lbl_jobdisplay_salary_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_2.setObjectName("lbl_jobdisplay_salary_2")
+        self.btn_jobsdisplay_2 = QtWidgets.QPushButton(self.frame_70)
+        self.btn_jobsdisplay_2.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_2.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_30.setText("")
-        self.pushButton_30.setObjectName("pushButton_30")
+        self.btn_jobsdisplay_2.setText("")
+        self.btn_jobsdisplay_2.setObjectName("btn_jobsdisplay_2")
         self.verticalLayout_33.addWidget(self.frame_70)
         self.frame_69 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_69.setMinimumSize(QtCore.QSize(341, 151))
@@ -1132,53 +1140,53 @@ class Ui_MainWindow(object):
         self.frame_69.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_69.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_69.setObjectName("frame_69")
-        self.label_150 = QtWidgets.QLabel(self.frame_69)
-        self.label_150.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_3 = QtWidgets.QLabel(self.frame_69)
+        self.lbl_jobdisplay_jobtitle_3.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_150.setFont(font)
-        self.label_150.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_150.setObjectName("label_150")
-        self.label_151 = QtWidgets.QLabel(self.frame_69)
-        self.label_151.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_3.setFont(font)
+        self.lbl_jobdisplay_jobtitle_3.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_3.setObjectName("lbl_jobdisplay_jobtitle_3")
+        self.lbl_jobdisplay_company_3 = QtWidgets.QLabel(self.frame_69)
+        self.lbl_jobdisplay_company_3.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_151.setFont(font)
-        self.label_151.setObjectName("label_151")
-        self.label_152 = QtWidgets.QLabel(self.frame_69)
-        self.label_152.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_3.setFont(font)
+        self.lbl_jobdisplay_company_3.setObjectName("lbl_jobdisplay_company_3")
+        self.lbl_jobdisplay_date_3 = QtWidgets.QLabel(self.frame_69)
+        self.lbl_jobdisplay_date_3.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_152.setFont(font)
-        self.label_152.setStyleSheet("padding-right:11px")
-        self.label_152.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_152.setObjectName("label_152")
-        self.label_153 = QtWidgets.QLabel(self.frame_69)
-        self.label_153.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_3.setFont(font)
+        self.lbl_jobdisplay_date_3.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_3.setObjectName("lbl_jobdisplay_date_3")
+        self.lbl_jobdisplay_description_3 = QtWidgets.QLabel(self.frame_69)
+        self.lbl_jobdisplay_description_3.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_153.setFont(font)
-        self.label_153.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_153.setWordWrap(True)
-        self.label_153.setObjectName("label_153")
-        self.label_154 = QtWidgets.QLabel(self.frame_69)
-        self.label_154.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_3.setFont(font)
+        self.lbl_jobdisplay_description_3.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_3.setWordWrap(True)
+        self.lbl_jobdisplay_description_3.setObjectName("lbl_jobdisplay_description_3")
+        self.lbl_jobdisplay_salary_3 = QtWidgets.QLabel(self.frame_69)
+        self.lbl_jobdisplay_salary_3.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_154.setFont(font)
-        self.label_154.setStyleSheet("")
-        self.label_154.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_154.setObjectName("label_154")
-        self.pushButton_29 = QtWidgets.QPushButton(self.frame_69)
-        self.pushButton_29.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_29.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_29.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_3.setFont(font)
+        self.lbl_jobdisplay_salary_3.setStyleSheet("")
+        self.lbl_jobdisplay_salary_3.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_3.setObjectName("lbl_jobdisplay_salary_3")
+        self.btn_jobsdisplay_3 = QtWidgets.QPushButton(self.frame_69)
+        self.btn_jobsdisplay_3.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_3.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_29.setText("")
-        self.pushButton_29.setObjectName("pushButton_29")
+        self.btn_jobsdisplay_3.setText("")
+        self.btn_jobsdisplay_3.setObjectName("btn_jobsdisplay_3")
         self.verticalLayout_33.addWidget(self.frame_69)
         self.frame_68 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_68.setMinimumSize(QtCore.QSize(341, 151))
@@ -1188,53 +1196,53 @@ class Ui_MainWindow(object):
         self.frame_68.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_68.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_68.setObjectName("frame_68")
-        self.label_112 = QtWidgets.QLabel(self.frame_68)
-        self.label_112.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_4 = QtWidgets.QLabel(self.frame_68)
+        self.lbl_jobdisplay_jobtitle_4.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_112.setFont(font)
-        self.label_112.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_112.setObjectName("label_112")
-        self.label_145 = QtWidgets.QLabel(self.frame_68)
-        self.label_145.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_4.setFont(font)
+        self.lbl_jobdisplay_jobtitle_4.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_4.setObjectName("lbl_jobdisplay_jobtitle_4")
+        self.lbl_jobdisplay_company_4 = QtWidgets.QLabel(self.frame_68)
+        self.lbl_jobdisplay_company_4.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_145.setFont(font)
-        self.label_145.setObjectName("label_145")
-        self.label_146 = QtWidgets.QLabel(self.frame_68)
-        self.label_146.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_4.setFont(font)
+        self.lbl_jobdisplay_company_4.setObjectName("lbl_jobdisplay_company_4")
+        self.lbl_jobdisplay_date_4 = QtWidgets.QLabel(self.frame_68)
+        self.lbl_jobdisplay_date_4.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_146.setFont(font)
-        self.label_146.setStyleSheet("padding-right:11px")
-        self.label_146.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_146.setObjectName("label_146")
-        self.label_148 = QtWidgets.QLabel(self.frame_68)
-        self.label_148.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_4.setFont(font)
+        self.lbl_jobdisplay_date_4.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_4.setObjectName("lbl_jobdisplay_date_4")
+        self.lbl_jobdisplay_description_4 = QtWidgets.QLabel(self.frame_68)
+        self.lbl_jobdisplay_description_4.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_148.setFont(font)
-        self.label_148.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_148.setWordWrap(True)
-        self.label_148.setObjectName("label_148")
-        self.label_149 = QtWidgets.QLabel(self.frame_68)
-        self.label_149.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_4.setFont(font)
+        self.lbl_jobdisplay_description_4.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_4.setWordWrap(True)
+        self.lbl_jobdisplay_description_4.setObjectName("lbl_jobdisplay_description_4")
+        self.lbl_jobdisplay_salary_4 = QtWidgets.QLabel(self.frame_68)
+        self.lbl_jobdisplay_salary_4.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_149.setFont(font)
-        self.label_149.setStyleSheet("")
-        self.label_149.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_149.setObjectName("label_149")
-        self.pushButton_28 = QtWidgets.QPushButton(self.frame_68)
-        self.pushButton_28.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_28.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_28.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_4.setFont(font)
+        self.lbl_jobdisplay_salary_4.setStyleSheet("")
+        self.lbl_jobdisplay_salary_4.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_4.setObjectName("lbl_jobdisplay_salary_4")
+        self.btn_jobsdisplay_4 = QtWidgets.QPushButton(self.frame_68)
+        self.btn_jobsdisplay_4.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_4.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_28.setText("")
-        self.pushButton_28.setObjectName("pushButton_28")
+        self.btn_jobsdisplay_4.setText("")
+        self.btn_jobsdisplay_4.setObjectName("btn_jobsdisplay_4")
         self.verticalLayout_33.addWidget(self.frame_68)
         self.frame_63 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_63.setMinimumSize(QtCore.QSize(341, 151))
@@ -1244,53 +1252,53 @@ class Ui_MainWindow(object):
         self.frame_63.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_63.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_63.setObjectName("frame_63")
-        self.label_106 = QtWidgets.QLabel(self.frame_63)
-        self.label_106.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_5 = QtWidgets.QLabel(self.frame_63)
+        self.lbl_jobdisplay_jobtitle_5.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_106.setFont(font)
-        self.label_106.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_106.setObjectName("label_106")
-        self.label_107 = QtWidgets.QLabel(self.frame_63)
-        self.label_107.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_5.setFont(font)
+        self.lbl_jobdisplay_jobtitle_5.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_5.setObjectName("lbl_jobdisplay_jobtitle_5")
+        self.lbl_jobdisplay_company_5 = QtWidgets.QLabel(self.frame_63)
+        self.lbl_jobdisplay_company_5.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_107.setFont(font)
-        self.label_107.setObjectName("label_107")
-        self.label_109 = QtWidgets.QLabel(self.frame_63)
-        self.label_109.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_5.setFont(font)
+        self.lbl_jobdisplay_company_5.setObjectName("lbl_jobdisplay_company_5")
+        self.lbl_jobdisplay_date_5 = QtWidgets.QLabel(self.frame_63)
+        self.lbl_jobdisplay_date_5.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_109.setFont(font)
-        self.label_109.setStyleSheet("padding-right:11px")
-        self.label_109.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_109.setObjectName("label_109")
-        self.label_110 = QtWidgets.QLabel(self.frame_63)
-        self.label_110.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_5.setFont(font)
+        self.lbl_jobdisplay_date_5.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_5.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_5.setObjectName("lbl_jobdisplay_date_5")
+        self.lbl_jobdisplay_description_5 = QtWidgets.QLabel(self.frame_63)
+        self.lbl_jobdisplay_description_5.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_110.setFont(font)
-        self.label_110.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_110.setWordWrap(True)
-        self.label_110.setObjectName("label_110")
-        self.label_111 = QtWidgets.QLabel(self.frame_63)
-        self.label_111.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_5.setFont(font)
+        self.lbl_jobdisplay_description_5.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_5.setWordWrap(True)
+        self.lbl_jobdisplay_description_5.setObjectName("lbl_jobdisplay_description_5")
+        self.lbl_jobdisplay_salary_5 = QtWidgets.QLabel(self.frame_63)
+        self.lbl_jobdisplay_salary_5.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_111.setFont(font)
-        self.label_111.setStyleSheet("")
-        self.label_111.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_111.setObjectName("label_111")
-        self.pushButton_27 = QtWidgets.QPushButton(self.frame_63)
-        self.pushButton_27.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_27.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_27.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_5.setFont(font)
+        self.lbl_jobdisplay_salary_5.setStyleSheet("")
+        self.lbl_jobdisplay_salary_5.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_5.setObjectName("lbl_jobdisplay_salary_5")
+        self.btn_jobsdisplay_5 = QtWidgets.QPushButton(self.frame_63)
+        self.btn_jobsdisplay_5.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_5.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_27.setText("")
-        self.pushButton_27.setObjectName("pushButton_27")
+        self.btn_jobsdisplay_5.setText("")
+        self.btn_jobsdisplay_5.setObjectName("btn_jobsdisplay_5")
         self.verticalLayout_33.addWidget(self.frame_63)
         self.frame_73 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_73.setMinimumSize(QtCore.QSize(341, 151))
@@ -1300,53 +1308,53 @@ class Ui_MainWindow(object):
         self.frame_73.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_73.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_73.setObjectName("frame_73")
-        self.label_172 = QtWidgets.QLabel(self.frame_73)
-        self.label_172.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_6 = QtWidgets.QLabel(self.frame_73)
+        self.lbl_jobdisplay_jobtitle_6.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_172.setFont(font)
-        self.label_172.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_172.setObjectName("label_172")
-        self.label_173 = QtWidgets.QLabel(self.frame_73)
-        self.label_173.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_6.setFont(font)
+        self.lbl_jobdisplay_jobtitle_6.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_6.setObjectName("lbl_jobdisplay_jobtitle_6")
+        self.lbl_jobdisplay_company_6 = QtWidgets.QLabel(self.frame_73)
+        self.lbl_jobdisplay_company_6.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_173.setFont(font)
-        self.label_173.setObjectName("label_173")
-        self.label_174 = QtWidgets.QLabel(self.frame_73)
-        self.label_174.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_6.setFont(font)
+        self.lbl_jobdisplay_company_6.setObjectName("lbl_jobdisplay_company_6")
+        self.lbl_jobdisplay_date_6 = QtWidgets.QLabel(self.frame_73)
+        self.lbl_jobdisplay_date_6.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_174.setFont(font)
-        self.label_174.setStyleSheet("padding-right:11px")
-        self.label_174.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_174.setObjectName("label_174")
-        self.label_175 = QtWidgets.QLabel(self.frame_73)
-        self.label_175.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_6.setFont(font)
+        self.lbl_jobdisplay_date_6.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_6.setObjectName("lbl_jobdisplay_date_6")
+        self.lbl_jobdisplay_description_6 = QtWidgets.QLabel(self.frame_73)
+        self.lbl_jobdisplay_description_6.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_175.setFont(font)
-        self.label_175.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_175.setWordWrap(True)
-        self.label_175.setObjectName("label_175")
-        self.label_176 = QtWidgets.QLabel(self.frame_73)
-        self.label_176.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_6.setFont(font)
+        self.lbl_jobdisplay_description_6.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_6.setWordWrap(True)
+        self.lbl_jobdisplay_description_6.setObjectName("lbl_jobdisplay_description_6")
+        self.lbl_jobdisplay_salary_6 = QtWidgets.QLabel(self.frame_73)
+        self.lbl_jobdisplay_salary_6.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_176.setFont(font)
-        self.label_176.setStyleSheet("")
-        self.label_176.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_176.setObjectName("label_176")
-        self.pushButton_33 = QtWidgets.QPushButton(self.frame_73)
-        self.pushButton_33.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_33.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_33.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_6.setFont(font)
+        self.lbl_jobdisplay_salary_6.setStyleSheet("")
+        self.lbl_jobdisplay_salary_6.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_6.setObjectName("lbl_jobdisplay_salary_6")
+        self.btn_jobsdisplay_6 = QtWidgets.QPushButton(self.frame_73)
+        self.btn_jobsdisplay_6.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_6.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_33.setText("")
-        self.pushButton_33.setObjectName("pushButton_33")
+        self.btn_jobsdisplay_6.setText("")
+        self.btn_jobsdisplay_6.setObjectName("btn_jobsdisplay_6")
         self.verticalLayout_33.addWidget(self.frame_73)
         self.frame_56 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_56.setMinimumSize(QtCore.QSize(341, 151))
@@ -1356,53 +1364,53 @@ class Ui_MainWindow(object):
         self.frame_56.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_56.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_56.setObjectName("frame_56")
-        self.label_101 = QtWidgets.QLabel(self.frame_56)
-        self.label_101.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_7 = QtWidgets.QLabel(self.frame_56)
+        self.lbl_jobdisplay_jobtitle_7.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_101.setFont(font)
-        self.label_101.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_101.setObjectName("label_101")
-        self.label_102 = QtWidgets.QLabel(self.frame_56)
-        self.label_102.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_7.setFont(font)
+        self.lbl_jobdisplay_jobtitle_7.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_7.setObjectName("lbl_jobdisplay_jobtitle_7")
+        self.lbl_jobdisplay_company_7 = QtWidgets.QLabel(self.frame_56)
+        self.lbl_jobdisplay_company_7.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_102.setFont(font)
-        self.label_102.setObjectName("label_102")
-        self.label_103 = QtWidgets.QLabel(self.frame_56)
-        self.label_103.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_7.setFont(font)
+        self.lbl_jobdisplay_company_7.setObjectName("lbl_jobdisplay_company_7")
+        self.lbl_jobdisplay_date_7 = QtWidgets.QLabel(self.frame_56)
+        self.lbl_jobdisplay_date_7.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_103.setFont(font)
-        self.label_103.setStyleSheet("padding-right:11px")
-        self.label_103.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_103.setObjectName("label_103")
-        self.label_104 = QtWidgets.QLabel(self.frame_56)
-        self.label_104.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_7.setFont(font)
+        self.lbl_jobdisplay_date_7.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_7.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_7.setObjectName("lbl_jobdisplay_date_7")
+        self.lbl_jobdisplay_description_7 = QtWidgets.QLabel(self.frame_56)
+        self.lbl_jobdisplay_description_7.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_104.setFont(font)
-        self.label_104.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_104.setWordWrap(True)
-        self.label_104.setObjectName("label_104")
-        self.label_105 = QtWidgets.QLabel(self.frame_56)
-        self.label_105.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_7.setFont(font)
+        self.lbl_jobdisplay_description_7.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_7.setWordWrap(True)
+        self.lbl_jobdisplay_description_7.setObjectName("lbl_jobdisplay_description_7")
+        self.lbl_jobdisplay_salary_7 = QtWidgets.QLabel(self.frame_56)
+        self.lbl_jobdisplay_salary_7.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_105.setFont(font)
-        self.label_105.setStyleSheet("")
-        self.label_105.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_105.setObjectName("label_105")
-        self.pushButton_19 = QtWidgets.QPushButton(self.frame_56)
-        self.pushButton_19.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_19.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_19.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_7.setFont(font)
+        self.lbl_jobdisplay_salary_7.setStyleSheet("")
+        self.lbl_jobdisplay_salary_7.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_7.setObjectName("lbl_jobdisplay_salary_7")
+        self.btn_jobsdisplay_7 = QtWidgets.QPushButton(self.frame_56)
+        self.btn_jobsdisplay_7.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_7.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_19.setText("")
-        self.pushButton_19.setObjectName("pushButton_19")
+        self.btn_jobsdisplay_7.setText("")
+        self.btn_jobsdisplay_7.setObjectName("btn_jobsdisplay_7")
         self.verticalLayout_33.addWidget(self.frame_56)
         self.frame_72 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_72.setMinimumSize(QtCore.QSize(341, 151))
@@ -1412,53 +1420,53 @@ class Ui_MainWindow(object):
         self.frame_72.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_72.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_72.setObjectName("frame_72")
-        self.label_167 = QtWidgets.QLabel(self.frame_72)
-        self.label_167.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_8 = QtWidgets.QLabel(self.frame_72)
+        self.lbl_jobdisplay_jobtitle_8.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_167.setFont(font)
-        self.label_167.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_167.setObjectName("label_167")
-        self.label_168 = QtWidgets.QLabel(self.frame_72)
-        self.label_168.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_8.setFont(font)
+        self.lbl_jobdisplay_jobtitle_8.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_8.setObjectName("lbl_jobdisplay_jobtitle_8")
+        self.lbl_jobdisplay_company_8 = QtWidgets.QLabel(self.frame_72)
+        self.lbl_jobdisplay_company_8.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_168.setFont(font)
-        self.label_168.setObjectName("label_168")
-        self.label_169 = QtWidgets.QLabel(self.frame_72)
-        self.label_169.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_8.setFont(font)
+        self.lbl_jobdisplay_company_8.setObjectName("lbl_jobdisplay_company_8")
+        self.lbl_jobdisplay_date_8 = QtWidgets.QLabel(self.frame_72)
+        self.lbl_jobdisplay_date_8.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_169.setFont(font)
-        self.label_169.setStyleSheet("padding-right:11px")
-        self.label_169.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_169.setObjectName("label_169")
-        self.label_170 = QtWidgets.QLabel(self.frame_72)
-        self.label_170.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_8.setFont(font)
+        self.lbl_jobdisplay_date_8.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_8.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_8.setObjectName("lbl_jobdisplay_date_8")
+        self.lbl_jobdisplay_description_8 = QtWidgets.QLabel(self.frame_72)
+        self.lbl_jobdisplay_description_8.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_170.setFont(font)
-        self.label_170.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_170.setWordWrap(True)
-        self.label_170.setObjectName("label_170")
-        self.label_171 = QtWidgets.QLabel(self.frame_72)
-        self.label_171.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_8.setFont(font)
+        self.lbl_jobdisplay_description_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_8.setWordWrap(True)
+        self.lbl_jobdisplay_description_8.setObjectName("lbl_jobdisplay_description_8")
+        self.lbl_jobdisplay_salary_8 = QtWidgets.QLabel(self.frame_72)
+        self.lbl_jobdisplay_salary_8.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_171.setFont(font)
-        self.label_171.setStyleSheet("")
-        self.label_171.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_171.setObjectName("label_171")
-        self.pushButton_32 = QtWidgets.QPushButton(self.frame_72)
-        self.pushButton_32.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_32.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_32.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_8.setFont(font)
+        self.lbl_jobdisplay_salary_8.setStyleSheet("")
+        self.lbl_jobdisplay_salary_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_8.setObjectName("lbl_jobdisplay_salary_8")
+        self.btn_jobsdisplay_8 = QtWidgets.QPushButton(self.frame_72)
+        self.btn_jobsdisplay_8.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_8.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_8.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_32.setText("")
-        self.pushButton_32.setObjectName("pushButton_32")
+        self.btn_jobsdisplay_8.setText("")
+        self.btn_jobsdisplay_8.setObjectName("btn_jobsdisplay_8")
         self.verticalLayout_33.addWidget(self.frame_72)
         self.frame_71 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_71.setEnabled(True)
@@ -1469,54 +1477,54 @@ class Ui_MainWindow(object):
         self.frame_71.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_71.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_71.setObjectName("frame_71")
-        self.label_162 = QtWidgets.QLabel(self.frame_71)
-        self.label_162.setGeometry(QtCore.QRect(10, 5, 321, 21))
+        self.lbl_jobdisplay_jobtitle_9 = QtWidgets.QLabel(self.frame_71)
+        self.lbl_jobdisplay_jobtitle_9.setGeometry(QtCore.QRect(10, 5, 321, 21))
         font = QtGui.QFont()
         font.setFamily("Sans Serif Collection")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.label_162.setFont(font)
-        self.label_162.setStyleSheet("color: rgb(0, 85, 127);")
-        self.label_162.setObjectName("label_162")
-        self.label_163 = QtWidgets.QLabel(self.frame_71)
-        self.label_163.setGeometry(QtCore.QRect(10, 30, 321, 21))
+        self.lbl_jobdisplay_jobtitle_9.setFont(font)
+        self.lbl_jobdisplay_jobtitle_9.setStyleSheet("color: rgb(0, 85, 127);")
+        self.lbl_jobdisplay_jobtitle_9.setObjectName("lbl_jobdisplay_jobtitle_9")
+        self.lbl_jobdisplay_company_9 = QtWidgets.QLabel(self.frame_71)
+        self.lbl_jobdisplay_company_9.setGeometry(QtCore.QRect(10, 30, 321, 21))
         font = QtGui.QFont()
         font.setPointSize(11)
-        self.label_163.setFont(font)
-        self.label_163.setObjectName("label_163")
-        self.label_164 = QtWidgets.QLabel(self.frame_71)
-        self.label_164.setGeometry(QtCore.QRect(220, 130, 121, 20))
+        self.lbl_jobdisplay_company_9.setFont(font)
+        self.lbl_jobdisplay_company_9.setObjectName("lbl_jobdisplay_company_9")
+        self.lbl_jobdisplay_date_9 = QtWidgets.QLabel(self.frame_71)
+        self.lbl_jobdisplay_date_9.setGeometry(QtCore.QRect(220, 130, 121, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_164.setFont(font)
-        self.label_164.setStyleSheet("padding-right:11px")
-        self.label_164.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_164.setObjectName("label_164")
-        self.label_165 = QtWidgets.QLabel(self.frame_71)
-        self.label_165.setGeometry(QtCore.QRect(10, 50, 321, 71))
+        self.lbl_jobdisplay_date_9.setFont(font)
+        self.lbl_jobdisplay_date_9.setStyleSheet("padding-right:11px")
+        self.lbl_jobdisplay_date_9.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_date_9.setObjectName("lbl_jobdisplay_date_9")
+        self.lbl_jobdisplay_description_9 = QtWidgets.QLabel(self.frame_71)
+        self.lbl_jobdisplay_description_9.setGeometry(QtCore.QRect(10, 50, 321, 71))
         font = QtGui.QFont()
         font.setPointSize(9)
-        self.label_165.setFont(font)
-        self.label_165.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_165.setWordWrap(True)
-        self.label_165.setObjectName("label_165")
-        self.label_166 = QtWidgets.QLabel(self.frame_71)
-        self.label_166.setGeometry(QtCore.QRect(10, 130, 211, 20))
+        self.lbl_jobdisplay_description_9.setFont(font)
+        self.lbl_jobdisplay_description_9.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_description_9.setWordWrap(True)
+        self.lbl_jobdisplay_description_9.setObjectName("lbl_jobdisplay_description_9")
+        self.lbl_jobdisplay_salary_9 = QtWidgets.QLabel(self.frame_71)
+        self.lbl_jobdisplay_salary_9.setGeometry(QtCore.QRect(10, 130, 211, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.label_166.setFont(font)
-        self.label_166.setStyleSheet("")
-        self.label_166.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_166.setObjectName("label_166")
-        self.pushButton_31 = QtWidgets.QPushButton(self.frame_71)
-        self.pushButton_31.setEnabled(True)
-        self.pushButton_31.setGeometry(QtCore.QRect(0, 0, 341, 151))
-        self.pushButton_31.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_31.setStyleSheet("background-color: transparent;\n"
+        self.lbl_jobdisplay_salary_9.setFont(font)
+        self.lbl_jobdisplay_salary_9.setStyleSheet("")
+        self.lbl_jobdisplay_salary_9.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lbl_jobdisplay_salary_9.setObjectName("lbl_jobdisplay_salary_9")
+        self.btn_jobsdisplay_9 = QtWidgets.QPushButton(self.frame_71)
+        self.btn_jobsdisplay_9.setEnabled(True)
+        self.btn_jobsdisplay_9.setGeometry(QtCore.QRect(0, 0, 341, 151))
+        self.btn_jobsdisplay_9.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_jobsdisplay_9.setStyleSheet("background-color: transparent;\n"
 "")
-        self.pushButton_31.setText("")
-        self.pushButton_31.setObjectName("pushButton_31")
+        self.btn_jobsdisplay_9.setText("")
+        self.btn_jobsdisplay_9.setObjectName("btn_jobsdisplay_9")
         self.verticalLayout_33.addWidget(self.frame_71)
         self.frame_74 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
         self.frame_74.setMinimumSize(QtCore.QSize(0, 40))
@@ -1557,7 +1565,7 @@ class Ui_MainWindow(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 147, 8285))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, -2043, 500, 2615))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_34.setObjectName("verticalLayout_34")
@@ -1703,6 +1711,428 @@ class Ui_MainWindow(object):
         self.verticalLayout_26.addWidget(self.frame_39)
         self.verticalLayout_21.addWidget(self.frame_38)
         self.stackedWidget_2.addWidget(self.page_2)
+        self.pagepostAjob = QtWidgets.QWidget()
+        self.pagepostAjob.setObjectName("pagepostAjob")
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout(self.pagepostAjob)
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.frame_76 = QtWidgets.QFrame(self.pagepostAjob)
+        self.frame_76.setMinimumSize(QtCore.QSize(240, 439))
+        self.frame_76.setMaximumSize(QtCore.QSize(250, 439))
+        self.frame_76.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_76.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_76.setObjectName("frame_76")
+        self.horizontalLayout_10.addWidget(self.frame_76)
+        self.frame_78 = QtWidgets.QFrame(self.pagepostAjob)
+        self.frame_78.setStyleSheet("background-color:rgb(171, 171, 171) ;\n"
+"border-radius:5px")
+        self.frame_78.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_78.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_78.setObjectName("frame_78")
+        self.verticalLayout_37 = QtWidgets.QVBoxLayout(self.frame_78)
+        self.verticalLayout_37.setObjectName("verticalLayout_37")
+        self.label_90 = QtWidgets.QLabel(self.frame_78)
+        font = QtGui.QFont()
+        font.setFamily("Sitka Banner")
+        font.setPointSize(20)
+        self.label_90.setFont(font)
+        self.label_90.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_90.setObjectName("label_90")
+        self.verticalLayout_37.addWidget(self.label_90)
+        self.scrollArea_6 = QtWidgets.QScrollArea(self.frame_78)
+        self.scrollArea_6.setWidgetResizable(True)
+        self.scrollArea_6.setObjectName("scrollArea_6")
+        self.scrollAreaWidgetContents_6 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_6.setGeometry(QtCore.QRect(0, 0, 380, 1521))
+        self.scrollAreaWidgetContents_6.setObjectName("scrollAreaWidgetContents_6")
+        self.verticalLayout_38 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_6)
+        self.verticalLayout_38.setContentsMargins(0, 0, 0, 10)
+        self.verticalLayout_38.setObjectName("verticalLayout_38")
+        self.frame_80 = QtWidgets.QFrame(self.scrollAreaWidgetContents_6)
+        self.frame_80.setMinimumSize(QtCore.QSize(377, 405))
+        self.frame_80.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_80.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_80.setObjectName("frame_80")
+        self.lineEdit_23 = QtWidgets.QLineEdit(self.frame_80)
+        self.lineEdit_23.setGeometry(QtCore.QRect(20, 40, 331, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_23.setFont(font)
+        self.lineEdit_23.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_23.setObjectName("lineEdit_23")
+        self.label_4 = QtWidgets.QLabel(self.frame_80)
+        self.label_4.setGeometry(QtCore.QRect(20, 10, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.lineEdit_24 = QtWidgets.QLineEdit(self.frame_80)
+        self.lineEdit_24.setGeometry(QtCore.QRect(20, 110, 331, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_24.setFont(font)
+        self.lineEdit_24.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_24.setPlaceholderText("")
+        self.lineEdit_24.setObjectName("lineEdit_24")
+        self.label_73 = QtWidgets.QLabel(self.frame_80)
+        self.label_73.setGeometry(QtCore.QRect(20, 80, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_73.setFont(font)
+        self.label_73.setObjectName("label_73")
+        self.lineEdit_25 = QtWidgets.QLineEdit(self.frame_80)
+        self.lineEdit_25.setGeometry(QtCore.QRect(20, 180, 331, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_25.setFont(font)
+        self.lineEdit_25.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_25.setObjectName("lineEdit_25")
+        self.label_74 = QtWidgets.QLabel(self.frame_80)
+        self.label_74.setGeometry(QtCore.QRect(20, 160, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_74.setFont(font)
+        self.label_74.setObjectName("label_74")
+        self.lineEdit_26 = QtWidgets.QLineEdit(self.frame_80)
+        self.lineEdit_26.setGeometry(QtCore.QRect(20, 270, 131, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_26.setFont(font)
+        self.lineEdit_26.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_26.setObjectName("lineEdit_26")
+        self.label_83 = QtWidgets.QLabel(self.frame_80)
+        self.label_83.setGeometry(QtCore.QRect(20, 235, 291, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_83.setFont(font)
+        self.label_83.setObjectName("label_83")
+        self.lineEdit_28 = QtWidgets.QLineEdit(self.frame_80)
+        self.lineEdit_28.setGeometry(QtCore.QRect(220, 270, 131, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_28.setFont(font)
+        self.lineEdit_28.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_28.setObjectName("lineEdit_28")
+        self.label_85 = QtWidgets.QLabel(self.frame_80)
+        self.label_85.setGeometry(QtCore.QRect(180, 270, 21, 31))
+        font = QtGui.QFont()
+        font.setFamily("Mongolian Baiti")
+        font.setPointSize(16)
+        font.setKerning(True)
+        self.label_85.setFont(font)
+        self.label_85.setObjectName("label_85")
+        self.label_145 = QtWidgets.QLabel(self.frame_80)
+        self.label_145.setGeometry(QtCore.QRect(20, 330, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_145.setFont(font)
+        self.label_145.setStyleSheet("")
+        self.label_145.setObjectName("label_145")
+        self.comboBox_25 = QtWidgets.QComboBox(self.frame_80)
+        self.comboBox_25.setGeometry(QtCore.QRect(20, 350, 211, 31))
+        self.comboBox_25.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_25.setObjectName("comboBox_25")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.comboBox_25.addItem("")
+        self.lineEdit_23.raise_()
+        self.label_4.raise_()
+        self.label_73.raise_()
+        self.lineEdit_25.raise_()
+        self.label_74.raise_()
+        self.lineEdit_26.raise_()
+        self.label_83.raise_()
+        self.lineEdit_24.raise_()
+        self.lineEdit_28.raise_()
+        self.label_85.raise_()
+        self.label_145.raise_()
+        self.comboBox_25.raise_()
+        self.verticalLayout_38.addWidget(self.frame_80)
+        self.frame_81 = QtWidgets.QFrame(self.scrollAreaWidgetContents_6)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_81.sizePolicy().hasHeightForWidth())
+        self.frame_81.setSizePolicy(sizePolicy)
+        self.frame_81.setMinimumSize(QtCore.QSize(0, 1100))
+        self.frame_81.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_81.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_81.setObjectName("frame_81")
+        self.label_84 = QtWidgets.QLabel(self.frame_81)
+        self.label_84.setGeometry(QtCore.QRect(10, 20, 151, 16))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Semilight")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_84.setFont(font)
+        self.label_84.setObjectName("label_84")
+        self.textEdit = QtWidgets.QTextEdit(self.frame_81)
+        self.textEdit.setGeometry(QtCore.QRect(10, 70, 351, 71))
+        self.textEdit.setStyleSheet("background-color: rgb(106, 106, 106);\n"
+"color: rgb(255, 255, 255);\n"
+"padding-left:5px;\n"
+"padding-right:5px;\n"
+"padding-top:5px;")
+        self.textEdit.setObjectName("textEdit")
+        self.label_86 = QtWidgets.QLabel(self.frame_81)
+        self.label_86.setGeometry(QtCore.QRect(10, 50, 351, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_86.setFont(font)
+        self.label_86.setObjectName("label_86")
+        self.label_87 = QtWidgets.QLabel(self.frame_81)
+        self.label_87.setGeometry(QtCore.QRect(10, 160, 351, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_87.setFont(font)
+        self.label_87.setObjectName("label_87")
+        self.textEdit_2 = QtWidgets.QTextEdit(self.frame_81)
+        self.textEdit_2.setGeometry(QtCore.QRect(10, 190, 351, 221))
+        self.textEdit_2.setStyleSheet("background-color: rgb(106, 106, 106);\n"
+"color: rgb(255, 255, 255);\n"
+"padding-left:5px;\n"
+"padding-right:5px;\n"
+"padding-top:5px;")
+        self.textEdit_2.setPlaceholderText("")
+        self.textEdit_2.setObjectName("textEdit_2")
+        self.textEdit_3 = QtWidgets.QTextEdit(self.frame_81)
+        self.textEdit_3.setGeometry(QtCore.QRect(10, 460, 351, 201))
+        self.textEdit_3.setStyleSheet("background-color: rgb(106, 106, 106);\n"
+"color: rgb(255, 255, 255);\n"
+"padding-left:5px;\n"
+"padding-right:5px;\n"
+"padding-top:5px;")
+        self.textEdit_3.setPlaceholderText("")
+        self.textEdit_3.setObjectName("textEdit_3")
+        self.label_88 = QtWidgets.QLabel(self.frame_81)
+        self.label_88.setGeometry(QtCore.QRect(10, 430, 351, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_88.setFont(font)
+        self.label_88.setObjectName("label_88")
+        self.lineEdit_27 = QtWidgets.QLineEdit(self.frame_81)
+        self.lineEdit_27.setGeometry(QtCore.QRect(10, 710, 251, 31))
+        self.lineEdit_27.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_27.setObjectName("lineEdit_27")
+        self.pushButton_15 = QtWidgets.QPushButton(self.frame_81)
+        self.pushButton_15.setGeometry(QtCore.QRect(280, 710, 80, 31))
+        self.pushButton_15.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_15.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.frame_82 = QtWidgets.QFrame(self.frame_81)
+        self.frame_82.setGeometry(QtCore.QRect(10, 760, 351, 251))
+        self.frame_82.setMinimumSize(QtCore.QSize(300, 251))
+        self.frame_82.setStyleSheet("border:1px solid black;\n"
+"border-radius:3px")
+        self.frame_82.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_82.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_82.setObjectName("frame_82")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.frame_82)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.label_146 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_146.setFont(font)
+        self.label_146.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px\n"
+"")
+        self.label_146.setText("")
+        self.label_146.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_146.setObjectName("label_146")
+        self.gridLayout_3.addWidget(self.label_146, 1, 1, 1, 1)
+        self.label_160 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_160.setFont(font)
+        self.label_160.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_160.setText("")
+        self.label_160.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_160.setObjectName("label_160")
+        self.gridLayout_3.addWidget(self.label_160, 0, 1, 1, 1)
+        self.label_161 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_161.setFont(font)
+        self.label_161.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_161.setText("")
+        self.label_161.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_161.setObjectName("label_161")
+        self.gridLayout_3.addWidget(self.label_161, 0, 0, 1, 1)
+        self.label_162 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_162.setFont(font)
+        self.label_162.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_162.setText("")
+        self.label_162.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_162.setObjectName("label_162")
+        self.gridLayout_3.addWidget(self.label_162, 2, 1, 1, 1)
+        self.label_163 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_163.setFont(font)
+        self.label_163.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_163.setText("")
+        self.label_163.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_163.setObjectName("label_163")
+        self.gridLayout_3.addWidget(self.label_163, 2, 0, 1, 1)
+        self.label_164 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_164.setFont(font)
+        self.label_164.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_164.setText("")
+        self.label_164.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_164.setObjectName("label_164")
+        self.gridLayout_3.addWidget(self.label_164, 1, 0, 1, 1)
+        self.label_165 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_165.setFont(font)
+        self.label_165.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_165.setText("")
+        self.label_165.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_165.setObjectName("label_165")
+        self.gridLayout_3.addWidget(self.label_165, 3, 1, 1, 1)
+        self.label_166 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_166.setFont(font)
+        self.label_166.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_166.setText("")
+        self.label_166.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_166.setObjectName("label_166")
+        self.gridLayout_3.addWidget(self.label_166, 3, 0, 1, 1)
+        self.label_167 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_167.setFont(font)
+        self.label_167.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_167.setText("")
+        self.label_167.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_167.setObjectName("label_167")
+        self.gridLayout_3.addWidget(self.label_167, 4, 0, 1, 1)
+        self.label_168 = QtWidgets.QLabel(self.frame_82)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_168.setFont(font)
+        self.label_168.setStyleSheet("border:1px solid rgb(171, 171, 171) ;\n"
+"border-radius:3px")
+        self.label_168.setText("")
+        self.label_168.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_168.setObjectName("label_168")
+        self.gridLayout_3.addWidget(self.label_168, 4, 1, 1, 1)
+        self.label_89 = QtWidgets.QLabel(self.frame_81)
+        self.label_89.setGeometry(QtCore.QRect(10, 680, 351, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_89.setFont(font)
+        self.label_89.setObjectName("label_89")
+        self.pushButton_18 = QtWidgets.QPushButton(self.frame_81)
+        self.pushButton_18.setGeometry(QtCore.QRect(250, 1050, 111, 41))
+        self.pushButton_18.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_18.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_18.setObjectName("pushButton_18")
+        self.pushButton_19 = QtWidgets.QPushButton(self.frame_81)
+        self.pushButton_19.setGeometry(QtCore.QRect(30, 1050, 101, 41))
+        self.pushButton_19.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_19.setStyleSheet("background-color: rgb(1, 79, 223);\n"
+"border: 1px solid black;\n"
+"border-radius: 3px;")
+        self.pushButton_19.setObjectName("pushButton_19")
+        self.label_84.raise_()
+        self.label_86.raise_()
+        self.label_87.raise_()
+        self.textEdit_2.raise_()
+        self.textEdit.raise_()
+        self.textEdit_3.raise_()
+        self.label_88.raise_()
+        self.lineEdit_27.raise_()
+        self.pushButton_15.raise_()
+        self.frame_82.raise_()
+        self.label_89.raise_()
+        self.pushButton_18.raise_()
+        self.pushButton_19.raise_()
+        self.verticalLayout_38.addWidget(self.frame_81)
+        self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_6)
+        self.verticalLayout_37.addWidget(self.scrollArea_6)
+        self.horizontalLayout_10.addWidget(self.frame_78)
+        self.frame_79 = QtWidgets.QFrame(self.pagepostAjob)
+        self.frame_79.setMinimumSize(QtCore.QSize(240, 439))
+        self.frame_79.setMaximumSize(QtCore.QSize(250, 439))
+        self.frame_79.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_79.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_79.setObjectName("frame_79")
+        self.horizontalLayout_10.addWidget(self.frame_79)
+        self.stackedWidget_2.addWidget(self.pagepostAjob)
         self.verticalLayout_5.addWidget(self.stackedWidget_2)
         self.verticalLayout_4.addWidget(self.frame_7)
         self.verticalLayout_3.addWidget(self.frame_5)
@@ -1918,6 +2348,8 @@ class Ui_MainWindow(object):
         self.dateEdit.setStyleSheet("border:1.2px solid black;\n"
 "border-radius:3px;\n"
 "padding-left:10px")
+        self.dateEdit.setMaximumDateTime(QtCore.QDateTime(QtCore.QDate(2005, 4, 5), QtCore.QTime(23, 59, 59)))
+        self.dateEdit.setMinimumDateTime(QtCore.QDateTime(QtCore.QDate(1973, 9, 14), QtCore.QTime(0, 0, 0)))
         self.dateEdit.setCalendarPopup(False)
         self.dateEdit.setObjectName("dateEdit")
         self.comboBox = QtWidgets.QComboBox(self.frame_31)
@@ -1969,7 +2401,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 521, 1415))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, -667, 521, 1415))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_20.setContentsMargins(1, -1, 1, -1)
@@ -2454,7 +2886,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 502, 1189))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 521, 703))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_24.setContentsMargins(1, -1, 1, -1)
@@ -2662,9 +3094,31 @@ class Ui_MainWindow(object):
         self.label_181.setStyleSheet("")
         self.label_181.setAlignment(QtCore.Qt.AlignCenter)
         self.label_181.setObjectName("label_181")
+        self.pushButton_38 = QtWidgets.QPushButton(self.frame_53)
+        self.pushButton_38.setGeometry(QtCore.QRect(30, 430, 101, 41))
+        self.pushButton_38.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_38.setStyleSheet("background-color: rgb(1, 79, 223);\n"
+"border: 1px solid black;\n"
+"border-radius: 3px;")
+        self.pushButton_38.setObjectName("pushButton_38")
+        self.pushButton_39 = QtWidgets.QPushButton(self.frame_53)
+        self.pushButton_39.setGeometry(QtCore.QRect(350, 430, 111, 41))
+        self.pushButton_39.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_39.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_39.setObjectName("pushButton_39")
         self.verticalLayout_25.addWidget(self.frame_53)
         self.verticalLayout_24.addWidget(self.frame_51)
-        self.frame_57 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
+        self.verticalLayout_28.addWidget(self.scrollArea_3)
+        self.stackedWidget_3.addWidget(self.page_4)
+        self.page_8 = QtWidgets.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.verticalLayout_36 = QtWidgets.QVBoxLayout(self.page_8)
+        self.verticalLayout_36.setObjectName("verticalLayout_36")
+        self.frame_57 = QtWidgets.QFrame(self.page_8)
         self.frame_57.setMinimumSize(QtCore.QSize(500, 480))
         self.frame_57.setMaximumSize(QtCore.QSize(10000, 10000))
         self.frame_57.setAutoFillBackground(False)
@@ -2724,14 +3178,14 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_13.setObjectName("pushButton_13")
         self.pushButton_11 = QtWidgets.QPushButton(self.frame_59)
-        self.pushButton_11.setGeometry(QtCore.QRect(30, 350, 101, 41))
+        self.pushButton_11.setGeometry(QtCore.QRect(30, 360, 101, 41))
         self.pushButton_11.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_11.setStyleSheet("background-color: rgb(1, 79, 223);\n"
 "border: 1px solid black;\n"
 "border-radius: 3px;")
         self.pushButton_11.setObjectName("pushButton_11")
         self.pushButton_14 = QtWidgets.QPushButton(self.frame_59)
-        self.pushButton_14.setGeometry(QtCore.QRect(350, 350, 111, 41))
+        self.pushButton_14.setGeometry(QtCore.QRect(350, 360, 111, 41))
         self.pushButton_14.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_14.setStyleSheet("border: 1px solid black;\n"
 "border-radius: 3px;\n"
@@ -2755,9 +3209,9 @@ class Ui_MainWindow(object):
         font.setBold(False)
         font.setWeight(50)
         self.label_136.setFont(font)
-        self.label_136.setStyleSheet("border: 1px solid rgb(12, 12, 234);\n"
-"border-radius:3px\n"
-"")
+        self.label_136.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px")
+        self.label_136.setText("")
         self.label_136.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_136.setObjectName("label_136")
         self.gridLayout.addWidget(self.label_136, 1, 1, 1, 1)
@@ -2768,9 +3222,8 @@ class Ui_MainWindow(object):
         font.setBold(False)
         font.setWeight(50)
         self.label_135.setFont(font)
-        self.label_135.setStyleSheet("border: 1px solid rgb(12, 12, 234);\n"
-"border-radius:3px\n"
-"")
+        self.label_135.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px")
         self.label_135.setText("")
         self.label_135.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_135.setObjectName("label_135")
@@ -2782,9 +3235,9 @@ class Ui_MainWindow(object):
         font.setBold(False)
         font.setWeight(50)
         self.label_129.setFont(font)
-        self.label_129.setStyleSheet("border: 1px solid rgb(12, 12, 234);\n"
-"border-radius:3px\n"
-"")
+        self.label_129.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px")
+        self.label_129.setText("")
         self.label_129.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_129.setObjectName("label_129")
         self.gridLayout.addWidget(self.label_129, 0, 0, 1, 1)
@@ -2829,8 +3282,6 @@ class Ui_MainWindow(object):
         self.label_116.setFont(font)
         self.label_116.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
 "border-radius:3px\n"
-"\n"
-"\n"
 "")
         self.label_116.setText("")
         self.label_116.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
@@ -2901,10 +3352,8 @@ class Ui_MainWindow(object):
         self.label_144.setObjectName("label_144")
         self.gridLayout.addWidget(self.label_144, 4, 1, 1, 1)
         self.verticalLayout_27.addWidget(self.frame_59)
-        self.verticalLayout_24.addWidget(self.frame_57)
-        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
-        self.verticalLayout_28.addWidget(self.scrollArea_3)
-        self.stackedWidget_3.addWidget(self.page_4)
+        self.verticalLayout_36.addWidget(self.frame_57)
+        self.stackedWidget_3.addWidget(self.page_8)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
         self.verticalLayout_18 = QtWidgets.QVBoxLayout(self.page_5)
@@ -3288,51 +3737,52 @@ class Ui_MainWindow(object):
         self.label_41.setText(_translate("MainWindow", "Skills and Competencies"))
         self.label_46.setText(_translate("MainWindow", "Data Collection"))
         self.lineEdit_20.setPlaceholderText(_translate("MainWindow", "Job title or company"))
-        self.label_73.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_74.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_83.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_84.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_85.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_155.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_156.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_157.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_160.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_161.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_150.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_151.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_152.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_153.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_154.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_112.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_145.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_146.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_148.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_149.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_106.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_107.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_109.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_110.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_111.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_172.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_173.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_174.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_175.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_176.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_101.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_102.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_103.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_104.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_105.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_167.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_168.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_169.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_170.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_171.setText(_translate("MainWindow", "150k-300k per month"))
-        self.label_162.setText(_translate("MainWindow", "This is the last Frame"))
-        self.label_163.setText(_translate("MainWindow", "Senior data analyst"))
-        self.label_164.setText(_translate("MainWindow", "26 March 2023"))
-        self.label_165.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
-        self.label_166.setText(_translate("MainWindow", "150k-300k per month"))
+        self.pushButton_27.setText(_translate("MainWindow", "Post a Job"))
+        self.lbl_jobdisplay_jobtitle_1.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_1.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_1.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_1.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_1.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_2.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_2.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_2.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_2.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_2.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_3.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_3.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_3.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_3.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_3.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_4.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_4.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_4.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_4.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_4.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_5.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_5.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_5.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_5.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_5.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_6.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_6.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_6.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_6.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_6.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_7.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_7.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_7.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_7.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_7.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_8.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_company_8.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_8.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_8.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_8.setText(_translate("MainWindow", "150k-300k per month"))
+        self.lbl_jobdisplay_jobtitle_9.setText(_translate("MainWindow", "This is the last Frame"))
+        self.lbl_jobdisplay_company_9.setText(_translate("MainWindow", "Senior data analyst"))
+        self.lbl_jobdisplay_date_9.setText(_translate("MainWindow", "26 March 2023"))
+        self.lbl_jobdisplay_description_9.setText(_translate("MainWindow", "To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel"))
+        self.lbl_jobdisplay_salary_9.setText(_translate("MainWindow", "150k-300k per month"))
         self.label_177.setText(_translate("MainWindow", "Senior Data Analyst"))
         self.label_182.setText(_translate("MainWindow", "Company abc"))
         self.label_183.setText(_translate("MainWindow", "Location xyz"))
@@ -3410,6 +3860,51 @@ class Ui_MainWindow(object):
 "Travel: None\n"
 "Telecommute Options: Hybrid. Must be able to work on-site at EPA in downtown Washington, DC as needed.\n"
 "VMD provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, disability, genetic information, marital status, amnesty, or status as a covered veteran in accordance with applicable Federal, state and local laws. VMD maintains a drug-free workplace."))
+        self.label_90.setText(_translate("MainWindow", "Post Job"))
+        self.lineEdit_23.setPlaceholderText(_translate("MainWindow", "Senior software developer"))
+        self.label_4.setText(_translate("MainWindow", "Job title*"))
+        self.label_73.setText(_translate("MainWindow", "Company*"))
+        self.lineEdit_25.setPlaceholderText(_translate("MainWindow", "Weiteithie | remote"))
+        self.label_74.setText(_translate("MainWindow", "Location*"))
+        self.lineEdit_26.setPlaceholderText(_translate("MainWindow", "25000"))
+        self.label_83.setText(_translate("MainWindow", "Specify expected salary range (monthly)"))
+        self.lineEdit_28.setPlaceholderText(_translate("MainWindow", "30000"))
+        self.label_85.setText(_translate("MainWindow", "to"))
+        self.label_145.setText(_translate("MainWindow", "Employment Type*"))
+        self.comboBox_25.setItemText(0, _translate("MainWindow", "Full time"))
+        self.comboBox_25.setItemText(1, _translate("MainWindow", "Part time"))
+        self.comboBox_25.setItemText(2, _translate("MainWindow", "Contract"))
+        self.comboBox_25.setItemText(3, _translate("MainWindow", "Freelance"))
+        self.comboBox_25.setItemText(4, _translate("MainWindow", "Internship"))
+        self.comboBox_25.setItemText(5, _translate("MainWindow", "Self employed"))
+        self.comboBox_25.setItemText(6, _translate("MainWindow", "Apprenticeship"))
+        self.label_84.setText(_translate("MainWindow", "About the job"))
+        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>"))
+        self.textEdit.setPlaceholderText(_translate("MainWindow", "eg.We are seeking a Customer Service Specialist to interact with our customers to provide and process information in response to inquiries and requests about products, services and promotions."))
+        self.label_86.setText(_translate("MainWindow", "Write a brief description of the job"))
+        self.label_87.setText(_translate("MainWindow", "Responsibilities"))
+        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>"))
+        self.textEdit_3.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>"))
+        self.label_88.setText(_translate("MainWindow", "Qualificatons"))
+        self.lineEdit_27.setPlaceholderText(_translate("MainWindow", "Programming | Data analysis | Database admin"))
+        self.pushButton_15.setText(_translate("MainWindow", "Add skill"))
+        self.pushButton_15.setShortcut(_translate("MainWindow", "Return"))
+        self.label_89.setText(_translate("MainWindow", "Add required skills"))
+        self.pushButton_18.setText(_translate("MainWindow", "Post Job"))
+        self.pushButton_18.setShortcut(_translate("MainWindow", "Return"))
+        self.pushButton_19.setText(_translate("MainWindow", "Back"))
         self.label_61.setText(_translate("MainWindow", "PERSONAL DETAILS"))
         self.label_62.setText(_translate("MainWindow", "EDUCATION"))
         self.label_63.setText(_translate("MainWindow", "EXPERIENCE"))
@@ -3619,15 +4114,17 @@ class Ui_MainWindow(object):
         self.lineEdit_19.setPlaceholderText(_translate("MainWindow", "Simba Cement"))
         self.label_131.setText(_translate("MainWindow", "Company*"))
         self.label_181.setText(_translate("MainWindow", "Enter your current or most recent work experience"))
+        self.pushButton_38.setText(_translate("MainWindow", "Back"))
+        self.pushButton_39.setText(_translate("MainWindow", "Next"))
+        self.pushButton_39.setShortcut(_translate("MainWindow", "Return"))
         self.label_141.setText(_translate("MainWindow", "Skills"))
         self.lineEdit_21.setPlaceholderText(_translate("MainWindow", "Programming | Data analysis | Database administration"))
         self.label_143.setText(_translate("MainWindow", "Add skills. This improves your chances of getting a job"))
         self.pushButton_13.setText(_translate("MainWindow", "Add skill"))
+        self.pushButton_13.setShortcut(_translate("MainWindow", "Return"))
         self.pushButton_11.setText(_translate("MainWindow", "Back"))
         self.pushButton_14.setText(_translate("MainWindow", "Next"))
         self.pushButton_14.setShortcut(_translate("MainWindow", "Return"))
-        self.label_136.setText(_translate("MainWindow", "Database programming in python and SQL"))
-        self.label_129.setText(_translate("MainWindow", "Database programming in python and SQL"))
         self.label_158.setText(_translate("MainWindow", "Password"))
         self.pushButton_20.setText(_translate("MainWindow", "Finish Signup"))
         self.pushButton_20.setShortcut(_translate("MainWindow", "Return"))
@@ -3663,6 +4160,8 @@ class Ui_MainWindow(object):
         self.loginpassword_status = "hide"
         self.reset_password1_status = "show"
         self.reset_password2_status = "show"
+        self.signup_password1_status = "show"
+        self.signup_password2_status = "show"
         self.signup_code = "o10o10"
 
         self.pushButton.clicked.connect(self.pushButton_clicked)
@@ -3683,27 +4182,334 @@ class Ui_MainWindow(object):
         self.signup_tertiaryeducation = [self.signup_personalData[0], 'institution', 'degree', 'field', 'start_date', 'end_date']
         self.signup_highschooleducation = [self.signup_personalData[0], 'institution', 'grade', 'end_date', 'start_date']
         self.signup_primaryEducation = [self.signup_personalData[0], 'primary_school', 'marks', 'end_date_primary_school', 'start_date_primary_school']
+        self.signup_workExperience = [self.signup_personalData[0], 'No work experience', 'No work experience', 'No work experience', f'{datetime.now().date()}', f'{datetime.now().date()}']
+        self.signup_passwords = [self.signup_personalData[0], "user_password"]
         self.pushButton_8.clicked.connect(self.pushButton_8_clicked)
         self.checkBox.stateChanged.connect(self.checkbox_state_changed)
-        self.pushButton_11.clicked.connect(self.pushButton_11_clicked)
         # self.pushButton_10.clicked.connect(lambda: self.scrollArea_3.verticalScrollBar().setValue(self.scrollArea_3.verticalScrollBar().maximum()))
         self.pushButton_10.clicked.connect(self.pushButton_10_clicked)
         self.pushButton_13.clicked.connect(self.pushButton_13_clicked)
         self.signup_skills_labels = [self.label_129, self.label_135, self.label_116, self.label_136, self.label_137, self.label_138, self.label_139, self.label_140, self.label_142, self.label_144]
+        self.post_job_skills_labels = [self.label_161, self.label_160, self.label_164, self.label_146, self.label_163, self.label_162, self.label_166, self.label_165, self.label_167, self.label_168]
         self.signup_skills_labels_number = 0
-        self.signup_skills = []
+        self.post_job_skills_labels_number = 0
+        self.signup_skills = [self.signup_personalData[0], "None"]
         self.pushButton_39.clicked.connect(self.pushButton_39_clicked)
         self.checkBox_2.stateChanged.connect(self.checkBox_2_state_changed)
         self.pushButton_11.clicked.connect(self.pushButton_11_clicked)
+        self.pushButton_12.clicked.connect(self.pushButton_12_clicked)
+        self.pushButton_14.clicked.connect(self.pushButton_14_clicked)
+        self.pushButton_21.clicked.connect(self.pushButton_21_clicked)
+        self.pushButton_22.clicked.connect(self.pushButton_22_clicked)
+        self.pushButton_20.clicked.connect(self.pushButton_20_clicked)
+        self.toolButton_5.clicked.connect(self.toolButton_5_clicked)
+        self.pushButton_27.clicked.connect(self.pushButton_27_clicked)
+        self.pushButton_18.clicked.connect(self.pushButton_18_clicked)
+        self.addjob_skills = "None"
+        self.pushButton_15.clicked.connect(self.pushButton_15_clicked)
 
 
+    def pushButton_15_clicked(self):
+            skill = self.lineEdit_27.text()
+
+
+            if skill != "":
+                    if self.post_job_skills_labels_number < 10:
+                            print("Entered")
+                            self.post_job_skills_labels[self.post_job_skills_labels_number].setText(skill)
+                            self.post_job_skills_labels[self.post_job_skills_labels_number].setStyleSheet(
+                                    'border: 1px solid rgb(12, 12, 234);border-radius:3px')
+                            skills = self.addjob_skills
+                            if skills == "None":
+                                    skills = skill
+                            else:
+                                    skills = skills + f', {skill}'
+
+                            self.post_job_skills_labels_number += 1
+                            self.lineEdit_27.clear()
+                            self.addjob_skills = skills
+
+                            print(self.addjob_skills)
+
+
+                    else:
+                            warning = QMessageBox()
+                            warning.setWindowTitle("Skills Limit")
+                            warning.setIcon(QMessageBox.Warning)
+                            warning.setText("Skills limit reached!")
+                            x = warning.exec_()
+            else:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Blank")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Empty input!Please enter a skill in the textbox provided. Enter just one skill!")
+                    x = warning.exec_()
+
+    def reset_skills(self):
+        for i in self.post_job_skills_labels:
+                i.setText(" ")
+                i.setStyleSheet("border:1px solid rgb(171, 171, 171) ;border-radius:3px")
+
+        self.addjob_skills = "None"
+        self.post_job_skills_labels_number = 0
+
+
+
+    def pushButton_18_clicked(self):
+        job_title_done = False
+        company_done = False
+        location_done = False
+        briefdescription_done = False
+        responsibilities_done = False
+        qualification_done = False
+
+        job_title = self.lineEdit_23.text()
+        if job_title != "":
+                job_title_done = True
+
+        company = self.lineEdit_24.text()
+        if company != "":
+                company_done = True
+
+        location = self.lineEdit_25.text()
+        if location != "":
+                location_done = True
+
+        salary_range_from = self.lineEdit_26.text()
+        salary_range_to = self.lineEdit_28.text()
+
+        if (salary_range_from == "") or (salary_range_to == ""):
+                salary_range = "Pay unspecified"
+        else:
+                salary_range = f"{salary_range_from} to {salary_range_to} per month"
+
+        job_type = self.comboBox_25.currentText()
+
+        brief_description = self.textEdit.toPlainText()
+        if brief_description != ""and len(brief_description) < 225:
+                briefdescription_done = True
+
+        responsibilities = self.textEdit_2.toPlainText()
+        if responsibilities != "":
+                responsibilities_done = True
+
+        qualifications = self.textEdit_3.toPlainText()
+        if qualifications != "":
+                qualification_done = True
+
+
+        if (job_title_done is True) and (company_done is True) and (location_done is True) and (briefdescription_done is True) and (responsibilities_done is True) and (qualification_done is True):
+                print("wow")
+                details_to_insert = (self.this_user_email, datetime.now().date(), job_title, company, location, job_type, brief_description, responsibilities, qualifications, self.addjob_skills, salary_range)
+                self.mycursor.execute("INSERT INTO jujaworks.job_posting(posted_by_email, posted_date, job_title, company, location, job_type, brief_description, responsibilities, qualifications, skills, salary_range) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);", details_to_insert)
+                self.db.commit()
+
+
+                warning = QMessageBox()
+                warning.setWindowTitle("Success")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(
+                        "Success! Your job has been posted successfully\nWe will keep you informed about the applicants via email.\n")
+                x = warning.exec_()
+
+                self.textEdit_3.clear()
+                self.textEdit.clear()
+                self.textEdit_2.clear()
+                self.lineEdit_28.clear()
+                self.lineEdit_26.clear()
+                self.lineEdit_25.clear()
+                self.lineEdit_24.clear()
+                self.lineEdit_23.clear()
+                self.reset_skills()
+                self.stackedWidget_2.setCurrentWidget(self.page_2)
+
+
+        elif job_title_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Job Title")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Job title field must not be blank.\n")
+                x = warning.exec_()
+
+        elif company_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Company")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Company field must not be blank.\n")
+                x = warning.exec_()
+
+        elif location_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Location")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Location field must not be blank.\n")
+                x = warning.exec_()
+
+        elif briefdescription_done is False:
+                if brief_description == "":
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Brief description")
+                        warning.setIcon(QMessageBox.Warning)
+                        warning.setText("Brief description field must not be blank.\n")
+                        x = warning.exec_()
+
+                elif len(brief_description) >= 225:
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Brief description")
+                        warning.setIcon(QMessageBox.Warning)
+                        warning.setText("Brief description field is too long.\n")
+                        x = warning.exec_()
+
+                else:
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Brief description")
+                        warning.setIcon(QMessageBox.Warning)
+                        warning.setText("Check brief description field.\n")
+                        x = warning.exec_()
+
+        elif responsibilities_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Responsibilities")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Responsibilities field must not be blank.\n")
+                x = warning.exec_()
+
+        elif qualification_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Qualifications")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Qualifications' field must not be blank.\n")
+                x = warning.exec_()
+
+    def pushButton_27_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pagepostAjob)
+
+    def toolButton_5_clicked(self):
+        self.stackedWidget_2.setCurrentWidget(self.page_2)
+    def pushButton_20_clicked(self):
+        password = self.lineEdit_7.text()
+        password2 = self.lineEdit_8.text()
+        if self.checkBox_3.isChecked():
+                if len(password) > 8:
+                        if password2 == password:
+                                self.signup_passwords = [self.signup_personalData[0], password]
+
+                                sql = 'INSERT INTO jujaworks.personalData(email_address, first_name, last_name, date_of_birth, location, gender, phone_number) VALUES' \
+                                      ' (%s, %s, %s, %s, %s, %s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_personalData))
+                                self.db.commit()
+
+                                print("Personal details DONE")
+
+                                sql = 'INSERT INTO jujaworks.tertiaryeducation(email_address, institution, degree, field, start_date, end_date) VALUES' \
+                                      ' (%s, %s, %s, %s, %s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_tertiaryeducation))
+                                self.db.commit()
+
+                                print("TERTIARY LOCATION DONE")
+
+
+                                sql = 'INSERT INTO jujaworks.highschooleducation(email_address, institution, grade, end_date, start_date) VALUES ' \
+                                      '(%s, %s, %s, %s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_highschooleducation))
+                                self.db.commit()
+
+                                print("HIGHSCHOOL DONE")
+
+
+                                sql = 'INSERT INTO jujaworks.primaryEducation(email_address, institution, marks, end_date, start_date) VALUES (%s, %s, %s, %s, %s);'
+                                self.mycursor.execute(sql, tuple(self.signup_primaryEducation))
+                                self.db.commit()
+
+                                print("PRIMARY EDUCATION DONE")
+
+                                sql = 'INSERT INTO jujaworks.workExperience(email_address, job_title, company, employment_type, start_date, end_date) VALUES ' \
+                                      '(%s, %s, %s, %s, %s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_workExperience))
+                                self.db.commit()
+
+                                print("WORK EXPERIENCE DONE")
+
+                                sql = 'INSERT INTO jujaworks.skills(email_address, skills) VALUES (%s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_skills))
+                                self.db.commit()
+
+                                print("SKILLS DONE")
+
+                                sql = 'INSERT INTO jujaworks.passwords(email_address, user_password) VALUES (%s, %s)'
+
+                                # execute the query, passing the values as a tuple
+                                self.mycursor.execute(sql, tuple(self.signup_passwords))
+                                self.db.commit()
+
+                                print("PASSWORDS DONE")
+
+
+                                warning = QMessageBox()
+                                warning.setWindowTitle("Password")
+                                warning.setIcon(QMessageBox.Information)
+                                warning.setText("Your account was created successfully\nPlease log in to your account to enjoy our services")
+                                x = warning.exec_()
+
+                                self.stackedWidget.setCurrentWidget(self.pageLogin)
+                                self.stackedWidget_3.setCurrentWidget(self.page)
+
+                        else:
+                                warning = QMessageBox()
+                                warning.setWindowTitle("Password")
+                                warning.setIcon(QMessageBox.Warning)
+                                warning.setText("Passwords do not match")
+                                x = warning.exec_()
+                else:
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Password")
+                        warning.setIcon(QMessageBox.Warning)
+                        warning.setText("Password is too short.")
+                        x = warning.exec_()
+        else:
+                warning = QMessageBox()
+                warning.setWindowTitle("Password")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Please accept Jujwork's terms and conditions")
+                x = warning.exec_()
+
+    def pushButton_22_clicked(self):
+        self.set_echomode(self.pushButton_22, self.lineEdit_8, self.signup_password2_status)
+        if self.signup_password2_status == "hide":
+                self.signup_password2_status = "show"
+        else:
+                self.signup_password2_status = "hide"
+
+    def pushButton_21_clicked(self):
+        self.set_echomode(self.pushButton_21, self.lineEdit_7, self.signup_password1_status)
+        if self.signup_password1_status == "hide":
+                self.signup_password1_status = "show"
+        else:
+                self.signup_password1_status = "hide"
+
+    def pushButton_14_clicked(self):
+            self.stackedWidget_3.setCurrentWidget(self.page_5)
+
+    def pushButton_12_clicked(self):
+            self.stackedWidget_3.setCurrentWidget(self.page_8)
     def pushButton_11_clicked(self):
-            self.stackedWidget_3.setCurrentWidget(self.page_4)
+        self.stackedWidget_3.setCurrentWidget(self.page_4)
 
     def pushButton_10_clicked(self):
+        self.signup_workExperience = [self.signup_personalData[0], ' ', ' ', ' ', f'{datetime.now().date()}', f'{datetime.now().date()}']
         self.stackedWidget_3.setCurrentWidget(self.page_8)
 
-    def checkbox_state_changed(self, state):
+    def checkBox_2_state_changed(self, state):
         self.comboBox_23.setEnabled(state == 0)
         self.comboBox_24.setEnabled(state == 0)
 
@@ -3716,7 +4522,7 @@ class Ui_MainWindow(object):
 
             employment_type = self.comboBox_20.currentText()
 
-            company = self.lineEdit_11.text()
+            company = self.lineEdit_19.text()
             if company == "":
                     company_done = False
             else:
@@ -3755,49 +4561,48 @@ class Ui_MainWindow(object):
             except:
                     work_dates = False
 
-            if (job_title_done is True) and (company_done is True) and (start_date_uni_done is True) and (
-                    end_date_uni_done is True) and (uni_dates is True):
-                    self.signup_tertiaryeducation = [self.signup_personalData[0], university_school, degree, uni_field,
-                                                     start_date_uni,
-                                                     end_date_uni]
+            if (job_title_done is True) and (company_done is True) and (start_date_work_done is True) and (
+                    end_date_work_done is True) and (work_dates is True):
+                    self.signup_workExperience = [self.signup_personalData[0], job_title, company, employment_type, start_date_work, end_date_work]
 
-                    print(self.signup_tertiaryeducation)
+                    print(self.signup_workExperience)
+                    self.stackedWidget_3.setCurrentWidget(self.page_8)
 
-                    uni_is_fine = True
-            elif university_school_done is False:
+
+            elif job_title_done is False:
                     warning = QMessageBox()
-                    warning.setWindowTitle("University Institution")
+                    warning.setWindowTitle("Job title")
                     warning.setIcon(QMessageBox.Warning)
-                    warning.setText("University institution Field must not be bank!")
+                    warning.setText("Job title field must not be bank!")
                     x = warning.exec_()
 
-            elif uni_field_done is False:
+            elif company_done is False:
                     warning = QMessageBox()
-                    warning.setWindowTitle("University Institution")
+                    warning.setWindowTitle("Company")
                     warning.setIcon(QMessageBox.Warning)
-                    warning.setText("University Field of stuy must not be bank!")
+                    warning.setText("Company must not be bank!")
                     x = warning.exec_()
 
-            elif start_date_uni_done is False:
+            elif start_date_work_done is False:
                     warning = QMessageBox()
-                    warning.setWindowTitle("University Institution")
+                    warning.setWindowTitle("Start Date")
                     warning.setIcon(QMessageBox.Warning)
-                    warning.setText("Invaid university start date!")
+                    warning.setText("Invaid start date!")
                     x = warning.exec_()
 
-            elif end_date_uni_done is False:
+            elif end_date_work_done is False:
                     warning = QMessageBox()
-                    warning.setWindowTitle("University Institution")
+                    warning.setWindowTitle("End date")
                     warning.setIcon(QMessageBox.Warning)
-                    warning.setText("Invaid university end date!")
+                    warning.setText("Invaid end date!")
                     x = warning.exec_()
 
-            elif uni_dates is False:
+            elif work_dates is False:
                     warning = QMessageBox()
-                    warning.setWindowTitle("University Institution")
+                    warning.setWindowTitle("Dates")
                     warning.setIcon(QMessageBox.Warning)
                     warning.setText(
-                            "The logic in your uni dates is off!\nPlease ensure the start and end dates are correct!")
+                            "The logic in your work dates is off!\nPlease ensure the start and end dates are correct!")
                     x = warning.exec_()
     def pushButton_13_clicked(self):
         skill = self.lineEdit_21.text()
@@ -3806,9 +4611,17 @@ class Ui_MainWindow(object):
                 if self.signup_skills_labels_number < 10:
                         self.signup_skills_labels[self.signup_skills_labels_number].setText(skill)
                         self.signup_skills_labels[self.signup_skills_labels_number].setStyleSheet('border: 1px solid rgb(12, 12, 234);border-radius:3px')
-                        self.signup_skills.append(skill)
+                        skills = self.signup_skills[1]
+                        if skills == "None":
+                                skills = skill
+                        else:
+                                skills = skills + f',{skill}'
+
                         self.signup_skills_labels_number += 1
                         self.lineEdit_21.clear()
+                        self.signup_skills = [self.signup_personalData[0], skills]
+
+
                 else:
                         warning = QMessageBox()
                         warning.setWindowTitle("Skills Limit")
@@ -3822,10 +4635,6 @@ class Ui_MainWindow(object):
                 warning.setText("Empty input!Please enter a skill in the textbox provided. Enter just one skill!")
                 x = warning.exec_()
 
-
-
-    def pushButton_11_clicked(self):
-        self.stackedWidget_3.setCurrentWidget(self.page_3)
 
     def checkbox_state_changed(self, state):
         # set the enabled state of the combo box based on the state of the check box
@@ -4005,6 +4814,9 @@ class Ui_MainWindow(object):
         else:
                 primary_school_done = True
         marks = self.lineEdit_22.text()
+        if marks == "":
+                marks = "Not specified"
+
         start_month_primary_school = self.comboBox_11.currentText()
         start_year_primary_school = self.comboBox_12.currentText()
         try:
@@ -4037,7 +4849,7 @@ class Ui_MainWindow(object):
 
         if (uni_is_fine is True) and (highschool_is_fine is True):
                 if (primary_school_done is True) and (start_date_primary_school_done is True) and (end_date_primary_school_done is True) and (primary_school_dates is True):
-                        self.signup_primaryEducation = [self.signup_personalData[0],primary_school, marks, end_date_primary_school, start_date_primary_school]
+                        self.signup_primaryEducation = [self.signup_personalData[0], primary_school, marks, end_date_primary_school, start_date_primary_school]
                         print(self.signup_primaryEducation)
                         primary_is_fine = True
                         self.stackedWidget_3.setCurrentWidget(self.page_4)
@@ -4202,6 +5014,8 @@ class Ui_MainWindow(object):
             self.comboBox_17.clear()
             self.comboBox_12.clear()
             self.comboBox_14.clear()
+            self.comboBox_24.clear()
+            self.comboBox_22.clear()
 
             years = [str(i) for i in range(2023, 1930, -1)]
             self.comboBox_9.addItems(years)
@@ -4210,6 +5024,8 @@ class Ui_MainWindow(object):
             self.comboBox_17.addItems(years)
             self.comboBox_12.addItems(years)
             self.comboBox_14.addItems(years)
+            self.comboBox_24.addItems(years)
+            self.comboBox_22.addItems(years)
 
             self.stackedWidget_3.setCurrentWidget(self.page_3)
 
@@ -4444,13 +5260,24 @@ class Ui_MainWindow(object):
             uni_dates = f"{start_date} to {end_date}"
 
             self.label_3.setText(name)
+            print("SETTEXT NAME DONE")
             self.label_5.setText(course)
+            print("SETTEXT COURSE DONE")
             self.label_12.setText(university)
+            print("SETTEXT UNIVERSITY DONE")
             self.label_10.setText(Location)
+            print("SETTEXT LOCATION DONE")
 
             self.label_20.setText(university)
+            print("SETTEXT UNI-UNI DONE")
+
             self.label_17.setText(uni_dates)
+            print("SETTEXT UNI-DATES DONE")
+
             self.label_16.setText(course)
+            print("SETTEXT COURSE DONE")
+
+            print("GETTING HIGHSCHOOL DATA")
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.highschooleducation Where email_address = "{email}";')
             high = [i for i in self.mycursor][0]
@@ -4474,9 +5301,18 @@ class Ui_MainWindow(object):
 
             highschool_dates = f"{start_date} to {end_date}"
 
+
+
             self.label_34.setText(highchool)
+            print("SETTEXT HIGHSCHOOL DONE")
+
             self.label_33.setText(grade)
+            print("SETTEXT HIGHSCHOOL-GRADE DONE")
+
             self.label_35.setText(highschool_dates)
+            print("SETTEXT HIGHSCHOOL-DATES DONE")
+
+            print("GETTING PRIMARY SCHOOL")
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.primaryeducation Where email_address = "{email}";')
             primary = [i for i in self.mycursor][0]
@@ -4501,9 +5337,16 @@ class Ui_MainWindow(object):
             primary_dates = f"{start_date} to {end_date}"
 
             self.label_22.setText(primary_school)
+            print("SETTEXT PRIMARY-SCHOOL DONE")
+
             self.label_18.setText(primary_grade)
+            print("SETTEXT PRIMARY-GRADE DONE")
+
             self.label_23.setText(primary_dates)
+            print("SETTEXT PRIMARY-DATES DONE")
+
             self.frame_24.hide()
+            print("GETTING work experience")
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.workexperience Where email_address = "{email}";')
             job = [i for i in self.mycursor][0]
@@ -4531,16 +5374,30 @@ class Ui_MainWindow(object):
             skills = job[7]
 
             self.label_26.setText(title)
+            print("SETTEXT WORK TITLE DONE")
+
             self.label_25.setText(company)
+            print("SETTEXT COMPANY DONE")
+
             self.label_29.setText(type)
+            print("SETTEXT WORK TYPE DONE")
+
 
             self.label_27.setText(work_dates)
+            print("SETTEXT WORK DATES DONE")
+
             self.label_28.setText(skills)
+            print("SETTEXT WORK SKILLS DONE")
+
+
+            print("GETTING SKILLS")
 
             self.mycursor.execute(f'SELECT skills FROM jujaworks.skills Where email_address = "{email}";')
             skills = [i for i in self.mycursor][0][0]
             print(skills)
             skills = skills.split(",")
+            print("STRIPPING SKILLS")
+
 
             skills = [i.strip() for i in skills]
             skills_num = len(skills)
@@ -4554,7 +5411,7 @@ class Ui_MainWindow(object):
             labels = [self.label_46, self.label_47, self.label_48, self.label_49, self.label_50, self.label_51, self.label_52,
                       self.label_53, self.label_54]
 
-            for i in labels:
+            for i in labels[:skills_num]:
                     i.setText(skills[j])
                     j += 1
                     i.setStyleSheet("border: 1px solid rgb(12, 12, 234);border-radius:3px")

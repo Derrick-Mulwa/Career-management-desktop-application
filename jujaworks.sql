@@ -62,7 +62,7 @@ CREATE TABLE primaryEducation(
 education_id INT PRIMARY KEY AUTO_INCREMENT,
 email_address VARCHAR(100),
 institution VARCHAR(100),
-marks int,
+marks VARCHAR(100),
 start_date VARCHAR(100),
 end_date VARCHAR(100)
 );
@@ -133,12 +133,23 @@ job_title VARCHAR(100),
 company VARCHAR(100),
 location VARCHAR(100),
 job_type VARCHAR(100),
-brief_description VARCHAR(1000),
-responsibilities VARCHAR(10000),
-qualifications VARCHAR(10000),
-benefits VARCHAR(10000),
+brief_description VARCHAR(2000),
+responsibilities VARCHAR(2000),
+qualifications VARCHAR(2000),
 skills VARCHAR(1000),
 salary_range VARCHAR(100));
+
+INSERT INTO jujaworks.job_posting(posted_by_email, posted_date, job_title, company, location, job_type, 
+brief_description, responsibilities, qualifications, skills, salary_range) VALUES 
+("beatricendinda@amazon.com","2023-03-24","Accountant", "Beatrice Enterprises", "Juja Main Gate","Part Time",
+"An accountant is required for a job position, which involves handling financial and accounting activities for a company or an organization",
+"Preparing and maintaining financial records\nManaging accounts payable and receivable\nHandling tax returns and audits\nGenerating financial reports",
+"Strong knowledge of accounting principles and practices\nProficiency in relevant software and tools\nExcellent communication and analytical skills.\nDegree in accounting or a related field\nAt least 1 year work experience",
+"Quickbooks\nProblem-solving skills\nOrganizational skills\nKnowledge of financial analysis and reporting\nAttention to detail",
+"20000 to 25000 per month"),
+('looz@gmail.com','2023-02-27', 'Cahier', 'DaPlace Minimart', 'Thika', 'Full time', 'In need of a cashier for a minimart. Responsible for selling throughout the day, from 5am to 9pm. Should be able to work well at peak hours and ensure security of the minimart', '1. Sell to customers at the minimart.\n2. Ensure security, no shoplifting.\n3. Report and schedule restocking orders.\n4. Cleaning the minimart\n5. Keeping time (opening at 5:30 am to 9pm)\n6. Reporting problemsbusiness issues to the owner', '1. Form four certificate and upper\n2. Work experience at a minimart or similar enviromnemt\n3. Good relations with customers\n4. Work under pressure\n5. Must be atleast 18 years old\n6. Must be aresident of Thika', 'Cashiering\nCreating reports\nFinancial analysis\nSecurity\nAttention to detail', '10,000 to 13,000 per month'),
+('looz@gmail.com', '2023-3-19', 'Chemist', 'Mulinge Pharmacy', 'Juja Gate A', 'Apprenticeship', 'Mulinge Pharmacy, a leading parmacy in juja, is seeking a chemist to join our team. The ideal candidate will be responsible for conducting experiments, analyzing data, and developing new chemical products', '- Conduct experiments and analyze data to develop new chemical products\n- Prepare and analyze samples using a variety of analytical techniques\n- Collaborate with other chemists and scientists to develop new products\n- Write reports and present findings to management and clients\n- Ensure that all work is performed in compliance with safety regulations and company policies\n\n', "* Bachelor's or Master's degree in Chemistry or related field\n* 2+ years of experience in a chemistry laboratory setting\n* Experience with analytical techniques such as HPLC, GC, and spectroscopy\n* Strong analytical and problem-solving skills\n* Ability to work independently and as part of a team\n\n", 'Work under pressure\nAbility to multitask and prioritize workload\nProficient in Microsoft Office and other data analysis software\n\nExcellent written and oral communication skills\n\nStrong knowledge of chemical principles and laboratory techniques\n', '21,000 to 26,000 per month'),
+('njeristacey270@gmail.com', '2023-4-1', 'Web Developer', 'Digital Creators', 'Kalimoni', 'Full time', "Digital Creators is seeking a talented Web Developer to join our team. The ideal candidate will be responsible for developing and maintaining web applications that meet our clients' needs.", '1. Develop and maintain web applications using modern web development technologies\n2. Collaborate with designers, product managers, and other developers to create innovative solutions\n3. Write clean, efficient, and well-documented code\n4. Test and debug code to ensure high-quality software\n5. Stay up-to-date with the latest trends and technologies in web development', "1. Bachelor's or Master's degree in Computer Science, Web Development, or a related field\n2. 1+ years of experience in web development\n3. Strong proficiency in HTML, CSS, and JavaScript\n4. Experience with front-end frameworks such as React, Angular, or Vue\n5. Experience with back-end technologies such as Node.js, PHP, or Ruby on Rails\n6. Experience with version control systems such as Git\n7. Strong problem-solving and analytical skills\n\n", 'Strong understanding of web development principles\nExcellent written and verbal communication skills\nAbility to work independently and as part of a team\nFamiliarity with Agile development methodologies\nExperience with cloud technologies such as AWS or Azure is a plus\n', '35,000 to 40,000 per month');
 
 CREATE TABLE job_applications(
 application_id INT PRIMARY KEY AUTO_INCREMENT, 

@@ -441,7 +441,7 @@ border-radius:0px</string>
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgb(240, 240, 240);</string>
+                     <string notr="true"/>
                     </property>
                     <property name="text">
                      <string>Home</string>
@@ -2400,6 +2400,27 @@ border-radius: 3px</string>
                            <property name="frameShadow">
                             <enum>QFrame::Raised</enum>
                            </property>
+                           <widget class="QPushButton" name="pushButton_27">
+                            <property name="geometry">
+                             <rect>
+                              <x>180</x>
+                              <y>10</y>
+                              <width>71</width>
+                              <height>31</height>
+                             </rect>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">background-color: rgb(1, 79, 223);
+border: 1px solid black;
+border-radius: 3px;</string>
+                            </property>
+                            <property name="text">
+                             <string>Post a Job</string>
+                            </property>
+                           </widget>
                           </widget>
                          </item>
                         </layout>
@@ -2472,7 +2493,7 @@ border-radius: 3px</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>359</width>
+                                 <width>363</width>
                                  <height>1471</height>
                                 </rect>
                                </property>
@@ -2501,7 +2522,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_73">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2522,10 +2543,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_74">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2540,10 +2561,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_83">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -2561,13 +2582,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_84">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2582,7 +2603,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2591,7 +2612,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_85">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2609,13 +2630,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_15">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_1">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -2661,7 +2682,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_155">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2682,10 +2703,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_156">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2700,10 +2721,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_157">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -2721,13 +2742,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_160">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2742,7 +2763,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2751,7 +2772,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_161">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2769,13 +2790,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_30">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_2">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -2821,7 +2842,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_150">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2842,10 +2863,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_151">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2860,10 +2881,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_152">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -2881,13 +2902,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_153">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2902,7 +2923,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2911,7 +2932,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_154">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -2929,13 +2950,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_29">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_3">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -2981,7 +3002,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_112">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3002,10 +3023,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_145">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3020,10 +3041,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_146">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3041,13 +3062,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_148">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3062,7 +3083,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3071,7 +3092,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_149">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3089,13 +3110,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_28">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_4">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -3141,7 +3162,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_106">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3162,10 +3183,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_107">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3180,10 +3201,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_109">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3201,13 +3222,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_110">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3222,7 +3243,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3231,7 +3252,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_111">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3249,13 +3270,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_27">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_5">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -3301,7 +3322,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_172">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3322,10 +3343,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_173">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3340,10 +3361,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_174">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3361,13 +3382,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_175">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3382,7 +3403,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3391,7 +3412,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_176">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3409,13 +3430,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_33">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_6">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -3461,7 +3482,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_101">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3482,10 +3503,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_102">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3500,10 +3521,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_103">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3521,13 +3542,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_104">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3542,7 +3563,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3551,7 +3572,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_105">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3569,13 +3590,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_19">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_7">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -3621,7 +3642,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_167">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3642,10 +3663,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_168">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3660,10 +3681,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_169">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3681,13 +3702,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_170">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3702,7 +3723,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3711,7 +3732,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_171">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3729,13 +3750,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_32">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_8">
                                    <property name="geometry">
                                     <rect>
                                      <x>0</x>
@@ -3784,7 +3805,7 @@ border-radius: 3px</string>
                                   <property name="frameShadow">
                                    <enum>QFrame::Raised</enum>
                                   </property>
-                                  <widget class="QLabel" name="label_162">
+                                  <widget class="QLabel" name="lbl_jobdisplay_jobtitle_9">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3805,10 +3826,10 @@ border-radius: 3px</string>
                                     <string notr="true">color: rgb(0, 85, 127);</string>
                                    </property>
                                    <property name="text">
-                                    <string>This is the last Frame</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_163">
+                                  <widget class="QLabel" name="lbl_jobdisplay_company_9">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3823,10 +3844,10 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Senior data analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_164">
+                                  <widget class="QLabel" name="lbl_jobdisplay_date_9">
                                    <property name="geometry">
                                     <rect>
                                      <x>220</x>
@@ -3844,13 +3865,13 @@ border-radius: 3px</string>
                                     <string notr="true">padding-right:11px</string>
                                    </property>
                                    <property name="text">
-                                    <string>26 March 2023</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_165">
+                                  <widget class="QLabel" name="lbl_jobdisplay_description_9">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3865,7 +3886,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3874,7 +3895,7 @@ border-radius: 3px</string>
                                     <bool>true</bool>
                                    </property>
                                   </widget>
-                                  <widget class="QLabel" name="label_166">
+                                  <widget class="QLabel" name="lbl_jobdisplay_salary_9">
                                    <property name="geometry">
                                     <rect>
                                      <x>10</x>
@@ -3892,13 +3913,13 @@ border-radius: 3px</string>
                                     <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string>150k-300k per month</string>
+                                    <string/>
                                    </property>
                                    <property name="alignment">
                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                    </property>
                                   </widget>
-                                  <widget class="QPushButton" name="pushButton_31">
+                                  <widget class="QPushButton" name="btn_jobsdisplay_9">
                                    <property name="enabled">
                                     <bool>true</bool>
                                    </property>
@@ -4019,8 +4040,8 @@ border-radius: 3px</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>147</width>
-                                 <height>8285</height>
+                                 <width>500</width>
+                                 <height>465</height>
                                 </rect>
                                </property>
                                <layout class="QVBoxLayout" name="verticalLayout_34">
@@ -4059,7 +4080,7 @@ border-radius: 3px</string>
                                     <string notr="true">padding-left:6px</string>
                                    </property>
                                    <property name="text">
-                                    <string>Senior Data Analyst</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                   <widget class="QLabel" name="label_178">
@@ -4134,7 +4155,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Company abc</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                   <widget class="QLabel" name="label_183">
@@ -4152,7 +4173,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Location xyz</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                   <widget class="QLabel" name="label_184">
@@ -4170,7 +4191,7 @@ border-radius: 3px</string>
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Part Time</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                   <widget class="QPushButton" name="pushButton_36">
@@ -4257,7 +4278,7 @@ color: rgb(240, 240, 240);
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>24 March 2023 2:47 pm</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                   <widget class="QLabel" name="label_190">
@@ -4275,7 +4296,7 @@ color: rgb(240, 240, 240);
                                     </font>
                                    </property>
                                    <property name="text">
-                                    <string>Ksh 30,000 Monthly</string>
+                                    <string/>
                                    </property>
                                   </widget>
                                  </widget>
@@ -4351,75 +4372,7 @@ color: rgb(240, 240, 240);
                                       </font>
                                      </property>
                                      <property name="text">
-                                      <string>Full Job Description
-Founded in 2002, VMD is an award-winning provider of Agile Software Engineering, Digital Infrastructure, Cybersecurity, and Transportation Security Services to numerous U.S. Federal Government clients including projects across both DoD and Civilian agencies. We specialize in high-level, tip of the spear engagements with a significant impact on mission success for our clients.
-
-Why Join VMD Corp?
-
-VMD fosters a culture that is founded on Eight Core Values and you can watch what our Core Values mean to our Vision Mission Driven employees.
-
-VMD Employees envision the future. We hold ourselves accountable and hold each other to equally high standards. Our people recognize and reward greatness and are humble in doing so. VMD Employees understand big accomplishments take a team. Our people learn from both our mistakes and successes; we pursue improvement relentlessly, objectively and without bias. We share our thoughts and ideas with purpose and transparency. We commit to the mission, the customer and to each other. We love being nimble and producing results.
-
-Our team is one of the best in the business.
-
-About the Mission You Will Join:
-
-The team supporting the EPA Office of Transportation and Air Quality (OTAQ) Fuels IT systems is seeking an Environmental Analyst to support their industry fuel registration, reporting and compliance activities.
-
-Your Impact to the Mission:
-
-VMD is seeking a people-oriented problem solver to provide specialized support for the U.S. Environmental Protection Agency (EPA). The work setting will be primarily remote, but the candidate must be able to provide support onsite at EPA Headquarters in Washington, DC on occasion as the project demands.
-
-In this Environment Analyst role, you will assist the EPA with reviewing materials submitted by regulated parties in the transportation fuel industry, with responding to industry inquiries on regulatory matters, and with supporting the use of IT systems for complying with the EPA Fuels program.
-
-To succeed, you must develop a deep knowledge of the regulations, guidance, policies, and use of the IT systems related to EPA programs for transportation fuel and be able to communicate on these subjects clearly and concisely with stakeholders. Communication and outreach take place through various methods including a Jira Service Desk management inquiry system, email, phone, and the use of guidance documents, tutorials, web pages, webinars, and meetings.
-
-Responsibilities:
-
-Review registration, reporting, and transaction compliance submissions, perform some data entry, and execute other miscellaneous tasks as requested by client
-Analyze and interpret information and questions submitted by industry stakeholders regarding IT systems, operations, and policies within the Programs
-Develop and follow standard operating procedures
-Analyze data and stakeholder input and develop observations and findings to aid in decision-making
-Identify functional requirements through process analysis, review of documents and procedures, and interviews and meetings with stakeholders
-Clearly and concisely communicate with the systems development team regarding industry issues and requests. Assist the development team in troubleshooting as needed
-Support business operations development
-Conduct industry stakeholder outreach to relay new or existing guidance
-Draft reports summarizing support team activity
-Integrate feedback and revisions into all work products
-Experience Needed to Be Successful:
-
-BA or equivalent and 0-3 yrs. related experience, or MA degree
-Comfortable working with end clients and providing customer support
-Have strong writing and communication skills, strong analytical skill, and be a fast learner with web-based IT systems and applications.
-Able to work on multiple projects simultaneously and be able to work closely with a team both in a remote and team-room environment.
-The successful candidate will be a self-starter who can manage his/her own work and help other team members with their tasks.
-Knowledge of business process analysis
-High degree of comfort with analytical tasks
-Ability to multi-task
-Comfort in working with systems.
-Desired Qualifications and Experience:
-
-Preferable – some experience with database query techniques and languages
-Highly desirable - an interest in renewable fuel, protection of the environment, or environmental policy
-Familiarity with the following regulations: 40 CFR Parts 79, 80, and 1090, Fuels and Fuel Additives or Renewable Fuel Standard
-Basic Qualifiers:
-
-Education Requirement: Bachelor’s degree in Environmental Science or Policy or a related field
-Can Additional Years of Experience Substitute for Degree? No
-Minimum Years of Overall Experience: 1
-Minimum Years of Specific Experience in Field:1
-Minimum Clearance to Start: Interim Public Trust
-Work Status Allowable: US Citizenship
-The Type of Person That Will Excel:
-
-You are curious, inquisitive, and have demonstrated a constant eagerness to learn through actions.
-You have high attention to detail.
-You demonstrate personal accountability and integrity in all actions.
-Travel and Telecommuting:
-
-Travel: None
-Telecommute Options: Hybrid. Must be able to work on-site at EPA in downtown Washington, DC as needed.
-VMD provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, disability, genetic information, marital status, amnesty, or status as a covered veteran in accordance with applicable Federal, state and local laws. VMD maintains a drug-free workplace.</string>
+                                      <string/>
                                      </property>
                                      <property name="textFormat">
                                       <enum>Qt::AutoText</enum>
@@ -4459,6 +4412,973 @@ VMD provides equal employment opportunities (EEO) to all employees and applicant
                        </widget>
                       </item>
                      </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="pagepostAjob">
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QFrame" name="frame_76">
+                     <property name="minimumSize">
+                      <size>
+                       <width>240</width>
+                       <height>439</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>250</width>
+                       <height>439</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_78">
+                     <property name="styleSheet">
+                      <string notr="true">background-color:rgb(171, 171, 171) ;
+border-radius:5px</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_37">
+                      <item>
+                       <widget class="QLabel" name="label_90">
+                        <property name="font">
+                         <font>
+                          <family>Sitka Banner</family>
+                          <pointsize>20</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Post Job</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea_6">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>380</width>
+                           <height>1521</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_38">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>10</number>
+                          </property>
+                          <item>
+                           <widget class="QFrame" name="frame_80">
+                            <property name="minimumSize">
+                             <size>
+                              <width>377</width>
+                              <height>405</height>
+                             </size>
+                            </property>
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <widget class="QLineEdit" name="lineEdit_23">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>40</y>
+                               <width>331</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Senior software developer</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_4">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>10</y>
+                               <width>101</width>
+                               <height>16</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Job title*</string>
+                             </property>
+                            </widget>
+                            <widget class="QLineEdit" name="lineEdit_24">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>110</y>
+                               <width>331</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string/>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_73">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>80</y>
+                               <width>101</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Company*</string>
+                             </property>
+                            </widget>
+                            <widget class="QLineEdit" name="lineEdit_25">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>180</y>
+                               <width>331</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Weiteithie | remote</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_74">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>160</y>
+                               <width>101</width>
+                               <height>16</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Location*</string>
+                             </property>
+                            </widget>
+                            <widget class="QLineEdit" name="lineEdit_26">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>270</y>
+                               <width>131</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>25000</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_83">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>235</y>
+                               <width>291</width>
+                               <height>21</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Specify expected salary range (monthly)</string>
+                             </property>
+                            </widget>
+                            <widget class="QLineEdit" name="lineEdit_28">
+                             <property name="geometry">
+                              <rect>
+                               <x>220</x>
+                               <y>270</y>
+                               <width>131</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>30000</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_85">
+                             <property name="geometry">
+                              <rect>
+                               <x>180</x>
+                               <y>270</y>
+                               <width>21</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Mongolian Baiti</family>
+                               <pointsize>16</pointsize>
+                               <kerning>true</kerning>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>to</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_145">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>330</y>
+                               <width>111</width>
+                               <height>16</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="text">
+                              <string>Employment Type*</string>
+                             </property>
+                            </widget>
+                            <widget class="QComboBox" name="comboBox_25">
+                             <property name="geometry">
+                              <rect>
+                               <x>20</x>
+                               <y>350</y>
+                               <width>211</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <item>
+                              <property name="text">
+                               <string>Full time</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Part time</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Contract</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Freelance</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Internship</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Self employed</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Apprenticeship</string>
+                              </property>
+                             </item>
+                            </widget>
+                            <zorder>lineEdit_23</zorder>
+                            <zorder>label_4</zorder>
+                            <zorder>label_73</zorder>
+                            <zorder>lineEdit_25</zorder>
+                            <zorder>label_74</zorder>
+                            <zorder>lineEdit_26</zorder>
+                            <zorder>label_83</zorder>
+                            <zorder>lineEdit_24</zorder>
+                            <zorder>lineEdit_28</zorder>
+                            <zorder>label_85</zorder>
+                            <zorder>label_145</zorder>
+                            <zorder>comboBox_25</zorder>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QFrame" name="frame_81">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>1100</height>
+                             </size>
+                            </property>
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <widget class="QLabel" name="label_84">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>20</y>
+                               <width>151</width>
+                               <height>16</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Segoe UI Semilight</family>
+                               <pointsize>13</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>About the job</string>
+                             </property>
+                            </widget>
+                            <widget class="QTextEdit" name="textEdit">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>70</y>
+                               <width>351</width>
+                               <height>71</height>
+                              </rect>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(106, 106, 106);
+color: rgb(255, 255, 255);
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;</string>
+                             </property>
+                             <property name="html">
+                              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>eg.We are seeking a Customer Service Specialist to interact with our customers to provide and process information in response to inquiries and requests about products, services and promotions.</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_86">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>50</y>
+                               <width>351</width>
+                               <height>21</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Write a brief description of the job</string>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_87">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>160</y>
+                               <width>351</width>
+                               <height>21</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Responsibilities</string>
+                             </property>
+                            </widget>
+                            <widget class="QTextEdit" name="textEdit_2">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>190</y>
+                               <width>351</width>
+                               <height>221</height>
+                              </rect>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(106, 106, 106);
+color: rgb(255, 255, 255);
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;</string>
+                             </property>
+                             <property name="html">
+                              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string/>
+                             </property>
+                            </widget>
+                            <widget class="QTextEdit" name="textEdit_3">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>460</y>
+                               <width>351</width>
+                               <height>201</height>
+                              </rect>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(106, 106, 106);
+color: rgb(255, 255, 255);
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;</string>
+                             </property>
+                             <property name="html">
+                              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string/>
+                             </property>
+                            </widget>
+                            <widget class="QLabel" name="label_88">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>430</y>
+                               <width>351</width>
+                               <height>21</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Qualificatons</string>
+                             </property>
+                            </widget>
+                            <widget class="QLineEdit" name="lineEdit_27">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>710</y>
+                               <width>251</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Programming | Data analysis | Database admin</string>
+                             </property>
+                            </widget>
+                            <widget class="QPushButton" name="pushButton_15">
+                             <property name="geometry">
+                              <rect>
+                               <x>280</x>
+                               <y>710</y>
+                               <width>80</width>
+                               <height>31</height>
+                              </rect>
+                             </property>
+                             <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border: 1px solid black;
+border-radius: 3px;
+background-color: rgb(9, 204, 6);
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Add skill</string>
+                             </property>
+                             <property name="shortcut">
+                              <string>Return</string>
+                             </property>
+                            </widget>
+                            <widget class="QFrame" name="frame_82">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>760</y>
+                               <width>351</width>
+                               <height>251</height>
+                              </rect>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>300</width>
+                               <height>251</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border:1px solid black;
+border-radius:3px</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_3">
+                              <item row="1" column="1">
+                               <widget class="QLabel" name="label_146">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px
+</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QLabel" name="label_160">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_161">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QLabel" name="label_162">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <widget class="QLabel" name="label_163">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QLabel" name="label_164">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QLabel" name="label_165">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="3" column="0">
+                               <widget class="QLabel" name="label_166">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="4" column="0">
+                               <widget class="QLabel" name="label_167">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QLabel" name="label_168">
+                                <property name="font">
+                                 <font>
+                                  <family>Segoe UI</family>
+                                  <pointsize>11</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">border:1px solid rgb(171, 171, 171) ;
+border-radius:3px</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                            <widget class="QLabel" name="label_89">
+                             <property name="geometry">
+                              <rect>
+                               <x>10</x>
+                               <y>680</y>
+                               <width>351</width>
+                               <height>21</height>
+                              </rect>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>11</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Add required skills</string>
+                             </property>
+                            </widget>
+                            <widget class="QPushButton" name="pushButton_18">
+                             <property name="geometry">
+                              <rect>
+                               <x>250</x>
+                               <y>1050</y>
+                               <width>111</width>
+                               <height>41</height>
+                              </rect>
+                             </property>
+                             <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border: 1px solid black;
+border-radius: 3px;
+background-color: rgb(9, 204, 6);
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Post Job</string>
+                             </property>
+                            </widget>
+                            <widget class="QPushButton" name="pushButton_19">
+                             <property name="geometry">
+                              <rect>
+                               <x>30</x>
+                               <y>1050</y>
+                               <width>101</width>
+                               <height>41</height>
+                              </rect>
+                             </property>
+                             <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(1, 79, 223);
+border: 1px solid black;
+border-radius: 3px;</string>
+                             </property>
+                             <property name="text">
+                              <string>Back</string>
+                             </property>
+                            </widget>
+                            <zorder>label_84</zorder>
+                            <zorder>label_86</zorder>
+                            <zorder>label_87</zorder>
+                            <zorder>textEdit_2</zorder>
+                            <zorder>textEdit</zorder>
+                            <zorder>textEdit_3</zorder>
+                            <zorder>label_88</zorder>
+                            <zorder>lineEdit_27</zorder>
+                            <zorder>pushButton_15</zorder>
+                            <zorder>frame_82</zorder>
+                            <zorder>label_89</zorder>
+                            <zorder>pushButton_18</zorder>
+                            <zorder>pushButton_19</zorder>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_79">
+                     <property name="minimumSize">
+                      <size>
+                       <width>240</width>
+                       <height>439</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>250</width>
+                       <height>439</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -5086,6 +6006,26 @@ border-radius: 3px;</string>
                           <string notr="true">border:1.2px solid black;
 border-radius:3px;
 padding-left:10px</string>
+                         </property>
+                         <property name="maximumDateTime">
+                          <datetime>
+                           <hour>23</hour>
+                           <minute>59</minute>
+                           <second>59</second>
+                           <year>2005</year>
+                           <month>4</month>
+                           <day>5</day>
+                          </datetime>
+                         </property>
+                         <property name="minimumDateTime">
+                          <datetime>
+                           <hour>0</hour>
+                           <minute>0</minute>
+                           <second>0</second>
+                           <year>1973</year>
+                           <month>9</month>
+                           <day>14</day>
+                          </datetime>
                          </property>
                          <property name="displayFormat">
                           <string>dd MMMM yyyy</string>
@@ -7717,9 +8657,6 @@ background-color: rgb(9, 204, 6);
                          </property>
                          <property name="text">
                           <string>Next</string>
-                         </property>
-                         <property name="shortcut">
-                          <string>Return</string>
                          </property>
                         </widget>
                         <widget class="QFrame" name="frame_54">
