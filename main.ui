@@ -507,35 +507,6 @@ border-radius:0px</string>
                     </property>
                    </widget>
                   </item>
-                  <item>
-                   <widget class="QToolButton" name="toolButton_3">
-                    <property name="minimumSize">
-                     <size>
-                      <width>47</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="text">
-                     <string>Messages</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resources.qrc">
-                      <normaloff>:/icons/icons/messages.png</normaloff>:/icons/icons/messages.png</iconset>
-                    </property>
-                    <property name="iconSize">
-                     <size>
-                      <width>32</width>
-                      <height>32</height>
-                     </size>
-                    </property>
-                    <property name="toolButtonStyle">
-                     <enum>Qt::ToolButtonTextUnderIcon</enum>
-                    </property>
-                   </widget>
-                  </item>
                  </layout>
                 </widget>
                </item>
@@ -672,7 +643,7 @@ border-radius:7px</string>
                            <x>0</x>
                            <y>0</y>
                            <width>533</width>
-                           <height>1577</height>
+                           <height>1391</height>
                           </rect>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -1414,7 +1385,7 @@ border-bottom-right-radius: 0px;</string>
                             <property name="minimumSize">
                              <size>
                               <width>515</width>
-                              <height>440</height>
+                              <height>254</height>
                              </size>
                             </property>
                             <property name="maximumSize">
@@ -1493,7 +1464,7 @@ border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;</string>
                                 </property>
                                 <property name="text">
-                                 <string>Work Experience</string>
+                                 <string>Recent Work Experience</string>
                                 </property>
                                 <property name="alignment">
                                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1503,10 +1474,16 @@ border-bottom-right-radius: 0px;</string>
                              </item>
                              <item>
                               <widget class="QFrame" name="frame_21">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
                                <property name="minimumSize">
                                 <size>
                                  <width>0</width>
-                                 <height>120</height>
+                                 <height>80</height>
                                 </size>
                                </property>
                                <property name="frameShape">
@@ -1674,203 +1651,6 @@ Data Collection, Data Cleaning, Data Storage label_28 label_28label_28label_28la
                                 </property>
                                 <property name="alignment">
                                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_14">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>-20</x>
-                                  <y>160</y>
-                                  <width>551</width>
-                                  <height>20</height>
-                                 </rect>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">border-bottom: 1px solid black
-</string>
-                                </property>
-                                <property name="text">
-                                 <string/>
-                                </property>
-                               </widget>
-                               <zorder>label_14</zorder>
-                               <zorder>label_24</zorder>
-                               <zorder>label_25</zorder>
-                               <zorder>label_26</zorder>
-                               <zorder>label_27</zorder>
-                               <zorder>label_28</zorder>
-                               <zorder>label_29</zorder>
-                              </widget>
-                             </item>
-                             <item>
-                              <widget class="QFrame" name="frame_24">
-                               <property name="minimumSize">
-                                <size>
-                                 <width>0</width>
-                                 <height>120</height>
-                                </size>
-                               </property>
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <widget class="QLabel" name="label_36">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>10</x>
-                                  <y>20</y>
-                                  <width>71</width>
-                                  <height>91</height>
-                                 </rect>
-                                </property>
-                                <property name="text">
-                                 <string/>
-                                </property>
-                                <property name="pixmap">
-                                 <pixmap resource="resources.qrc">:/icons/icons/Company.png</pixmap>
-                                </property>
-                                <property name="scaledContents">
-                                 <bool>true</bool>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_37">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>80</x>
-                                  <y>40</y>
-                                  <width>421</width>
-                                  <height>31</height>
-                                 </rect>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>Segoe UI</family>
-                                  <pointsize>12</pointsize>
-                                  <weight>50</weight>
-                                  <bold>false</bold>
-                                 </font>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">padding-left:10px</string>
-                                </property>
-                                <property name="text">
-                                 <string>Urithi Apartments </string>
-                                </property>
-                                <property name="alignment">
-                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_38">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>80</x>
-                                  <y>10</y>
-                                  <width>421</width>
-                                  <height>31</height>
-                                 </rect>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>Segoe UI</family>
-                                  <pointsize>12</pointsize>
-                                  <weight>75</weight>
-                                  <bold>true</bold>
-                                 </font>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">padding-left:10px</string>
-                                </property>
-                                <property name="text">
-                                 <string>Entry Level Data Scientist</string>
-                                </property>
-                                <property name="alignment">
-                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_39">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>360</x>
-                                  <y>10</y>
-                                  <width>141</width>
-                                  <height>31</height>
-                                 </rect>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>Segoe UI</family>
-                                  <pointsize>10</pointsize>
-                                  <weight>50</weight>
-                                  <italic>true</italic>
-                                  <bold>false</bold>
-                                 </font>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">padding-left:10px</string>
-                                </property>
-                                <property name="text">
-                                 <string>Mar 2022 to Aug 2022</string>
-                                </property>
-                                <property name="alignment">
-                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_30">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>80</x>
-                                  <y>70</y>
-                                  <width>421</width>
-                                  <height>31</height>
-                                 </rect>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>Segoe UI</family>
-                                  <pointsize>11</pointsize>
-                                  <weight>50</weight>
-                                  <italic>true</italic>
-                                  <bold>false</bold>
-                                 </font>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">padding-left:10px</string>
-                                </property>
-                                <property name="text">
-                                 <string>Internship</string>
-                                </property>
-                                <property name="alignment">
-                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                </property>
-                               </widget>
-                               <widget class="QLabel" name="label_31">
-                                <property name="geometry">
-                                 <rect>
-                                  <x>80</x>
-                                  <y>110</y>
-                                  <width>421</width>
-                                  <height>61</height>
-                                 </rect>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>Segoe UI</family>
-                                  <pointsize>11</pointsize>
-                                  <weight>50</weight>
-                                  <bold>false</bold>
-                                 </font>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">padding-left:10px</string>
-                                </property>
-                                <property name="text">
-                                 <string>Skills Aquired:
-Inventory Management, Worker Coordination, Resource Allocation, Budgeting</string>
-                                </property>
-                                <property name="alignment">
-                                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
                                 </property>
                                </widget>
                               </widget>
@@ -4040,8 +3820,8 @@ border-radius: 3px;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>500</width>
-                                 <height>465</height>
+                                 <width>517</width>
+                                 <height>369</height>
                                 </rect>
                                </property>
                                <layout class="QVBoxLayout" name="verticalLayout_34">
@@ -5383,6 +5163,1232 @@ border-radius: 3px;</string>
                    </item>
                   </layout>
                  </widget>
+                 <widget class="QWidget" name="page_9">
+                  <widget class="QFrame" name="frame_83">
+                   <property name="geometry">
+                    <rect>
+                     <x>200</x>
+                     <y>0</y>
+                     <width>541</width>
+                     <height>461</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(171, 171, 171) ;
+border-radius:5px</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_39">
+                    <item>
+                     <widget class="QLabel" name="label_91">
+                      <property name="font">
+                       <font>
+                        <family>Sitka Banner</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>RESUME</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QScrollArea" name="scrollArea_7">
+                      <property name="widgetResizable">
+                       <bool>true</bool>
+                      </property>
+                      <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>506</width>
+                         <height>1907</height>
+                        </rect>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_40">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>10</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_84">
+                          <property name="minimumSize">
+                           <size>
+                            <width>377</width>
+                            <height>405</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <widget class="QLineEdit" name="lineEdit_29">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>110</y>
+                             <width>381</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>It personeel | Accountant |Engineer</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_92">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>90</y>
+                             <width>101</width>
+                             <height>16</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Official Job title*</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_30">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>180</y>
+                             <width>381</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_93">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>150</y>
+                             <width>101</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>GitHub link</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_31">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>250</y>
+                             <width>381</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_94">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>230</y>
+                             <width>101</width>
+                             <height>16</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>LinkedIn link</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_32">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>330</y>
+                             <width>381</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_95">
+                           <property name="geometry">
+                            <rect>
+                             <x>40</x>
+                             <y>305</y>
+                             <width>291</width>
+                             <height>21</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Other link (Portfolio link)</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_193">
+                           <property name="geometry">
+                            <rect>
+                             <x>30</x>
+                             <y>10</y>
+                             <width>471</width>
+                             <height>51</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">padding:10px</string>
+                           </property>
+                           <property name="text">
+                            <string>Fill in these required fields as accurately as possible. The more fields you fill accurately, the more detailed your resume will be</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                          <zorder>lineEdit_29</zorder>
+                          <zorder>label_92</zorder>
+                          <zorder>label_93</zorder>
+                          <zorder>lineEdit_31</zorder>
+                          <zorder>label_94</zorder>
+                          <zorder>lineEdit_32</zorder>
+                          <zorder>label_95</zorder>
+                          <zorder>lineEdit_30</zorder>
+                          <zorder>label_193</zorder>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_87">
+                          <property name="minimumSize">
+                           <size>
+                            <width>500</width>
+                            <height>580</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>10000</width>
+                            <height>10000</height>
+                           </size>
+                          </property>
+                          <property name="autoFillBackground">
+                           <bool>false</bool>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_41">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QFrame" name="frame_89">
+                             <property name="minimumSize">
+                              <size>
+                               <width>515</width>
+                               <height>60</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>60</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <widget class="QLabel" name="label_151">
+                              <property name="geometry">
+                               <rect>
+                                <x>0</x>
+                                <y>0</y>
+                                <width>521</width>
+                                <height>51</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>HoloLens MDL2 Assets</family>
+                                <pointsize>16</pointsize>
+                                <weight>50</weight>
+                                <bold>false</bold>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>Work Experience</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_192">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>70</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="text">
+                              <string>For this section, you can skip if you want to use the work experience you provided during signing up. If you edit this section, the work you provided during signup will not be used in your resume. Fill in in chronological order(newest first, oldest last) and submit after editing. Unsubmitted work experience will not be used</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="frame_90">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>280</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <widget class="QLineEdit" name="lineEdit_35">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>40</y>
+                                <width>461</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Senior Data Engineer</string>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="label_152">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>20</y>
+                                <width>111</width>
+                                <height>16</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>9</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>Job Title*</string>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="label_153">
+                              <property name="geometry">
+                               <rect>
+                                <x>270</x>
+                                <y>100</y>
+                                <width>111</width>
+                                <height>16</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>9</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>Employment Type*</string>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="comboBox_27">
+                              <property name="geometry">
+                               <rect>
+                                <x>270</x>
+                                <y>120</y>
+                                <width>211</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>Full time</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Part time</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Contract</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Freelance</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Internship</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Self employed</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Apprenticeship</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="comboBox_28">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>200</y>
+                                <width>211</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>Month</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>January</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>February</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>March</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>April</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>May</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>June</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>July</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>August</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Setember</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>October</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>November</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>December</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="label_154">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>180</y>
+                                <width>111</width>
+                                <height>16</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>9</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>Start Date*</string>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="comboBox_29">
+                              <property name="geometry">
+                               <rect>
+                                <x>260</x>
+                                <y>200</y>
+                                <width>221</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>Year</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="comboBox_30">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>280</y>
+                                <width>211</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>Month</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>January</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>February</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>March</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>April</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>May</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>June</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>July</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>August</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>Setember</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>October</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>November</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>December</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="label_155">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>260</y>
+                                <width>201</width>
+                                <height>16</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>9</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>End Date(Or Expected end date)*</string>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="comboBox_31">
+                              <property name="geometry">
+                               <rect>
+                                <x>260</x>
+                                <y>280</y>
+                                <width>221</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>Year</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QCheckBox" name="checkBox_4">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>330</y>
+                                <width>201</width>
+                                <height>21</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>10</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>I still work here</string>
+                              </property>
+                             </widget>
+                             <widget class="QLineEdit" name="lineEdit_36">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>120</y>
+                                <width>221</width>
+                                <height>31</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Simba Cement</string>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="label_156">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>100</y>
+                                <width>111</width>
+                                <height>16</height>
+                               </rect>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>9</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>Company*</string>
+                              </property>
+                             </widget>
+                             <widget class="QPushButton" name="pushButton_41">
+                              <property name="geometry">
+                               <rect>
+                                <x>160</x>
+                                <y>380</y>
+                                <width>151</width>
+                                <height>41</height>
+                               </rect>
+                              </property>
+                              <property name="cursor">
+                               <cursorShape>PointingHandCursor</cursorShape>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">border: 1px solid black;
+border-radius: 3px;
+background-color: rgb(9, 204, 6);
+</string>
+                              </property>
+                              <property name="text">
+                               <string>Submit and add another</string>
+                              </property>
+                              <property name="shortcut">
+                               <string>Return</string>
+                              </property>
+                             </widget>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_85">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>900</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <widget class="QLabel" name="label_97">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>20</y>
+                             <width>151</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>Segoe UI Semilight</family>
+                             <pointsize>13</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>About you</string>
+                           </property>
+                          </widget>
+                          <widget class="QTextEdit" name="textEdit_4">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>70</y>
+                             <width>491</width>
+                             <height>171</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">background-color: rgb(106, 106, 106);
+color: rgb(255, 255, 255);
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;</string>
+                           </property>
+                           <property name="html">
+                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>eg. Experienced IT professional with 7+ years of expertise in software development, network administration, and database management. Skilled in programming languages such as Java, Python, and C#. Managed complex IT projects from inception to deployment, ensuring timely delivery and adherence to quality standards. Strong analytical and problem-solving skills, with a proven ability to diagnose and resolve technical issues efficiently. Collaborative team player, skilled in communicating technical information to cross-functional teams, and translating business requirements into technical solutions. Seeking a challenging position in a dynamic organization where I can leverage my technical expertise and leadership skills to drive innovation and success.    </string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_98">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>50</y>
+                             <width>351</width>
+                             <height>21</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Write a brief overview about yourself</string>
+                           </property>
+                          </widget>
+                          <widget class="QPushButton" name="pushButton_28">
+                           <property name="geometry">
+                            <rect>
+                             <x>160</x>
+                             <y>670</y>
+                             <width>181</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="cursor">
+                            <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border: 1px solid black;
+border-radius: 3px;
+background-color: rgb(9, 204, 6);
+</string>
+                           </property>
+                           <property name="text">
+                            <string>Submit and add another referee</string>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                          <widget class="QPushButton" name="pushButton_29">
+                           <property name="geometry">
+                            <rect>
+                             <x>200</x>
+                             <y>760</y>
+                             <width>121</width>
+                             <height>41</height>
+                            </rect>
+                           </property>
+                           <property name="cursor">
+                            <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border: 1px solid black;
+border-radius: 3px;
+background-color: rgb(9, 204, 6);
+</string>
+                           </property>
+                           <property name="text">
+                            <string>Create resume</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_99">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>270</y>
+                             <width>151</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>Segoe UI Semilight</family>
+                             <pointsize>13</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Referees</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_105">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>300</y>
+                             <width>351</width>
+                             <height>41</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Add referees who can verify your competences</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_100">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>410</y>
+                             <width>141</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Referee's job title</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_40">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>590</y>
+                             <width>401</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_106">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>565</y>
+                             <width>291</width>
+                             <height>21</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Referee's phone number</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_41">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>440</y>
+                             <width>401</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Chief Information Officer | Project Manager | Senior Accountant</string>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_42">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>370</y>
+                             <width>401</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit_43">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>510</y>
+                             <width>401</width>
+                             <height>31</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>9</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:1.2px solid black;
+border-radius:3px;
+padding-left:10px</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_107">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>350</y>
+                             <width>161</width>
+                             <height>16</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Referee's full names</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_109">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>486</y>
+                             <width>251</width>
+                             <height>20</height>
+                            </rect>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Referees company or institution </string>
+                           </property>
+                          </widget>
+                          <widget class="QPushButton" name="pushButton_30">
+                           <property name="geometry">
+                            <rect>
+                             <x>210</x>
+                             <y>850</y>
+                             <width>101</width>
+                             <height>41</height>
+                            </rect>
+                           </property>
+                           <property name="cursor">
+                            <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">background-color: rgb(1, 79, 223);
+border: 1px solid black;
+border-radius: 3px;</string>
+                           </property>
+                           <property name="text">
+                            <string>Back</string>
+                           </property>
+                          </widget>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="page_10"/>
                 </widget>
                </item>
               </layout>
@@ -5843,7 +6849,7 @@ border-radius: 3px;</string>
                           <string notr="true"/>
                          </property>
                          <property name="text">
-                          <string>First Name*</string>
+                          <string>Surname*</string>
                          </property>
                         </widget>
                         <widget class="QLabel" name="label_44">
@@ -5864,7 +6870,7 @@ border-radius: 3px;</string>
                           <string notr="true"/>
                          </property>
                          <property name="text">
-                          <string>Last Name*</string>
+                          <string>Other Names*</string>
                          </property>
                         </widget>
                         <widget class="QLabel" name="label_45">

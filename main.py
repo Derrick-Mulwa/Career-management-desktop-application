@@ -4181,7 +4181,13 @@ class Ui_MainWindow(object):
         self.btn_jobsdisplay_9.clicked.connect(lambda: self.button_clicked(9))
         self.pushButton_36.clicked.connect(self.pushButton_36_clicked)
         self.application_sql_querry = self.current_display_jobs_sql_querry + f" LIMIT {self.current_display_jobs_sql_querry_ulimit}, 1"
+        self.toolButton_2.clicked.connect(self.toolButton_2_clicked)
 
+
+    def toolButton_2_clicked(self):
+            self.update_hompage(self.this_user_email)
+            self.stackedWidget.setCurrentWidget(self.pageHomepage)
+            self.stackedWidget_2.setCurrentWidget(self.pageHompage)
     def pushButton_36_clicked(self):
         self.mycursor.execute(self.application_sql_querry)
         jobs = [i for i in self.mycursor][0]
@@ -4198,9 +4204,59 @@ class Ui_MainWindow(object):
                              f"\n\nRegards, \n\n{us}"
         applicant_title = f"Application for {job_title.lower()} position at {company}"
 
-        message = f'subject: {applicant_title} \n\n{email_to_applicant}'
+        applicant_message = f'subject: {applicant_title} \n\n{email_to_applicant}'
+
+        email_to_poster = f"Hello,\n\nYour job post for {job_type} {job_title} position for {company} has received a new applicant. \n\n" \
+                             f"Name: {self.current_session_name}\nEmail_address: {self.this_user_email}" \
+                             f"\n\nRegards, \n\n{us}"
+        poster_title = f"New applicant for {job_title.lower()} position at {company}"
+        poster_message = f'subject: {poster_title} \n\n{email_to_poster}'
+
+
+
         try:
-                self.sendmail(self.this_user_email, message)
+                warning = QMessageBox()
+                warning.setWindowTitle("Sending application")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"Sending your application. Please be patient..")
+                x = warning.exec_()
+
+
+                self.sendmail(self.this_user_email, applicant_message)
+                print("sending done 1")
+
+                msg = MIMEMultipart()
+                msg['Subject'] = poster_title
+                msg['From'] = "noreply.jujaworks@gmail.com"
+                msg['To'] = self.this_user_email
+                print("sending done 2")
+
+
+                # add body text to the message
+                body = MIMEText(email_to_poster)
+                msg.attach(body)
+
+                print("sending done 3")
+
+
+                with open('resume.docx', 'rb') as f:
+                        # create the attachment object
+                        attachment = MIMEApplication(f.read(), _subtype='docx')
+                        attachment.add_header('Content-Disposition', 'attachment', filename='document.docx')
+                        # attach the file to the message
+                        msg.attach(attachment)
+                print("sending done 4")
+
+                # connect to SMTP server and send the message
+                with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+                        smtp.starttls()
+                        password = "qsfqjbkroyolhyhi"
+
+                        print("sending done 5")
+
+                        smtp.login("noreply.jujaworks@gmail.com", password)
+                        smtp.send_message(msg)
+
                 warning = QMessageBox()
                 warning.setWindowTitle("Application sent")
                 warning.setIcon(QMessageBox.Information)
@@ -4211,7 +4267,7 @@ class Ui_MainWindow(object):
                 warning = QMessageBox()
                 warning.setWindowTitle("Application Error")
                 warning.setIcon(QMessageBox.Warning)
-                warning.setText("Error sending application.\nPlease check your network.!")
+                warning.setText("Error sending application.\nPlease check your network!")
                 x = warning.exec_()
 
     def button_clicked(self, but_num):
@@ -4234,10 +4290,52 @@ class Ui_MainWindow(object):
                     qualifications = jobs[9]
                     skills = jobs[10]
                     salary_range = jobs[11]
+                    responsibilities_html = "<ol>"
+                    qualifications_html = "<ol>"
+                    skills_html = "<ol>"
+
+                    try:
+                            responsibilities_list = responsibilities.split("\n")
+                            number = len(responsibilities_list)
+
+                            for i in range(number):
+                                responsibilities_html += f"<li>{responsibilities_list[i]}</li>"
+
+                    except:
+                            responsibilities_html = responsibilities
+
+                    responsibilities_html += "</ol>"
+
+                    try:
+                            qualifications_list = qualifications.split("\n")
+                            number = len(qualifications_list)
+
+                            for i in range(number):
+                                qualifications_html += f"<li>{qualifications_list[i]}</li>"
+
+                    except:
+                            qualifications_html = qualifications
+
+                    qualifications_html += "</ol>"
 
 
-                    more_description = f"BRIEF DESCRIPTION\n\n{brief_description}\n\n\nJOB RESPONSIBILITIES\n\n" \
-                                       f"{responsibilities}\n\n\nJOB QUALIFICATIONS\n\n{qualifications}\n\n\nSKILLS REQUIRED\n\n{skills}"
+
+                    try:
+                            skills_list = skills.split("\n")
+                            number = len(skills_list)
+
+                            for i in range(number):
+                                skills_html += f"<li>{skills_list[i]}</li>"
+
+                    except:
+                            skills_html = skills
+
+                    skills_html += "</ol>"
+
+
+
+                    more_description = f"<h4>BRIEF DESCRIPTION</h4>\n\n{brief_description}\n\n\n<h4>JOB RESPONSIBILITIES</h4>\n\n" \
+                                       f"{responsibilities_html}\n\n\n<h4>JOB QUALIFICATIONS</h4>\n\n{qualifications_html}\n\n\n<h4>SKILLS REQUIRED</h4>\n\n{skills_html}"
 
                     self.label_177.setText(job_title)
                     self.label_183.setText(location)
@@ -4246,7 +4344,6 @@ class Ui_MainWindow(object):
                     self.label_189.setText(posted_date)
                     self.label_182.setText(company)
                     self.label_188.setText(more_description)
-
 
 
     def update_page_jobs(self):
@@ -4278,8 +4375,49 @@ class Ui_MainWindow(object):
                     self.pagejob_display_salary[index].setText(salary_range)
 
                     if index == 0:
-                            more_description = f"BRIEF DESCRIPTION\n\n{brief_description}\n\n\nJOB RESPONSIBILITIES\n\n" \
-                                          f"{responsibilities}\n\n\nJOB QUALIFICATIONS\n\n{qualifications}\n\n\nSKILLS REQUIRED\n\n{skills}"
+                            responsibilities_html = "<ol>"
+                            qualifications_html = "<ol>"
+                            skills_html = "<ol>"
+
+                            try:
+                                    responsibilities_list = responsibilities.split("\n")
+                                    number = len(responsibilities_list)
+
+                                    for i in range(number):
+                                            responsibilities_html += f"<li>{responsibilities_list[i]}</li>"
+
+                            except:
+                                    responsibilities_html = responsibilities
+
+                            responsibilities_html += "</ol>"
+
+                            try:
+                                    qualifications_list = qualifications.split("\n")
+                                    number = len(qualifications_list)
+
+                                    for i in range(number):
+                                            qualifications_html += f"<li>{qualifications_list[i]}</li>"
+
+                            except:
+                                    qualifications_html = qualifications
+
+                            qualifications_html += "</ol>"
+
+                            try:
+                                    skills_list = skills.split("\n")
+                                    number = len(skills_list)
+
+                                    for i in range(number):
+                                            skills_html += f"<li>{skills_list[i]}</li>"
+
+                            except:
+                                    skills_html = skills
+
+                            skills_html += "</ol>"
+
+                            more_description = f"<h4>BRIEF DESCRIPTION</h4>\n\n{brief_description}\n\n\n<h4>JOB RESPONSIBILITIES</h4>\n\n" \
+                                               f"{responsibilities_html}\n\n\n<h4>JOB QUALIFICATIONS</h4>\n\n{qualifications_html}\n\n\n<h4>SKILLS REQUIRED</h4>\n\n{skills_html}"
+
                             self.label_177.setText(job_title)
                             self.label_183.setText(location)
                             self.label_184.setText(job_type)
@@ -5526,6 +5664,9 @@ class Ui_MainWindow(object):
 
 import mysql.connector
 import resources_rc
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
 import smtplib
 from datetime import datetime
 import random
