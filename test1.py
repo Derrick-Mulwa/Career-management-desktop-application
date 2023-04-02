@@ -1,35 +1,39 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+import mysql.connector
+from datetime import datetime
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
+db = mysql.connector.connect(
+    host = 'localhost',
+    user = 'root',
+    password = 'root'
+)
 
-        self.initUI()
+mycursor = db.cursor()
 
-    def initUI(self):
-        # Create a menu bar
-        menubar = self.menuBar()
+email = 'njeristacey270@gmail.com'
 
-        # Create a File menu
-        fileMenu = menubar.addMenu('File')
+import os
 
-        # Create a Save action
-        saveAction = fileMenu.addAction('Save')
-        saveAction.triggered.connect(self.saveFolderDialog)
+# Get the path to the user's documents folder
+documents_folder = os.path.join(os.path.expanduser("~"), "Documents")
 
-    def saveFolderDialog(self):
-        # Create a QFileDialog object
-        options = QFileDialog.Options()
-        options |= QFileDialog.DontUseNativeDialog
-        folderName = QFileDialog.getExistingDirectory(self, "Select Folder", options=options)
+# Create a file path within the documents folder
+file_path = os.path.join(documents_folder, "example.txt")
 
-        if folderName:
-            # Save the file to the selected folder
-            with open(folderName + '/example.txt', 'w') as file:
-                file.write("Hello, World!")
+# Write some text to the file
+with open(file_path, "w") as f:
+    f.write("Hello, world!")
 
-if __name__ == '__main__':
-    app = QApplication([])
-    window = MainWindow()
-    window.show()
-    app.exec_()
+def is_resume():
+    try:
+        with open("resume.docx", "rb") as fimename:
+            a = 4
+        return True
+
+    except:
+        return False
+
+
+print(is_resume())
+
+
+

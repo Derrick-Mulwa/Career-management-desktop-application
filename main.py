@@ -194,16 +194,6 @@ class Ui_MainWindow(object):
         self.toolButton_4.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
         self.toolButton_4.setObjectName("toolButton_4")
         self.horizontalLayout_3.addWidget(self.toolButton_4)
-        self.toolButton_3 = QtWidgets.QToolButton(self.frame_9)
-        self.toolButton_3.setMinimumSize(QtCore.QSize(47, 0))
-        self.toolButton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/icons/icons/messages.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.toolButton_3.setIcon(icon5)
-        self.toolButton_3.setIconSize(QtCore.QSize(32, 32))
-        self.toolButton_3.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
-        self.toolButton_3.setObjectName("toolButton_3")
-        self.horizontalLayout_3.addWidget(self.toolButton_3)
         self.horizontalLayout_2.addWidget(self.frame_9)
         self.frame_10 = QtWidgets.QFrame(self.frame_6)
         self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -256,7 +246,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 533, 1577))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 533, 1391))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
@@ -544,7 +534,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.addWidget(self.frame_18)
         self.verticalLayout_7.addWidget(self.frame_15)
         self.frame_19 = QtWidgets.QFrame(self.scrollAreaWidgetContents)
-        self.frame_19.setMinimumSize(QtCore.QSize(515, 440))
+        self.frame_19.setMinimumSize(QtCore.QSize(515, 254))
         self.frame_19.setMaximumSize(QtCore.QSize(10000, 10000))
         self.frame_19.setAutoFillBackground(False)
         self.frame_19.setStyleSheet("background-color: rgb(197, 197, 197);\n"
@@ -577,7 +567,12 @@ class Ui_MainWindow(object):
         self.label_13.setObjectName("label_13")
         self.verticalLayout_9.addWidget(self.frame_20)
         self.frame_21 = QtWidgets.QFrame(self.frame_19)
-        self.frame_21.setMinimumSize(QtCore.QSize(0, 120))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_21.sizePolicy().hasHeightForWidth())
+        self.frame_21.setSizePolicy(sizePolicy)
+        self.frame_21.setMinimumSize(QtCore.QSize(0, 80))
         self.frame_21.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_21.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_21.setObjectName("frame_21")
@@ -646,89 +641,7 @@ class Ui_MainWindow(object):
         self.label_29.setStyleSheet("padding-left:10px")
         self.label_29.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_29.setObjectName("label_29")
-        self.label_14 = QtWidgets.QLabel(self.frame_21)
-        self.label_14.setGeometry(QtCore.QRect(-20, 160, 551, 20))
-        self.label_14.setStyleSheet("border-bottom: 1px solid black\n"
-"")
-        self.label_14.setText("")
-        self.label_14.setObjectName("label_14")
-        self.label_14.raise_()
-        self.label_24.raise_()
-        self.label_25.raise_()
-        self.label_26.raise_()
-        self.label_27.raise_()
-        self.label_28.raise_()
-        self.label_29.raise_()
         self.verticalLayout_9.addWidget(self.frame_21)
-        self.frame_24 = QtWidgets.QFrame(self.frame_19)
-        self.frame_24.setMinimumSize(QtCore.QSize(0, 120))
-        self.frame_24.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_24.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_24.setObjectName("frame_24")
-        self.label_36 = QtWidgets.QLabel(self.frame_24)
-        self.label_36.setGeometry(QtCore.QRect(10, 20, 71, 91))
-        self.label_36.setText("")
-        self.label_36.setPixmap(QtGui.QPixmap(":/icons/icons/Company.png"))
-        self.label_36.setScaledContents(True)
-        self.label_36.setObjectName("label_36")
-        self.label_37 = QtWidgets.QLabel(self.frame_24)
-        self.label_37.setGeometry(QtCore.QRect(80, 40, 421, 31))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_37.setFont(font)
-        self.label_37.setStyleSheet("padding-left:10px")
-        self.label_37.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_37.setObjectName("label_37")
-        self.label_38 = QtWidgets.QLabel(self.frame_24)
-        self.label_38.setGeometry(QtCore.QRect(80, 10, 421, 31))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_38.setFont(font)
-        self.label_38.setStyleSheet("padding-left:10px")
-        self.label_38.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_38.setObjectName("label_38")
-        self.label_39 = QtWidgets.QLabel(self.frame_24)
-        self.label_39.setGeometry(QtCore.QRect(360, 10, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setItalic(True)
-        font.setWeight(50)
-        self.label_39.setFont(font)
-        self.label_39.setStyleSheet("padding-left:10px")
-        self.label_39.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_39.setObjectName("label_39")
-        self.label_30 = QtWidgets.QLabel(self.frame_24)
-        self.label_30.setGeometry(QtCore.QRect(80, 70, 421, 31))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setItalic(True)
-        font.setWeight(50)
-        self.label_30.setFont(font)
-        self.label_30.setStyleSheet("padding-left:10px")
-        self.label_30.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_30.setObjectName("label_30")
-        self.label_31 = QtWidgets.QLabel(self.frame_24)
-        self.label_31.setGeometry(QtCore.QRect(80, 110, 421, 61))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_31.setFont(font)
-        self.label_31.setStyleSheet("padding-left:10px")
-        self.label_31.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
-        self.label_31.setObjectName("label_31")
-        self.verticalLayout_9.addWidget(self.frame_24)
         self.verticalLayout_7.addWidget(self.frame_19)
         self.frame_22 = QtWidgets.QFrame(self.scrollAreaWidgetContents)
         self.frame_22.setMinimumSize(QtCore.QSize(515, 440))
@@ -973,9 +886,9 @@ class Ui_MainWindow(object):
         self.pushButton_7.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
 "border-radius: 3px")
         self.pushButton_7.setText("")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/icons/icons/search.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_7.setIcon(icon6)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap(":/icons/icons/search.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_7.setIcon(icon5)
         self.pushButton_7.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_7.setObjectName("pushButton_7")
         self.horizontalLayout_8.addWidget(self.pushButton_7)
@@ -1580,9 +1493,9 @@ class Ui_MainWindow(object):
         self.pushButton_34.setStyleSheet("background-color: transparent;\n"
 "")
         self.pushButton_34.setText("")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/icons/icons/next.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_34.setIcon(icon7)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(":/icons/icons/next.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_34.setIcon(icon6)
         self.pushButton_34.setIconSize(QtCore.QSize(32, 323))
         self.pushButton_34.setObjectName("pushButton_34")
         self.pushButton_35 = QtWidgets.QPushButton(self.frame_74)
@@ -1590,9 +1503,9 @@ class Ui_MainWindow(object):
         self.pushButton_35.setStyleSheet("background-color: transparent;\n"
 "")
         self.pushButton_35.setText("")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/icons/icons/back.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_35.setIcon(icon8)
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(":/icons/icons/back.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_35.setIcon(icon7)
         self.pushButton_35.setIconSize(QtCore.QSize(32, 323))
         self.pushButton_35.setObjectName("pushButton_35")
         self.verticalLayout_33.addWidget(self.frame_74)
@@ -1609,7 +1522,7 @@ class Ui_MainWindow(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 500, 465))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 517, 369))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_34.setObjectName("verticalLayout_34")
@@ -2184,6 +2097,472 @@ class Ui_MainWindow(object):
         self.frame_79.setObjectName("frame_79")
         self.horizontalLayout_10.addWidget(self.frame_79)
         self.stackedWidget_2.addWidget(self.pagepostAjob)
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.frame_83 = QtWidgets.QFrame(self.page_9)
+        self.frame_83.setGeometry(QtCore.QRect(200, 0, 541, 461))
+        self.frame_83.setStyleSheet("background-color:rgb(171, 171, 171) ;\n"
+"border-radius:5px")
+        self.frame_83.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_83.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_83.setObjectName("frame_83")
+        self.verticalLayout_39 = QtWidgets.QVBoxLayout(self.frame_83)
+        self.verticalLayout_39.setObjectName("verticalLayout_39")
+        self.label_91 = QtWidgets.QLabel(self.frame_83)
+        font = QtGui.QFont()
+        font.setFamily("Sitka Banner")
+        font.setPointSize(20)
+        self.label_91.setFont(font)
+        self.label_91.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_91.setObjectName("label_91")
+        self.verticalLayout_39.addWidget(self.label_91)
+        self.scrollArea_7 = QtWidgets.QScrollArea(self.frame_83)
+        self.scrollArea_7.setWidgetResizable(True)
+        self.scrollArea_7.setObjectName("scrollArea_7")
+        self.scrollAreaWidgetContents_7 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 506, 2127))
+        self.scrollAreaWidgetContents_7.setObjectName("scrollAreaWidgetContents_7")
+        self.verticalLayout_40 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_7)
+        self.verticalLayout_40.setContentsMargins(0, 0, 0, 10)
+        self.verticalLayout_40.setObjectName("verticalLayout_40")
+        self.frame_84 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_84.setMinimumSize(QtCore.QSize(377, 405))
+        self.frame_84.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_84.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_84.setObjectName("frame_84")
+        self.lineEdit_29 = QtWidgets.QLineEdit(self.frame_84)
+        self.lineEdit_29.setGeometry(QtCore.QRect(40, 110, 381, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_29.setFont(font)
+        self.lineEdit_29.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_29.setObjectName("lineEdit_29")
+        self.label_92 = QtWidgets.QLabel(self.frame_84)
+        self.label_92.setGeometry(QtCore.QRect(40, 90, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_92.setFont(font)
+        self.label_92.setObjectName("label_92")
+        self.lineEdit_30 = QtWidgets.QLineEdit(self.frame_84)
+        self.lineEdit_30.setGeometry(QtCore.QRect(40, 180, 381, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_30.setFont(font)
+        self.lineEdit_30.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_30.setPlaceholderText("")
+        self.lineEdit_30.setObjectName("lineEdit_30")
+        self.label_93 = QtWidgets.QLabel(self.frame_84)
+        self.label_93.setGeometry(QtCore.QRect(40, 150, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_93.setFont(font)
+        self.label_93.setObjectName("label_93")
+        self.lineEdit_31 = QtWidgets.QLineEdit(self.frame_84)
+        self.lineEdit_31.setGeometry(QtCore.QRect(40, 250, 381, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_31.setFont(font)
+        self.lineEdit_31.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_31.setPlaceholderText("")
+        self.lineEdit_31.setObjectName("lineEdit_31")
+        self.label_94 = QtWidgets.QLabel(self.frame_84)
+        self.label_94.setGeometry(QtCore.QRect(40, 230, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_94.setFont(font)
+        self.label_94.setObjectName("label_94")
+        self.lineEdit_32 = QtWidgets.QLineEdit(self.frame_84)
+        self.lineEdit_32.setGeometry(QtCore.QRect(40, 330, 381, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_32.setFont(font)
+        self.lineEdit_32.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_32.setPlaceholderText("")
+        self.lineEdit_32.setObjectName("lineEdit_32")
+        self.label_95 = QtWidgets.QLabel(self.frame_84)
+        self.label_95.setGeometry(QtCore.QRect(40, 305, 291, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_95.setFont(font)
+        self.label_95.setObjectName("label_95")
+        self.label_193 = QtWidgets.QLabel(self.frame_84)
+        self.label_193.setGeometry(QtCore.QRect(30, 10, 471, 51))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_193.setFont(font)
+        self.label_193.setStyleSheet("padding:10px")
+        self.label_193.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_193.setWordWrap(True)
+        self.label_193.setObjectName("label_193")
+        self.lineEdit_29.raise_()
+        self.label_92.raise_()
+        self.label_93.raise_()
+        self.lineEdit_31.raise_()
+        self.label_94.raise_()
+        self.lineEdit_32.raise_()
+        self.label_95.raise_()
+        self.lineEdit_30.raise_()
+        self.label_193.raise_()
+        self.verticalLayout_40.addWidget(self.frame_84)
+        self.frame_87 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_87.setMinimumSize(QtCore.QSize(500, 850))
+        self.frame_87.setMaximumSize(QtCore.QSize(10000, 10000))
+        self.frame_87.setAutoFillBackground(False)
+        self.frame_87.setStyleSheet("")
+        self.frame_87.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_87.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_87.setObjectName("frame_87")
+        self.verticalLayout_41 = QtWidgets.QVBoxLayout(self.frame_87)
+        self.verticalLayout_41.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_41.setObjectName("verticalLayout_41")
+        self.frame_89 = QtWidgets.QFrame(self.frame_87)
+        self.frame_89.setMinimumSize(QtCore.QSize(515, 60))
+        self.frame_89.setMaximumSize(QtCore.QSize(16777215, 60))
+        self.frame_89.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_89.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_89.setObjectName("frame_89")
+        self.label_151 = QtWidgets.QLabel(self.frame_89)
+        self.label_151.setGeometry(QtCore.QRect(0, 0, 521, 51))
+        font = QtGui.QFont()
+        font.setFamily("HoloLens MDL2 Assets")
+        font.setPointSize(16)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_151.setFont(font)
+        self.label_151.setStyleSheet("")
+        self.label_151.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_151.setObjectName("label_151")
+        self.verticalLayout_41.addWidget(self.frame_89)
+        self.label_192 = QtWidgets.QLabel(self.frame_87)
+        self.label_192.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_192.setMaximumSize(QtCore.QSize(16777215, 70))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_192.setFont(font)
+        self.label_192.setStyleSheet("")
+        self.label_192.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_192.setWordWrap(True)
+        self.label_192.setObjectName("label_192")
+        self.verticalLayout_41.addWidget(self.label_192)
+        self.frame_90 = QtWidgets.QFrame(self.frame_87)
+        self.frame_90.setMinimumSize(QtCore.QSize(0, 280))
+        self.frame_90.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_90.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_90.setObjectName("frame_90")
+        self.lineEdit_35 = QtWidgets.QLineEdit(self.frame_90)
+        self.lineEdit_35.setGeometry(QtCore.QRect(20, 40, 461, 31))
+        self.lineEdit_35.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_35.setObjectName("lineEdit_35")
+        self.label_152 = QtWidgets.QLabel(self.frame_90)
+        self.label_152.setGeometry(QtCore.QRect(20, 20, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_152.setFont(font)
+        self.label_152.setStyleSheet("")
+        self.label_152.setObjectName("label_152")
+        self.label_153 = QtWidgets.QLabel(self.frame_90)
+        self.label_153.setGeometry(QtCore.QRect(270, 100, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_153.setFont(font)
+        self.label_153.setStyleSheet("")
+        self.label_153.setObjectName("label_153")
+        self.comboBox_27 = QtWidgets.QComboBox(self.frame_90)
+        self.comboBox_27.setGeometry(QtCore.QRect(270, 120, 211, 31))
+        self.comboBox_27.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_27.setObjectName("comboBox_27")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_27.addItem("")
+        self.comboBox_28 = QtWidgets.QComboBox(self.frame_90)
+        self.comboBox_28.setGeometry(QtCore.QRect(20, 200, 211, 31))
+        self.comboBox_28.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_28.setObjectName("comboBox_28")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.comboBox_28.addItem("")
+        self.label_154 = QtWidgets.QLabel(self.frame_90)
+        self.label_154.setGeometry(QtCore.QRect(20, 180, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_154.setFont(font)
+        self.label_154.setStyleSheet("")
+        self.label_154.setObjectName("label_154")
+        self.comboBox_29 = QtWidgets.QComboBox(self.frame_90)
+        self.comboBox_29.setGeometry(QtCore.QRect(260, 200, 221, 31))
+        self.comboBox_29.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_29.setObjectName("comboBox_29")
+        self.comboBox_29.addItem("")
+        self.comboBox_30 = QtWidgets.QComboBox(self.frame_90)
+        self.comboBox_30.setGeometry(QtCore.QRect(20, 280, 211, 31))
+        self.comboBox_30.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_30.setObjectName("comboBox_30")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.comboBox_30.addItem("")
+        self.label_155 = QtWidgets.QLabel(self.frame_90)
+        self.label_155.setGeometry(QtCore.QRect(20, 260, 201, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_155.setFont(font)
+        self.label_155.setStyleSheet("")
+        self.label_155.setObjectName("label_155")
+        self.comboBox_31 = QtWidgets.QComboBox(self.frame_90)
+        self.comboBox_31.setGeometry(QtCore.QRect(260, 280, 221, 31))
+        self.comboBox_31.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.comboBox_31.setObjectName("comboBox_31")
+        self.comboBox_31.addItem("")
+        self.checkBox_4 = QtWidgets.QCheckBox(self.frame_90)
+        self.checkBox_4.setGeometry(QtCore.QRect(20, 330, 201, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.checkBox_4.setFont(font)
+        self.checkBox_4.setObjectName("checkBox_4")
+        self.lineEdit_36 = QtWidgets.QLineEdit(self.frame_90)
+        self.lineEdit_36.setGeometry(QtCore.QRect(20, 120, 221, 31))
+        self.lineEdit_36.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_36.setObjectName("lineEdit_36")
+        self.label_156 = QtWidgets.QLabel(self.frame_90)
+        self.label_156.setGeometry(QtCore.QRect(20, 100, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_156.setFont(font)
+        self.label_156.setStyleSheet("")
+        self.label_156.setObjectName("label_156")
+        self.pushButton_41 = QtWidgets.QPushButton(self.frame_90)
+        self.pushButton_41.setGeometry(QtCore.QRect(160, 660, 151, 41))
+        self.pushButton_41.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_41.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_41.setObjectName("pushButton_41")
+        self.textEdit_5 = QtWidgets.QTextEdit(self.frame_90)
+        self.textEdit_5.setGeometry(QtCore.QRect(10, 410, 491, 211))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.textEdit_5.setFont(font)
+        self.textEdit_5.setStyleSheet("background-color: rgb(106, 106, 106);\n"
+"color: rgb(255, 255, 255);\n"
+"padding-left:5px;\n"
+"padding-right:5px;\n"
+"padding-top:5px;")
+        self.textEdit_5.setPlaceholderText("")
+        self.textEdit_5.setObjectName("textEdit_5")
+        self.label_101 = QtWidgets.QLabel(self.frame_90)
+        self.label_101.setGeometry(QtCore.QRect(10, 380, 461, 31))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_101.setFont(font)
+        self.label_101.setObjectName("label_101")
+        self.lineEdit_35.raise_()
+        self.label_152.raise_()
+        self.label_153.raise_()
+        self.comboBox_27.raise_()
+        self.comboBox_28.raise_()
+        self.label_154.raise_()
+        self.comboBox_29.raise_()
+        self.comboBox_30.raise_()
+        self.label_155.raise_()
+        self.comboBox_31.raise_()
+        self.checkBox_4.raise_()
+        self.lineEdit_36.raise_()
+        self.label_156.raise_()
+        self.pushButton_41.raise_()
+        self.label_101.raise_()
+        self.textEdit_5.raise_()
+        self.verticalLayout_41.addWidget(self.frame_90)
+        self.verticalLayout_40.addWidget(self.frame_87)
+        self.frame_85 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_85.sizePolicy().hasHeightForWidth())
+        self.frame_85.setSizePolicy(sizePolicy)
+        self.frame_85.setMinimumSize(QtCore.QSize(0, 850))
+        self.frame_85.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_85.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_85.setObjectName("frame_85")
+        self.label_97 = QtWidgets.QLabel(self.frame_85)
+        self.label_97.setGeometry(QtCore.QRect(10, 20, 151, 31))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Semilight")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_97.setFont(font)
+        self.label_97.setObjectName("label_97")
+        self.textEdit_4 = QtWidgets.QTextEdit(self.frame_85)
+        self.textEdit_4.setGeometry(QtCore.QRect(10, 70, 491, 171))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.textEdit_4.setFont(font)
+        self.textEdit_4.setStyleSheet("background-color: rgb(106, 106, 106);\n"
+"color: rgb(255, 255, 255);\n"
+"padding-left:5px;\n"
+"padding-right:5px;\n"
+"padding-top:5px;")
+        self.textEdit_4.setObjectName("textEdit_4")
+        self.label_98 = QtWidgets.QLabel(self.frame_85)
+        self.label_98.setGeometry(QtCore.QRect(10, 50, 351, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_98.setFont(font)
+        self.label_98.setObjectName("label_98")
+        self.pushButton_28 = QtWidgets.QPushButton(self.frame_85)
+        self.pushButton_28.setGeometry(QtCore.QRect(160, 670, 181, 31))
+        self.pushButton_28.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_28.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.pushButton_29 = QtWidgets.QPushButton(self.frame_85)
+        self.pushButton_29.setGeometry(QtCore.QRect(350, 760, 121, 41))
+        self.pushButton_29.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_29.setStyleSheet("border: 1px solid black;\n"
+"border-radius: 3px;\n"
+"background-color: rgb(9, 204, 6);\n"
+"")
+        self.pushButton_29.setObjectName("pushButton_29")
+        self.label_99 = QtWidgets.QLabel(self.frame_85)
+        self.label_99.setGeometry(QtCore.QRect(50, 270, 151, 31))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Semilight")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_99.setFont(font)
+        self.label_99.setObjectName("label_99")
+        self.label_105 = QtWidgets.QLabel(self.frame_85)
+        self.label_105.setGeometry(QtCore.QRect(50, 300, 351, 41))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_105.setFont(font)
+        self.label_105.setObjectName("label_105")
+        self.label_100 = QtWidgets.QLabel(self.frame_85)
+        self.label_100.setGeometry(QtCore.QRect(50, 410, 141, 31))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_100.setFont(font)
+        self.label_100.setObjectName("label_100")
+        self.lineEdit_40 = QtWidgets.QLineEdit(self.frame_85)
+        self.lineEdit_40.setGeometry(QtCore.QRect(50, 590, 401, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_40.setFont(font)
+        self.lineEdit_40.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_40.setPlaceholderText("")
+        self.lineEdit_40.setObjectName("lineEdit_40")
+        self.label_106 = QtWidgets.QLabel(self.frame_85)
+        self.label_106.setGeometry(QtCore.QRect(50, 565, 291, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_106.setFont(font)
+        self.label_106.setObjectName("label_106")
+        self.lineEdit_41 = QtWidgets.QLineEdit(self.frame_85)
+        self.lineEdit_41.setGeometry(QtCore.QRect(50, 440, 401, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_41.setFont(font)
+        self.lineEdit_41.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_41.setObjectName("lineEdit_41")
+        self.lineEdit_42 = QtWidgets.QLineEdit(self.frame_85)
+        self.lineEdit_42.setGeometry(QtCore.QRect(50, 370, 401, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_42.setFont(font)
+        self.lineEdit_42.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_42.setPlaceholderText("")
+        self.lineEdit_42.setObjectName("lineEdit_42")
+        self.lineEdit_43 = QtWidgets.QLineEdit(self.frame_85)
+        self.lineEdit_43.setGeometry(QtCore.QRect(50, 510, 401, 31))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lineEdit_43.setFont(font)
+        self.lineEdit_43.setStyleSheet("border:1.2px solid black;\n"
+"border-radius:3px;\n"
+"padding-left:10px")
+        self.lineEdit_43.setPlaceholderText("")
+        self.lineEdit_43.setObjectName("lineEdit_43")
+        self.label_107 = QtWidgets.QLabel(self.frame_85)
+        self.label_107.setGeometry(QtCore.QRect(50, 350, 161, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_107.setFont(font)
+        self.label_107.setObjectName("label_107")
+        self.label_109 = QtWidgets.QLabel(self.frame_85)
+        self.label_109.setGeometry(QtCore.QRect(50, 486, 251, 20))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_109.setFont(font)
+        self.label_109.setObjectName("label_109")
+        self.pushButton_30 = QtWidgets.QPushButton(self.frame_85)
+        self.pushButton_30.setGeometry(QtCore.QRect(20, 760, 101, 41))
+        self.pushButton_30.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_30.setStyleSheet("background-color: rgb(1, 79, 223);\n"
+"border: 1px solid black;\n"
+"border-radius: 3px;")
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.verticalLayout_40.addWidget(self.frame_85)
+        self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_7)
+        self.verticalLayout_39.addWidget(self.scrollArea_7)
+        self.stackedWidget_2.addWidget(self.page_9)
+        self.page_10 = QtWidgets.QWidget()
+        self.page_10.setObjectName("page_10")
+        self.stackedWidget_2.addWidget(self.page_10)
         self.verticalLayout_5.addWidget(self.stackedWidget_2)
         self.verticalLayout_4.addWidget(self.frame_7)
         self.verticalLayout_3.addWidget(self.frame_5)
@@ -2216,8 +2595,9 @@ class Ui_MainWindow(object):
         self.label_61.setMinimumSize(QtCore.QSize(171, 61))
         self.label_61.setMaximumSize(QtCore.QSize(181, 61))
         self.label_61.setStyleSheet("color:rgb(255, 255, 255);\n"
-"background-color: rgb(24, 197, 15);\n"
-"border-radius:4px")
+"background-color: rgb(23, 65, 255);\n"
+"border-radius:3px;\n"
+"")
         self.label_61.setAlignment(QtCore.Qt.AlignCenter)
         self.label_61.setObjectName("label_61")
         self.verticalLayout.addWidget(self.label_61)
@@ -2937,7 +3317,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 521, 703))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -192, 521, 703))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_24.setContentsMargins(1, -1, 1, -1)
@@ -3253,32 +3633,6 @@ class Ui_MainWindow(object):
         self.frame_54.setObjectName("frame_54")
         self.gridLayout = QtWidgets.QGridLayout(self.frame_54)
         self.gridLayout.setObjectName("gridLayout")
-        self.label_136 = QtWidgets.QLabel(self.frame_54)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_136.setFont(font)
-        self.label_136.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
-"border-radius:3px")
-        self.label_136.setText("")
-        self.label_136.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_136.setObjectName("label_136")
-        self.gridLayout.addWidget(self.label_136, 1, 1, 1, 1)
-        self.label_135 = QtWidgets.QLabel(self.frame_54)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_135.setFont(font)
-        self.label_135.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
-"border-radius:3px")
-        self.label_135.setText("")
-        self.label_135.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_135.setObjectName("label_135")
-        self.gridLayout.addWidget(self.label_135, 0, 1, 1, 1)
         self.label_129 = QtWidgets.QLabel(self.frame_54)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
@@ -3292,6 +3646,62 @@ class Ui_MainWindow(object):
         self.label_129.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_129.setObjectName("label_129")
         self.gridLayout.addWidget(self.label_129, 0, 0, 1, 1)
+        self.label_116 = QtWidgets.QLabel(self.frame_54)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_116.setFont(font)
+        self.label_116.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px\n"
+"")
+        self.label_116.setText("")
+        self.label_116.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_116.setObjectName("label_116")
+        self.gridLayout.addWidget(self.label_116, 1, 0, 1, 1)
+        self.label_135 = QtWidgets.QLabel(self.frame_54)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_135.setFont(font)
+        self.label_135.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px")
+        self.label_135.setText("")
+        self.label_135.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_135.setObjectName("label_135")
+        self.gridLayout.addWidget(self.label_135, 0, 1, 1, 1)
+        self.label_144 = QtWidgets.QLabel(self.frame_54)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_144.setFont(font)
+        self.label_144.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px\n"
+"\n"
+"\n"
+"")
+        self.label_144.setText("")
+        self.label_144.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_144.setObjectName("label_144")
+        self.gridLayout.addWidget(self.label_144, 4, 1, 1, 1)
+        self.label_136 = QtWidgets.QLabel(self.frame_54)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_136.setFont(font)
+        self.label_136.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
+"border-radius:3px")
+        self.label_136.setText("")
+        self.label_136.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_136.setObjectName("label_136")
+        self.gridLayout.addWidget(self.label_136, 1, 1, 1, 1)
         self.label_138 = QtWidgets.QLabel(self.frame_54)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
@@ -3324,20 +3734,6 @@ class Ui_MainWindow(object):
         self.label_137.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_137.setObjectName("label_137")
         self.gridLayout.addWidget(self.label_137, 2, 0, 1, 1)
-        self.label_116 = QtWidgets.QLabel(self.frame_54)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_116.setFont(font)
-        self.label_116.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
-"border-radius:3px\n"
-"")
-        self.label_116.setText("")
-        self.label_116.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_116.setObjectName("label_116")
-        self.gridLayout.addWidget(self.label_116, 1, 0, 1, 1)
         self.label_140 = QtWidgets.QLabel(self.frame_54)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
@@ -3386,22 +3782,6 @@ class Ui_MainWindow(object):
         self.label_142.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_142.setObjectName("label_142")
         self.gridLayout.addWidget(self.label_142, 4, 0, 1, 1)
-        self.label_144 = QtWidgets.QLabel(self.frame_54)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_144.setFont(font)
-        self.label_144.setStyleSheet("border: 1px solid rgb(197, 197, 197);\n"
-"border-radius:3px\n"
-"\n"
-"\n"
-"")
-        self.label_144.setText("")
-        self.label_144.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_144.setObjectName("label_144")
-        self.gridLayout.addWidget(self.label_144, 4, 1, 1, 1)
         self.verticalLayout_27.addWidget(self.frame_59)
         self.verticalLayout_36.addWidget(self.frame_57)
         self.stackedWidget_3.addWidget(self.page_8)
@@ -3491,9 +3871,9 @@ class Ui_MainWindow(object):
 "border-top-left-radius: 0px;\n"
 "border-bottom-left-radius: 0px;")
         self.pushButton_21.setText("")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap(":/icons/icons/password hide.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_21.setIcon(icon9)
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(":/icons/icons/password hide.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_21.setIcon(icon8)
         self.pushButton_21.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_21.setObjectName("pushButton_21")
         self.lineEdit_8 = QtWidgets.QLineEdit(self.frame_65)
@@ -3501,6 +3881,7 @@ class Ui_MainWindow(object):
         self.lineEdit_8.setStyleSheet("border:1.2px solid black;\n"
 "border-radius:3px;\n"
 "padding-left:10px")
+        self.lineEdit_8.setText("")
         self.lineEdit_8.setObjectName("lineEdit_8")
         self.label_71 = QtWidgets.QLabel(self.frame_65)
         self.label_71.setGeometry(QtCore.QRect(132, 90, 271, 21))
@@ -3521,7 +3902,7 @@ class Ui_MainWindow(object):
 "border-top-left-radius: 0px;\n"
 "border-bottom-left-radius: 0px;")
         self.pushButton_22.setText("")
-        self.pushButton_22.setIcon(icon1)
+        self.pushButton_22.setIcon(icon8)
         self.pushButton_22.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_22.setObjectName("pushButton_22")
         self.pushButton_12 = QtWidgets.QPushButton(self.frame_65)
@@ -3633,7 +4014,7 @@ class Ui_MainWindow(object):
 "border-top-left-radius: 0px;\n"
 "border-bottom-left-radius: 0px;")
         self.pushButton_25.setText("")
-        self.pushButton_25.setIcon(icon9)
+        self.pushButton_25.setIcon(icon8)
         self.pushButton_25.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_25.setObjectName("pushButton_25")
         self.label_76 = QtWidgets.QLabel(self.frame_67)
@@ -3668,7 +4049,7 @@ class Ui_MainWindow(object):
 "border-top-left-radius: 0px;\n"
 "border-bottom-left-radius: 0px;")
         self.pushButton_26.setText("")
-        self.pushButton_26.setIcon(icon9)
+        self.pushButton_26.setIcon(icon8)
         self.pushButton_26.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_26.setObjectName("pushButton_26")
         self.label_79 = QtWidgets.QLabel(self.frame_67)
@@ -3755,7 +4136,6 @@ class Ui_MainWindow(object):
         self.toolButton_2.setText(_translate("MainWindow", "Home"))
         self.toolButton_5.setText(_translate("MainWindow", "Jobs"))
         self.toolButton_4.setText(_translate("MainWindow", "Resume"))
-        self.toolButton_3.setText(_translate("MainWindow", "Messages"))
         self.pushButton_16.setText(_translate("MainWindow", "Logout"))
         self.label_3.setText(_translate("MainWindow", "Stacey  Njeri"))
         self.label_5.setText(_translate("MainWindow", "Diploma in Health Sciences"))
@@ -3772,19 +4152,13 @@ class Ui_MainWindow(object):
         self.label_18.setText(_translate("MainWindow", "Kenya Certificate of Primary Education"))
         self.label_22.setText(_translate("MainWindow", "Baraka Primary School"))
         self.label_23.setText(_translate("MainWindow", "Sep 2010 to Dec 2015"))
-        self.label_13.setText(_translate("MainWindow", "Work Experience"))
+        self.label_13.setText(_translate("MainWindow", "Recent Work Experience"))
         self.label_25.setText(_translate("MainWindow", "Mabati Rolling Mills"))
         self.label_26.setText(_translate("MainWindow", "Senior Data Analyst"))
         self.label_27.setText(_translate("MainWindow", "Sep 2022 to Current"))
         self.label_28.setText(_translate("MainWindow", "Skills Aquired:\n"
 "Data Collection, Data Cleaning, Data Storage label_28 label_28label_28label_28label_28label_28label_28label_28 label_28label_28label_28label_28label_28label_28"))
         self.label_29.setText(_translate("MainWindow", "Full Time"))
-        self.label_37.setText(_translate("MainWindow", "Urithi Apartments "))
-        self.label_38.setText(_translate("MainWindow", "Entry Level Data Scientist"))
-        self.label_39.setText(_translate("MainWindow", "Mar 2022 to Aug 2022"))
-        self.label_30.setText(_translate("MainWindow", "Internship"))
-        self.label_31.setText(_translate("MainWindow", "Skills Aquired:\n"
-"Inventory Management, Worker Coordination, Resource Allocation, Budgeting"))
         self.label_41.setText(_translate("MainWindow", "Skills and Competencies"))
         self.label_46.setText(_translate("MainWindow", "Data Collection"))
         self.lineEdit_20.setPlaceholderText(_translate("MainWindow", "Job title or company"))
@@ -3835,6 +4209,85 @@ class Ui_MainWindow(object):
         self.label_89.setText(_translate("MainWindow", "Add required skills"))
         self.pushButton_18.setText(_translate("MainWindow", "Post Job"))
         self.pushButton_19.setText(_translate("MainWindow", "Back"))
+        self.label_91.setText(_translate("MainWindow", "RESUME"))
+        self.lineEdit_29.setPlaceholderText(_translate("MainWindow", "It personeel | Accountant |Engineer"))
+        self.label_92.setText(_translate("MainWindow", "Official Job title*"))
+        self.label_93.setText(_translate("MainWindow", "GitHub link"))
+        self.label_94.setText(_translate("MainWindow", "LinkedIn link"))
+        self.label_95.setText(_translate("MainWindow", "Other link (Portfolio link)"))
+        self.label_193.setText(_translate("MainWindow", "Fill in these required fields as accurately as possible. The more fields you fill accurately, the more detailed your resume will be"))
+        self.label_151.setText(_translate("MainWindow", "Work Experience"))
+        self.label_192.setText(_translate("MainWindow", "For this section, you can skip if you want to use the work experience you provided during signing up. If you edit this section, the work you provided during signup will not be used in your resume. Fill in in chronological order(newest first, oldest last) and submit after editing. Unsubmitted work experience will not be used"))
+        self.lineEdit_35.setPlaceholderText(_translate("MainWindow", "Senior Data Engineer"))
+        self.label_152.setText(_translate("MainWindow", "Job Title*"))
+        self.label_153.setText(_translate("MainWindow", "Employment Type*"))
+        self.comboBox_27.setItemText(0, _translate("MainWindow", "Full time"))
+        self.comboBox_27.setItemText(1, _translate("MainWindow", "Part time"))
+        self.comboBox_27.setItemText(2, _translate("MainWindow", "Contract"))
+        self.comboBox_27.setItemText(3, _translate("MainWindow", "Freelance"))
+        self.comboBox_27.setItemText(4, _translate("MainWindow", "Internship"))
+        self.comboBox_27.setItemText(5, _translate("MainWindow", "Self employed"))
+        self.comboBox_27.setItemText(6, _translate("MainWindow", "Apprenticeship"))
+        self.comboBox_28.setItemText(0, _translate("MainWindow", "Month"))
+        self.comboBox_28.setItemText(1, _translate("MainWindow", "January"))
+        self.comboBox_28.setItemText(2, _translate("MainWindow", "February"))
+        self.comboBox_28.setItemText(3, _translate("MainWindow", "March"))
+        self.comboBox_28.setItemText(4, _translate("MainWindow", "April"))
+        self.comboBox_28.setItemText(5, _translate("MainWindow", "May"))
+        self.comboBox_28.setItemText(6, _translate("MainWindow", "June"))
+        self.comboBox_28.setItemText(7, _translate("MainWindow", "July"))
+        self.comboBox_28.setItemText(8, _translate("MainWindow", "August"))
+        self.comboBox_28.setItemText(9, _translate("MainWindow", "Setember"))
+        self.comboBox_28.setItemText(10, _translate("MainWindow", "October"))
+        self.comboBox_28.setItemText(11, _translate("MainWindow", "November"))
+        self.comboBox_28.setItemText(12, _translate("MainWindow", "December"))
+        self.label_154.setText(_translate("MainWindow", "Start Date*"))
+        self.comboBox_29.setItemText(0, _translate("MainWindow", "Year"))
+        self.comboBox_30.setItemText(0, _translate("MainWindow", "Month"))
+        self.comboBox_30.setItemText(1, _translate("MainWindow", "January"))
+        self.comboBox_30.setItemText(2, _translate("MainWindow", "February"))
+        self.comboBox_30.setItemText(3, _translate("MainWindow", "March"))
+        self.comboBox_30.setItemText(4, _translate("MainWindow", "April"))
+        self.comboBox_30.setItemText(5, _translate("MainWindow", "May"))
+        self.comboBox_30.setItemText(6, _translate("MainWindow", "June"))
+        self.comboBox_30.setItemText(7, _translate("MainWindow", "July"))
+        self.comboBox_30.setItemText(8, _translate("MainWindow", "August"))
+        self.comboBox_30.setItemText(9, _translate("MainWindow", "Setember"))
+        self.comboBox_30.setItemText(10, _translate("MainWindow", "October"))
+        self.comboBox_30.setItemText(11, _translate("MainWindow", "November"))
+        self.comboBox_30.setItemText(12, _translate("MainWindow", "December"))
+        self.label_155.setText(_translate("MainWindow", "End Date(Or Expected end date)*"))
+        self.comboBox_31.setItemText(0, _translate("MainWindow", "Year"))
+        self.checkBox_4.setText(_translate("MainWindow", "I still work here"))
+        self.lineEdit_36.setPlaceholderText(_translate("MainWindow", "Simba Cement"))
+        self.label_156.setText(_translate("MainWindow", "Company*"))
+        self.pushButton_41.setText(_translate("MainWindow", "Submit and add another"))
+        self.pushButton_41.setShortcut(_translate("MainWindow", "Return"))
+        self.textEdit_5.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>"))
+        self.label_101.setText(_translate("MainWindow", "List your duties/responsibilities at this company/role. Do not number."))
+        self.label_97.setText(_translate("MainWindow", "About you"))
+        self.textEdit_4.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>"))
+        self.textEdit_4.setPlaceholderText(_translate("MainWindow", "eg. Experienced IT professional with 7+ years of expertise in software development, network administration, and database management. Skilled in programming languages such as Java, Python, and C#. Managed complex IT projects from inception to deployment, ensuring timely delivery and adherence to quality standards. Strong analytical and problem-solving skills, with a proven ability to diagnose and resolve technical issues efficiently. Collaborative team player, skilled in communicating technical information to cross-functional teams, and translating business requirements into technical solutions. Seeking a challenging position in a dynamic organization where I can leverage my technical expertise and leadership skills to drive innovation and success.    "))
+        self.label_98.setText(_translate("MainWindow", "Write a brief overview about yourself"))
+        self.pushButton_28.setText(_translate("MainWindow", "Submit and add another referee"))
+        self.pushButton_28.setShortcut(_translate("MainWindow", "Return"))
+        self.pushButton_29.setText(_translate("MainWindow", "Create resume"))
+        self.label_99.setText(_translate("MainWindow", "Referees"))
+        self.label_105.setText(_translate("MainWindow", "Add referees who can verify your competences"))
+        self.label_100.setText(_translate("MainWindow", "Referee\'s job title"))
+        self.label_106.setText(_translate("MainWindow", "Referee\'s phone number"))
+        self.lineEdit_41.setPlaceholderText(_translate("MainWindow", "Chief Information Officer | Project Manager | Senior Accountant"))
+        self.label_107.setText(_translate("MainWindow", "Referee\'s full names"))
+        self.label_109.setText(_translate("MainWindow", "Referees company or institution "))
+        self.pushButton_30.setText(_translate("MainWindow", "Back"))
         self.label_61.setText(_translate("MainWindow", "PERSONAL DETAILS"))
         self.label_62.setText(_translate("MainWindow", "EDUCATION"))
         self.label_63.setText(_translate("MainWindow", "EXPERIENCE"))
@@ -3848,8 +4301,8 @@ class Ui_MainWindow(object):
         self.pushButton_5.setText(_translate("MainWindow", "Next"))
         self.pushButton_5.setShortcut(_translate("MainWindow", "Return"))
         self.pushButton_6.setText(_translate("MainWindow", "Back to Log In"))
-        self.label_43.setText(_translate("MainWindow", "First Name*"))
-        self.label_44.setText(_translate("MainWindow", "Last Name*"))
+        self.label_43.setText(_translate("MainWindow", "Surname*"))
+        self.label_44.setText(_translate("MainWindow", "Other Names*"))
         self.label_45.setText(_translate("MainWindow", "Verification Code*"))
         self.label_55.setText(_translate("MainWindow", "Email Address*"))
         self.label_56.setText(_translate("MainWindow", "Date of Birth*"))
@@ -4078,7 +4531,6 @@ class Ui_MainWindow(object):
 
 
 
-
         # EDITS
         self.db = mysql.connector.connect(
                 user = "root",
@@ -4126,6 +4578,7 @@ class Ui_MainWindow(object):
         self.signup_skills = [self.signup_personalData[0], "None"]
         self.pushButton_39.clicked.connect(self.pushButton_39_clicked)
         self.checkBox_2.stateChanged.connect(self.checkBox_2_state_changed)
+        self.checkBox_4.stateChanged.connect(self.checkBox_4_state_changed)
         self.pushButton_11.clicked.connect(self.pushButton_11_clicked)
         self.pushButton_12.clicked.connect(self.pushButton_12_clicked)
         self.pushButton_14.clicked.connect(self.pushButton_14_clicked)
@@ -4182,94 +4635,626 @@ class Ui_MainWindow(object):
         self.pushButton_36.clicked.connect(self.pushButton_36_clicked)
         self.application_sql_querry = self.current_display_jobs_sql_querry + f" LIMIT {self.current_display_jobs_sql_querry_ulimit}, 1"
         self.toolButton_2.clicked.connect(self.toolButton_2_clicked)
+        self.toolButton_4.clicked.connect(self.toolButton_4_clicked)
+        self.pushButton_29.clicked.connect(self.pushButton_29_clicked)
+        self.pushButton_34.clicked.connect(self.pushButton_34_clicked)
+        self.pushButton_35.clicked.connect(self.pushButton_35_clicked)
+        self.pushButton_7.clicked.connect(self.pushButton_7_clicked)
+        self.pushButton_41.clicked.connect(self.pushButton_41_clicked)
+        self.resume_work_experiences = []
+        self.resume_referees = []
 
+        self.pushButton_28.clicked.connect(self.pushButton_28_clicked)
+
+    def is_resume(self):
+            try:
+                    with open("resume.docx", "rb") as fimename:
+                            a = 4
+                    return True
+
+            except:
+                    return False
+    def pushButton_28_clicked(self):
+        ref_name = self.lineEdit_42.text()
+        if ref_name != "":
+                refname_done = True
+        else:
+                refname_done = True
+
+        ref_title = self.lineEdit_41.text()
+        if ref_title != "":
+                ref_title_done = True
+        else:
+                ref_title_done = True
+
+        ref_company = self.lineEdit_43.text()
+        if ref_company != "":
+                ref_company_done = True
+        else:
+                ref_company_done = True
+
+        ref_contacts = self.lineEdit_40.text()
+        if ref_contacts != "":
+                ref_contacts_done = True
+        else:
+                ref_contacts_done = True
+
+        if (refname_done is True) and (ref_title_done is True) and (ref_company_done is True) and (ref_contacts_done is True):
+                ref = (ref_name, ref_title, ref_company, ref_contacts)
+                self.resume_referees.append(ref)
+
+                warning = QMessageBox()
+                warning.setWindowTitle("Referee added")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Referee saved! You can add another referee.")
+                x = warning.exec_()
+                self.lineEdit_42.clear()
+                self.lineEdit_41.clear()
+                self.lineEdit_43.clear()
+                self.lineEdit_40.clear()
+        else:
+                warning = QMessageBox()
+                warning.setWindowTitle("Error")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Please fill in all the required fields appropriately.")
+                x = warning.exec_()
+
+    def checkBox_4_state_changed(self, state):
+        self.comboBox_30.setEnabled(state == 0)
+        self.comboBox_31.setEnabled(state == 0)
+    def pushButton_41_clicked(self):
+            job_title = self.lineEdit_35.text()
+
+            if job_title == "":
+                    job_title_done = False
+            else:
+                    job_title_done = True
+
+
+            company = self.lineEdit_36.text()
+            if company == "":
+                    company_done = False
+            else:
+                    company_done = True
+
+
+            start_month = self.comboBox_28.currentText()
+            start_year = self.comboBox_29.currentText()
+            if start_month != "Month":
+                    start_date_work = f"{start_month} {start_year}"
+                    start_date_work_done = True
+            else:
+                    start_date_work_done = False
+
+
+            end_month = self.comboBox_30.currentText()
+            end_year = self.comboBox_31.currentText()
+            if end_month != "Month":
+                end_date_work = f"{end_month} {end_year}"
+                end_date_work_done = True
+            else:
+                end_date_work_done = False
+
+
+            if self.checkBox_4.isChecked():
+                    end_date_work = 'Current'
+                    end_date_work_done = True
+
+
+            roles = self.textEdit_5.toPlainText().strip()
+            if roles == "":
+                roles_done = False
+            else:
+                roles_done = True
+
+
+            if (job_title_done is True) and (company_done is True) and (start_date_work_done is True) and (end_date_work_done is True) and (roles_done is True):
+                    dates = f"{start_date_work} to {end_date_work}"
+
+                    experience = (job_title, company, dates, roles)
+                    self.resume_work_experiences.append(experience)
+
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Work experience saved")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Work experience saved! You can add another work experience.")
+                    x = warning.exec_()
+
+                    self.lineEdit_36.clear()
+                    self.lineEdit_35.clear()
+                    self.textEdit_5.clear()
+                    self.comboBox_30.setCurrentIndex(0)
+                    self.comboBox_28.setCurrentIndex(0)
+
+
+            elif job_title_done is False:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Job title")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Job title field must not be bank!")
+                    x = warning.exec_()
+
+            elif company_done is False:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Company")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Company must not be bank!")
+                    x = warning.exec_()
+
+            elif start_date_work_done is False:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Start Date")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Invalid start date!")
+                    x = warning.exec_()
+
+            elif end_date_work_done is False:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("End date")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Invalid end date!")
+                    x = warning.exec_()
+
+            elif roles_done is False:
+                    warning = QMessageBox()
+                    warning.setWindowTitle("Duties/responsibilities")
+                    warning.setIcon(QMessageBox.Warning)
+                    warning.setText("Duties/responsibility cannot be blank!!")
+                    x = warning.exec_()
+
+    def pushButton_7_clicked(self):
+        to_search = self.lineEdit_20.text()
+        if to_search == "":
+                to_search = "."
+
+        self.current_display_jobs_sql_querry_ulimit = 0
+        self.current_display_jobs_sql_querry = f'SELECT * FROM jujaworks.job_posting WHERE ' \
+                                  f'company regexp "{to_search}" OR job_title regexp "{to_search}" or ' \
+                                  f'location regexp "{to_search}"'
+        self.update_page_jobs()
+
+    def pushButton_35_clicked(self):
+            if self.current_display_jobs_sql_querry_ulimit > 8:
+                self.current_display_jobs_sql_querry_ulimit -= 9
+            self.current_sql_querry = "SELECT * FROM jujaworks.job_posting"
+            self.update_page_jobs()
+
+    def pushButton_34_clicked(self):
+            self.current_display_jobs_sql_querry_ulimit += 9
+            self.current_sql_querry = "SELECT * FROM jujaworks.job_posting"
+            self.update_page_jobs()
+    def toolButton_4_clicked(self):
+        try:
+                with open('resume.docx', 'rb') as f:
+                        x = 2
+
+                warning = QMessageBox()
+                warning.setWindowTitle("Warning")
+                warning.setIcon(QMessageBox.Warning)
+                warning.setText("Please note that editing your resume will overwrite the old one!")
+                x = warning.exec_()
+        except:
+                x = 1
+
+        self.stackedWidget_2.setCurrentWidget(self.page_9)
+        self.comboBox_29.clear()
+        self.comboBox_31.clear()
+
+        years = [str(i) for i in range(2023, 1930, -1)]
+        self.comboBox_29.addItems(years)
+        self.comboBox_31.addItems(years)
+
+    def pushButton_29_clicked(self):
+        official_job_title = self.lineEdit_29.text()
+        if official_job_title != "":
+            official_job_title_done = True
+        else:
+            official_job_title_done = False
+
+        github_ = self.lineEdit_30.text()
+        portifolio_link = self.lineEdit_32.text()
+        linked_in_ = self.lineEdit_31.text()
+
+        # work_experiences = [("Job Title", "Location", "Date", "Duties 1\nDuty2\nDuty3")]
+        self.mycursor.execute(f"SELECT job_title, company, start_date, end_date FROM jujaworks.workexperience WHERE email_address =  '{self.this_user_email}';")
+        details = [i for i in self.mycursor][0]
+
+        date_string = details[2]
+        try:
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                start_date = date_obj.strftime('%b %Y')
+        except:
+                start_date = "Current"
+
+        try:
+                date_string = details[2]
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                end_date = date_obj.strftime('%b %Y')
+        except:
+                end_date = "Current"
+        work_dates = f"{start_date} to {end_date}"
+
+        if len(self.resume_work_experiences) <=0:
+                self.resume_work_experiences = [(details[0], details[1], {work_dates}, "Following policies and procedures\nCollaborating with colleagues\nAttention to detail\nTime management\nMeeting deadlines")]
+
+        overview = self.textEdit_4.toPlainText().strip()
+        if overview != "":
+                overview_done = True
+        else:
+                overview_done = False
+
+
+        if len(self.resume_referees) > 0:
+                resume_ref = True
+        else:
+                resume_ref = False
+
+        # PEEEENUUUTBUTAAAAAAA
+        self.mycursor.execute(f'SELECT * FROM jujaworks.personaldata where email_address = "{self.this_user_email}";')
+        personadata = [i for i in self.mycursor][0]
+
+        doc = docx.Document()
+        full_names = f"{personadata[1]} {personadata[2]}"
+        email_address = self.this_user_email
+        phone_number = personadata[6]
+        location = personadata[4]
+        occupation_title = official_job_title
+        linked_in = linked_in_
+        github = github_
+        portifolio_link = portifolio_link
+        has_work_experience = True
+
+        self.mycursor.execute(f'SELECT * FROM jujaworks.tertiaryeducation where email_address = "{self.this_user_email}";')
+        tertiary_ed = [i for i in self.mycursor][0]
+
+        institution = tertiary_ed[2]
+        degree = tertiary_ed[3]
+        field = tertiary_ed[4]
+        date_string = tertiary_ed[5]
+        try:
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                start_date = date_obj.strftime('%b %Y')
+        except:
+                start_date = "Current"
+
+        try:
+                date_string = tertiary_ed[6]
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                end_date = date_obj.strftime('%b %Y')
+        except:
+                end_date = "Current"
+
+        uni_dates = f"{start_date} to {end_date}"
+
+        uni_institution = tertiary_ed[2]
+        uni_degree = tertiary_ed[3]
+        uni_field = tertiary_ed[4]
+        uni_dates = uni_dates
+
+        self.mycursor.execute(f'SELECT * FROM jujaworks.highschooleducation where email_address = "{self.this_user_email}";')
+        highscool_ = [i for i in self.mycursor][0]
+
+        institution = highscool_[2]
+        grade = highscool_[3]
+        date_string = highscool_[4]
+        try:
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                start_date = date_obj.strftime('%b %Y')
+        except:
+                start_date = "Current"
+
+        try:
+                date_string = highscool_[5]
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                end_date = date_obj.strftime('%b %Y')
+        except:
+                end_date = "Current"
+
+        high_dates = f"{start_date} to {end_date}"
+
+
+        highschool_institution = highscool_[2]
+        highschool_dates = high_dates
+        highschool_grade = highscool_[3]
+
+        self.mycursor.execute(f'SELECT * FROM jujaworks.primaryeducation where email_address = "{self.this_user_email}";')
+        primo = [i for i in self.mycursor][0]
+
+
+        date_string = primo[4]
+        try:
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                start_date = date_obj.strftime('%b %Y')
+        except:
+                start_date = "Current"
+
+        try:
+                date_string = primo[5]
+                date_obj = datetime.strptime(date_string, '%Y-%m-%d')
+                end_date = date_obj.strftime('%b %Y')
+        except:
+                end_date = "Current"
+
+        prim_dates = f"{start_date} to {end_date}"
+
+        primary_institution = primo[2]
+        primary_dates = prim_dates
+        primary_grade = primo[3]
+
+        self.mycursor.execute(f'SELECT * FROM jujaworks.skills where email_address = "{self.this_user_email}";')
+        primo = [i for i in self.mycursor][0]
+
+        skills_list = primo[2].split(",")
+
+        work_experiences = self.resume_work_experiences
+
+
+        referees = self.resume_referees
+
+        sections = doc.sections
+        for section in sections:
+                section.top_margin = docx.shared.Inches(0.5)
+                section.bottom_margin = docx.shared.Inches(0.5)
+                section.left_margin = docx.shared.Inches(1)
+                section.right_margin = docx.shared.Inches(1)
+
+        font_styles = doc.styles
+        font_charstyle = font_styles.add_style('job_title_style', WD_STYLE_TYPE.CHARACTER)
+        font_object = font_charstyle.font
+        font_object.size = Pt(15)
+        font_object.bold = True
+
+        font_styles = doc.styles
+        font_charstyle = font_styles.add_style('Header_', WD_STYLE_TYPE.CHARACTER)
+        font_object = font_charstyle.font
+        font_object.size = Pt(17)
+
+        font_styles = doc.styles
+        font_charstyle = font_styles.add_style('section_headers', WD_STYLE_TYPE.CHARACTER)
+        font_object = font_charstyle.font
+        font_object.size = Pt(14)
+
+        font_styles = doc.styles
+        font_charstyle = font_styles.add_style('normal_text', WD_STYLE_TYPE.CHARACTER)
+        font_object = font_charstyle.font
+        font_object.size = Pt(12)
+
+        # INITIALIZATIONNNNN
+
+        if official_job_title_done is True and overview_done is True and (len(self.resume_referees) > 0):
+                heading = doc.add_heading('', level=1)
+                heading.add_run(f'{full_names.upper()}', style="Header_")
+                heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+                job_title = doc.add_paragraph('')
+                job_title.add_run(f'{occupation_title.upper()}', style="job_title_style")
+                job_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+                # PERSONAL DETAILS
+
+                personal_details_header = doc.add_heading('', level=2)
+                personal_details_header.add_run("PERSONAL DETAILS", style="section_headers")
+
+                phone = doc.add_paragraph("")
+                phone.add_run(f'Phone Number : +{phone_number}', style="normal_text")
+
+                email = doc.add_paragraph("")
+                email.add_run(f'Email Address: {email_address}', style="normal_text")
+
+                location_ = doc.add_paragraph("")
+                location_.add_run(f'Location: {location}', style="normal_text")
+
+                if linked_in != "":
+                        linkedin = doc.add_paragraph("")
+                        linkedin.add_run(f'Linked in: {linked_in}', style="normal_text")
+
+                if github != "":
+                        github_ = doc.add_paragraph("")
+                        github_.add_run(f'GitHub: {github}', style="normal_text")
+
+                if portifolio_link != "":
+                        portifolio = doc.add_paragraph("")
+                        portifolio.add_run(f'Portfolio: {portifolio_link}', style="normal_text")
+
+                overview = overview
+                overview_header = doc.add_heading('', level=2)
+                overview_header.add_run('OVERVIEW', style="section_headers")
+
+                the_overview = doc.add_paragraph("")
+                the_overview.add_run({overview}, style='normal_text')
+                the_overview.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+                if has_work_experience is True:
+                        work_experience_header = doc.add_heading('', level=2)
+                        work_experience_header.add_run('WORK EXPERIENCE', style="section_headers")
+
+                        # [("Job Title", "Location", "Date", "Duties 1\nDuty2\nDuty3")]
+
+                        for job in work_experiences:
+                                job_title = job[0]
+                                job_location = job[1]
+                                job_dates = job[2]
+                                job_duties = job[3]
+
+                                job_duties = job_duties.split("\n")
+
+                                doc.add_paragraph(f"").add_run(f"{job_title.upper()} at {job_location.upper()}",
+                                                               style="normal_text").bold = True
+                                doc.add_paragraph(f"").add_run(job_dates, style="normal_text")
+                                doc.add_paragraph(f"").add_run(f"RESPONSIBILITIES", style="normal_text")
+
+                                bullet_format = doc.styles['List Bullet'].paragraph_format
+                                bullet_format.left_indent = docx.shared.Inches(0.5)
+                                bullet_format.space_after = docx.shared.Pt(16)
+                                for i in job_duties:
+                                        bullet_item = doc.add_paragraph(f'{i}', style='List Bullet')
+
+                                doc.add_paragraph(f"").add_run(f"", style="normal_text")
+
+                doc.add_heading('', level=2).add_run('EDUCATION', style="section_headers")
+                doc.add_paragraph("").add_run({uni_institution.upper()}, style='normal_text').bold = True
+                doc.add_paragraph("").add_run(f'{uni_degree} in {uni_field}', style='normal_text')
+                doc.add_paragraph("").add_run(f'{uni_dates}', style='normal_text')
+
+                doc.add_paragraph("").add_run(f'', style='normal_text')
+                doc.add_paragraph("").add_run({highschool_institution.upper()}, style='normal_text').bold = True
+                doc.add_paragraph("").add_run(f' Kenya Certificate of Secondary Education(KCSE {highschool_grade})',
+                                              style='normal_text')
+                doc.add_paragraph("").add_run(f'{highschool_dates}', style='normal_text')
+
+                doc.add_paragraph("").add_run(f'', style='normal_text')
+                doc.add_paragraph("").add_run({primary_institution.upper()}, style='normal_text').bold = True
+                if primary_grade != "":
+                        doc.add_paragraph("").add_run(f'Kenya Certificate of Primary Education (KCPE {primary_grade})',
+                                                      style='normal_text')
+                doc.add_paragraph("").add_run(f'{primary_dates}', style='normal_text')
+                doc.add_paragraph("").add_run(f'', style='normal_text')
+
+                doc.add_heading('', level=2).add_run('SKILLS', style="section_headers")
+                for i in skills_list:
+                        bullet_item = doc.add_paragraph(f'{i}', style='List Bullet')
+
+                doc.add_heading('', level=2).add_run('REFEREES', style="section_headers")
+                for i in referees:
+                        ref_name = i[0]
+                        ref_role = i[1]
+                        ref_company = i[2]
+                        ref_number = i[3]
+
+                        doc.add_paragraph("").add_run({ref_name.upper()}, style='normal_text').bold = True
+                        doc.add_paragraph("").add_run({ref_role.upper()}, style='normal_text')
+                        doc.add_paragraph("").add_run({ref_company.upper()}, style='normal_text')
+                        doc.add_paragraph("").add_run({ref_number.upper()}, style='normal_text')
+                        doc.add_paragraph("").add_run("", style='normal_text')
+
+                doc.save('resume.docx')
+                documents_folder = os.path.join(os.path.expanduser("~"), "Documents")
+                file_path = os.path.join(documents_folder, f"{full_names}'s resume.docx")
+                doc.save(file_path)
+
+                warning = QMessageBox()
+                warning.setWindowTitle("Success")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"Your resume has been created and saved successfully.")
+                x = warning.exec_()
+
+
+        elif official_job_title_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("title")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"Job title must not be blank")
+                x = warning.exec_()
+
+        elif overview_done is False:
+                warning = QMessageBox()
+                warning.setWindowTitle("Overview")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"Please fill in the overview section")
+                x = warning.exec_()
+
+        elif len(self.resume_referees) <= 0:
+                warning = QMessageBox()
+                warning.setWindowTitle("referee")
+                warning.setIcon(QMessageBox.Information)
+                warning.setText(f"You must add at least one referee")
+                x = warning.exec_()
 
     def toolButton_2_clicked(self):
             self.update_hompage(self.this_user_email)
             self.stackedWidget.setCurrentWidget(self.pageHomepage)
             self.stackedWidget_2.setCurrentWidget(self.pageHompage)
     def pushButton_36_clicked(self):
-        self.mycursor.execute(self.application_sql_querry)
-        jobs = [i for i in self.mycursor][0]
-        job_id = jobs[0]
-        posted_by_email = jobs[1]
-        job_title = jobs[3]
-        company = jobs[4]
-        location = jobs[5]
-        job_type = jobs[6]
-        us = "Jujaworks"
+        resum = self.is_resume()
+        if resum is True:
+                self.mycursor.execute(self.application_sql_querry)
+                jobs = [i for i in self.mycursor][0]
+                job_id = jobs[0]
+                posted_by_email = jobs[1]
+                job_title = jobs[3]
+                company = jobs[4]
+                location = jobs[5]
+                job_type = jobs[6]
+                us = "Jujaworks"
 
-        email_to_applicant = f"Hello {self.current_session_name}\n\nYour application for {job_type} {job_title} position at {company} has been successfully submitted. \n\n" \
-                             f"We will keep you informed on the job. Good luck" \
-                             f"\n\nRegards, \n\n{us}"
-        applicant_title = f"Application for {job_title.lower()} position at {company}"
+                email_to_applicant = f"Hello {self.current_session_name}\n\nYour application for {job_type} {job_title} position at {company} has been successfully submitted. \n\n" \
+                                     f"We will keep you informed on the job. Good luck" \
+                                     f"\n\nRegards, \n\n{us}"
+                applicant_title = f"Application for {job_title.lower()} position at {company}"
 
-        applicant_message = f'subject: {applicant_title} \n\n{email_to_applicant}'
+                applicant_message = f'subject: {applicant_title} \n\n{email_to_applicant}'
 
-        email_to_poster = f"Hello,\n\nYour job post for {job_type} {job_title} position for {company} has received a new applicant. \n\n" \
-                             f"Name: {self.current_session_name}\nEmail_address: {self.this_user_email}" \
-                             f"\n\nRegards, \n\n{us}"
-        poster_title = f"New applicant for {job_title.lower()} position at {company}"
-        poster_message = f'subject: {poster_title} \n\n{email_to_poster}'
+                email_to_poster = f"Hello,\n\nYour job post for {job_type} {job_title} position for {company} has received a new applicant. \n\n" \
+                                     f"Name: {self.current_session_name}\nEmail_address: {self.this_user_email}" \
+                                     f"\n\nRegards, \n\n{us}"
+                poster_title = f"New applicant for {job_title.lower()} position at {company}"
+                poster_message = f'subject: {poster_title} \n\n{email_to_poster}'
 
 
 
-        try:
+                try:
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Sending application")
+                        warning.setIcon(QMessageBox.Information)
+                        warning.setText(f"Sending your application. Please be patient..")
+                        x = warning.exec_()
+
+
+                        self.sendmail(self.this_user_email, applicant_message)
+                        print("sending done 1")
+
+                        msg = MIMEMultipart()
+                        msg['Subject'] = poster_title
+                        msg['From'] = "noreply.jujaworks@gmail.com"
+                        msg['To'] = self.this_user_email
+                        print("sending done 2")
+
+
+                        # add body text to the message
+                        body = MIMEText(email_to_poster)
+                        msg.attach(body)
+
+                        print("sending done 3")
+
+
+                        with open('resume.docx', 'rb') as f:
+                                # create the attachment object
+                                attachment = MIMEApplication(f.read(), _subtype='docx')
+                                attachment.add_header('Content-Disposition', 'attachment', filename='document.docx')
+                                # attach the file to the message
+                                msg.attach(attachment)
+                        print("sending done 4")
+
+                        # connect to SMTP server and send the message
+                        with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+                                smtp.starttls()
+                                password = "qsfqjbkroyolhyhi"
+
+                                print("sending done 5")
+
+                                smtp.login("noreply.jujaworks@gmail.com", password)
+                                smtp.send_message(msg)
+
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Application sent")
+                        warning.setIcon(QMessageBox.Information)
+                        warning.setText(f"Your application has successfully been sent to {company}\n"
+                                        f"We will keep you informed on the job.")
+                        x = warning.exec_()
+                except:
+                        warning = QMessageBox()
+                        warning.setWindowTitle("Application Error")
+                        warning.setIcon(QMessageBox.Warning)
+                        warning.setText("Error sending application.\nPlease check your network!")
+                        x = warning.exec_()
+        else:
                 warning = QMessageBox()
-                warning.setWindowTitle("Sending application")
-                warning.setIcon(QMessageBox.Information)
-                warning.setText(f"Sending your application. Please be patient..")
-                x = warning.exec_()
-
-
-                self.sendmail(self.this_user_email, applicant_message)
-                print("sending done 1")
-
-                msg = MIMEMultipart()
-                msg['Subject'] = poster_title
-                msg['From'] = "noreply.jujaworks@gmail.com"
-                msg['To'] = self.this_user_email
-                print("sending done 2")
-
-
-                # add body text to the message
-                body = MIMEText(email_to_poster)
-                msg.attach(body)
-
-                print("sending done 3")
-
-
-                with open('resume.docx', 'rb') as f:
-                        # create the attachment object
-                        attachment = MIMEApplication(f.read(), _subtype='docx')
-                        attachment.add_header('Content-Disposition', 'attachment', filename='document.docx')
-                        # attach the file to the message
-                        msg.attach(attachment)
-                print("sending done 4")
-
-                # connect to SMTP server and send the message
-                with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-                        smtp.starttls()
-                        password = "qsfqjbkroyolhyhi"
-
-                        print("sending done 5")
-
-                        smtp.login("noreply.jujaworks@gmail.com", password)
-                        smtp.send_message(msg)
-
-                warning = QMessageBox()
-                warning.setWindowTitle("Application sent")
-                warning.setIcon(QMessageBox.Information)
-                warning.setText(f"Your application has successfully been sent to {company}\n"
-                                f"We will keep you informed on the job.")
-                x = warning.exec_()
-        except:
-                warning = QMessageBox()
-                warning.setWindowTitle("Application Error")
+                warning.setWindowTitle("Edit resume first")
                 warning.setIcon(QMessageBox.Warning)
-                warning.setText("Error sending application.\nPlease check your network!")
+                warning.setText("You do not have a resume to use.\nPlease create a resume first then apply for jobs\n"
+                                "A good resume increases your chances of landing a good job!")
                 x = warning.exec_()
-
+                self.toolButton_4_clicked()
     def button_clicked(self, but_num):
             sql = self.current_display_jobs_sql_querry + f" LIMIT {self.current_display_jobs_sql_querry_ulimit+(but_num-1)}, 1"
             self.mycursor.execute(sql)
@@ -4347,6 +5332,13 @@ class Ui_MainWindow(object):
 
 
     def update_page_jobs(self):
+            for numb in range(9):
+                self.pagejob_display_company[numb].setText("")
+                self.pagejob_display_date[numb].setText(" ")
+                self.pagejob_display_description[numb].setText(" ")
+                self.pagejob_display_jobtitle[numb].setText(" ")
+                self.pagejob_display_salary[numb].setText(" ")
+
             sql = self.current_display_jobs_sql_querry + f" LIMIT {self.current_display_jobs_sql_querry_ulimit}, 9"
             self.mycursor.execute(sql)
             all_jobs = [i for i in self.mycursor]
@@ -5245,6 +6237,10 @@ class Ui_MainWindow(object):
             self.comboBox_14.clear()
             self.comboBox_24.clear()
             self.comboBox_22.clear()
+            self.comboBox_28.clear()
+            self.comboBox_29.clear()
+            self.comboBox_30.clear()
+            self.comboBox_31.clear()
 
             years = [str(i) for i in range(2023, 1930, -1)]
             self.comboBox_9.addItems(years)
@@ -5459,7 +6455,6 @@ class Ui_MainWindow(object):
 
     def update_hompage(self, user_email):
             email = user_email
-            print('Entered')
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.personaldata Where email_address = "{email}";')
             valid = [i for i in self.mycursor][0]
@@ -5489,6 +6484,7 @@ class Ui_MainWindow(object):
                     end_date = "Current"
             uni_dates = f"{start_date} to {end_date}"
 
+
             self.label_3.setText(name)
             self.label_5.setText(course)
             self.label_12.setText(university)
@@ -5496,6 +6492,9 @@ class Ui_MainWindow(object):
             self.label_20.setText(university)
             self.label_17.setText(uni_dates)
             self.label_16.setText(course)
+
+
+
 
             self.mycursor.execute(f'SELECT * FROM jujaworks.highschooleducation Where email_address = "{email}";')
             high = [i for i in self.mycursor][0]
@@ -5549,9 +6548,9 @@ class Ui_MainWindow(object):
             self.label_22.setText(primary_school)
             self.label_18.setText(primary_grade)
             self.label_23.setText(primary_dates)
-            self.frame_24.hide()
             self.mycursor.execute(f'SELECT * FROM jujaworks.workexperience Where email_address = "{email}";')
             job = [i for i in self.mycursor][0]
+
 
             title = job[2]
             company = job[3]
@@ -5639,6 +6638,7 @@ class Ui_MainWindow(object):
 
         valid = int(valid[0][0])
         if valid != 0:
+                print("001")
                 self.mycursor.execute(f'SELECT user_password FROM jujaworks.passwords WHERE email_address = "{email}";')
                 user_password = [i for i in self.mycursor][0][0]
 
@@ -5649,6 +6649,9 @@ class Ui_MainWindow(object):
                         self.stackedWidget.setCurrentWidget(self.pageHomepage)
                         self.stackedWidget_2.setCurrentWidget(self.pageHompage)
                         self.label_2.setText("")
+
+                        print("002")
+
 
                 else:
                         self.label_2.setText("Incorrect Password")
@@ -5672,6 +6675,15 @@ from datetime import datetime
 import random
 from PyQt5.QtWidgets import QMessageBox
 import re
+import docx
+from docx.shared import Pt
+from docx.enum.style import WD_STYLE_TYPE
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+import smtplib
+import os
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
 
 if __name__ == "__main__":
     import sys
